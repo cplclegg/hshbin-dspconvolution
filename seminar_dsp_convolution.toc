@@ -1,0 +1,4 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Einführung}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Grundlagen der Faltung}{4}{section.1.1}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
