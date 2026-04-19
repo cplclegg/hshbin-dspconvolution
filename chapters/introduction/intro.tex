@@ -1,7 +1,22 @@
 \chapter{Einführung}
 \section{Grundlagen der Faltung}
-In der Welt der digitalen Signalverarbeitung ist die Faltung (engl.: "Convolution") ein mathematischer Vorgang, bei dem 
-ein Eingangssignal mit einem weiteren Signal, einer sog. Impulsantwort gefaltet wird. Die Impulsantwort fungiert 
-hierbei als eine Art Filter, der das Eingangssignal in sowohl seinen diskreten mathematischen Eigenschaften 
-als auch seinem Klangcharakter verändert.
+In der Welt der digitalen Signalverarbeitung ist die Faltung (engl.: \glqq Convolution\grqq) ein mathematischer Vorgang, bei dem 
+ein Eingangssignal mit einem weiteren Signal, einer sog. Impulsantwort gefaltet wird.
+Eine Impulsantwort ist hierbei als diskretes Audiosignal zu verstehen, das die Klangeigenschaften
+eines bestimmten Systems (bspw. Lautsprecherboxen, Räume, Filter, ... etc.) beinhaltet.
+Die Faltung beschreibt also mathematisch den Einfluss eines solchen Systems auf ein Eingangssignal.
 
+In den folgenen Kapiteln werden wir auf mehrere Aspekte der Faltung eingehen:
+\begin{itemize}
+    \item Die mathematischen Grundlagen der Faltung diskreter Audiosignale
+    \item Veranschaulichung verschiedener Systeme, die mithilfe der Faltung realisiert werden können
+    \item Praktische Anwendung und die damit verbundenen Problemstellungen
+    \item Ein gesonderter Blick: Umsetzung von Halleffekten mithilfe von Faltung
+    \item Implementierung in Software zur digitalen Audiobearbeitung mithilfe des Frameworks \glqq JUCE\grqq in C++
+    \item Lösung von Laufzeitproblemen mithilfe der schnellen Fourier Transformation
+\end{itemize}
+
+Wir werden allerdings nicht auf die mathematische Definition der diskreten Fourier Transformation oder
+die schnelle Fourier Transformation eingehen, weil dies den Rahmen der Seminararbeit sprengen würde.
+Stattdessen werden wir mit dieser Seminararbeit alle Techniken und Theoreme erläutern, die für das grundlegende
+Verständnis der Faltung notwendig sind.

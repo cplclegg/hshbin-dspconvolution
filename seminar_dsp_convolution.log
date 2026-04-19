@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.18)  18 APR 2026 20:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.18)  19 APR 2026 13:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -576,9 +576,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] (./chapters/introduction/intro.tex
 chapter 1.
-) [4
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 11.
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) [4
 
-] (./seminar_dsp_convolution.aux)
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}] (./seminar_dsp_convolution.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -587,18 +590,18 @@ Package rerunfilecheck Info: File `seminar_dsp_convolution.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15916 strings out of 474222
- 301602 string characters out of 5748733
- 1928975 words of memory out of 5000000
- 37953 multiletter control sequences out of 15000+600000
- 597084 words of font info for 63 fonts, out of 8000000 for 9000
+ 15949 strings out of 474222
+ 302461 string characters out of 5748733
+ 1932975 words of memory out of 5000000
+ 37981 multiletter control sequences out of 15000+600000
+ 597459 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,107p,11016b,477s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,19n,107p,11016b,475s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on seminar_dsp_convolution.pdf (4 pages, 107811 bytes).
+Output written on seminar_dsp_convolution.pdf (4 pages, 112545 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 500000)
  35 words of extra memory for PDF output out of 10000 (max. 10000000)
 
