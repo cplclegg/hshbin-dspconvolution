@@ -1,8 +1,13 @@
-\begin{thebibliography}{Lyo10}
+\begin{thebibliography}{Smi97}
 
 \bibitem[Lyo10]{lyons2010}
 Richard~G. Lyons.
 \newblock {\em Understanding Digital Signal Processing}.
 \newblock Pearson Education, third edition, 2010.
+
+\bibitem[Smi97]{smith1997}
+Steven~W. Smith.
+\newblock {\em The Scientist \& Engineer's Guide to Digital Signal Processing}.
+\newblock California Technical Pub, first edition, 1997.
 
 \end{thebibliography}

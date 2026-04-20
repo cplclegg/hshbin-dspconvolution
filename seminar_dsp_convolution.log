@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.18)  20 APR 2026 18:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.18)  20 APR 2026 21:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -583,9 +583,20 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
 chapter 2.
-) (./seminar_dsp_convolution.bbl [5
+<graphic/python/chapter2/stetiges_signal.pdf, id=47, 462.52798pt x 346.89601pt>
+File: graphic/python/chapter2/stetiges_signal.pdf Graphic file (type pdf)
+<use graphic/python/chapter2/stetiges_signal.pdf>
+Package pdftex.def Info: graphic/python/chapter2/stetiges_signal.pdf  used on input line 15.
+(pdftex.def)             Requested size: 357.69322pt x 268.28055pt.
+[5
 
-]) [6
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} <./graphic/python/chapter2/stetiges_signal.pdf>]
+<graphic/python/chapter2/diskretes_signal.pdf, id=99, 722.7pt x 289.08pt>
+File: graphic/python/chapter2/diskretes_signal.pdf Graphic file (type pdf)
+<use graphic/python/chapter2/diskretes_signal.pdf>
+Package pdftex.def Info: graphic/python/chapter2/diskretes_signal.pdf  used on input line 40.
+(pdftex.def)             Requested size: 357.69322pt x 143.07518pt.
+) (./seminar_dsp_convolution.bbl [6 <./graphic/python/chapter2/diskretes_signal.pdf>]) [7
 
 ] (./seminar_dsp_convolution.aux)
  ***********
@@ -596,18 +607,18 @@ Package rerunfilecheck Info: File `seminar_dsp_convolution.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15973 strings out of 474222
- 303012 string characters out of 5748733
+ 16018 strings out of 474222
+ 304676 string characters out of 5748733
  1932975 words of memory out of 5000000
- 37992 multiletter control sequences out of 15000+600000
+ 38029 multiletter control sequences out of 15000+600000
  601721 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,107p,11016b,485s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on seminar_dsp_convolution.pdf (6 pages, 129596 bytes).
+ 108i,19n,107p,11016b,526s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
+Output written on seminar_dsp_convolution.pdf (7 pages, 193375 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

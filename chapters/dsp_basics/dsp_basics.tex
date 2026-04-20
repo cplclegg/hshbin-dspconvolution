@@ -2,4 +2,44 @@
 \section{Abtasttheorem}
 
 In der physikalischen Welt sind Töne Luftdruckschwankungen, die sich in Form von Wellen durch ein Medium, wie
-bspw. der Erdatmosphäre ausbreiten. Diese atmosphärischen Schwankungen lassen sich durch 
+bspw. der Erdatmosphäre ausbreiten. Solche Schwankungen lassen sich mithilfe von Wandlern wie Mikrofonen
+oder Tonabnehmern in
+einen Wechselstrom identischer Wellenform
+umwandeln.
+
+Die folgenden Veranschaulichungen und mathematischen Definitionen orientieren sich an den Darstellungen von
+Lyons \cite[Kap. 1]{lyons2010} und Smith \cite[Kap. 3]{smith1997}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{graphic/python/chapter2/stetiges_signal.pdf}
+    \caption{Stetiges, analoges Audiosignal (5 Hz); Erstellt mit Python (Matplotlib), angelehnt an \cite[Kapitel 1]{lyons2010}}
+    \label{fig:stetiges_signal}
+\end{figure}
+
+Stetige bzw \textit{analoge} Audiosignale wie dieses hier sind mathematisch wie folgt definiert
+\cite[Kap. 1]{lyons2010}:
+\begin{equation}
+    y(t) = \sin(2\pi \cdot f \cdot t)
+    \label{eq:stetige_gleichung}
+\end{equation}
+
+Problematisch hierbei ist, dass ein solches analoges Signal aufgrund seiner Stetigkeit eine überabzählbare
+Anzahl an potentiellen Messpunkten aufweist und sich dadurch unmöglich in Form einer Datenstruktur speichern lässt.
+
+Um dieses Problem nun zu lösen und das Signal dennoch zu digitalisieren,
+wird eine Abtastung (engl.: \textit{sampling})
+in zeitlich gleichmäßigen Abständen vorgenommen. Die Anzahl der Messungen, die sog. Abttastrate
+(engl.: \textit{samplerate}) wird in Hertz angegeben (abgekürzt: \textit{Hz}), was
+in diesem Fall für die Abtastungen pro Sekunde steht.
+Einmal durchgeführt, erhält man eine Folge von diskreten (bzw. abzählbaren) Signalwerten, die sich
+grafisch wie folgt darstellen lassen:
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{graphic/python/chapter2/diskretes_signal.pdf}
+    \caption{Diskretes, digitalisiertes Signal (Freq. von 5Hz) mit Abtastrate von 50Hz; Erstellt in Python (Matplotlib), angelehnt an \cite[Kap. 1]{lyons2010}}
+    \label{fig:diskretes_signal}
+\end{figure}
+
+ 
