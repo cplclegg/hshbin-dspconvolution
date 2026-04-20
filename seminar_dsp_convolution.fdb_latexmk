@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex seminar_dsp_convolution"] 1776611880.18032 "seminar_dsp_convolution.aux" "seminar_dsp_convolution.bbl" "seminar_dsp_convolution" 1776613002.71617 0
+["bibtex seminar_dsp_convolution"] 1776703751.97172 "seminar_dsp_convolution.aux" "seminar_dsp_convolution.bbl" "seminar_dsp_convolution" 1776703754.82667 0
   "./bibliography/bibl.bib" 1776611867.80908 216 27eb103a6f5c10c0925c72a770f31fe0 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/alpha.bst" 1292289607 23907 a5f93555796fb564b924339521f10a7c ""
-  "seminar_dsp_convolution.aux" 1776613002.46229 1632 8c53215e1290556942b1da037efa3983 "pdflatex"
+  "seminar_dsp_convolution.aux" 1776703754.36812 2045 cdf70990337b3e8e28c19a50517b72a7 "pdflatex"
   (generated)
   "seminar_dsp_convolution.bbl"
   "seminar_dsp_convolution.blg"
   (rewritten before read)
-["pdflatex"] 1776613001.3549 "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/seminar_dsp_convolution.tex" "seminar_dsp_convolution.pdf" "seminar_dsp_convolution" 1776613002.71633 0
+["pdflatex"] 1776703752.15965 "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/seminar_dsp_convolution.tex" "seminar_dsp_convolution.pdf" "seminar_dsp_convolution" 1776703754.82697 0
   "/etc/texmf/web2c/texmf.cnf" 1776529841.68766 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/seminar_dsp_convolution.tex" 1776611826.88917 2879 843585758156ef9bca44c77856e11793 ""
+  "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/seminar_dsp_convolution.tex" 1776703101.21251 2922 e9996d06784d8f3373ee105395401249 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -128,12 +128,13 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1776529978 8213202 489845c34e8838eac27fc5ef8f5d7be0 ""
   "H_WI_Pantone1665.pdf" 1776535515.53811 7439 da052d383040ca24b29c150780344e39 ""
   "Wortmarke_WI_schwarz.pdf" 1776535515.53832 43749 83ab1940fe374e4312be1a2db47a85ff ""
-  "chapters/introduction/intro.tex" 1776613001.17894 1589 406878a0a71d390f3d4539e9f6bb1b63 ""
-  "seminar_dsp_convolution.aux" 1776613002.46229 1632 8c53215e1290556942b1da037efa3983 "pdflatex"
-  "seminar_dsp_convolution.bbl" 1776611880.27306 207 b5e0b96f55adab47111576b6414dcebe "bibtex seminar_dsp_convolution"
-  "seminar_dsp_convolution.out" 1776613002.34929 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "seminar_dsp_convolution.tex" 1776611826.88917 2879 843585758156ef9bca44c77856e11793 ""
-  "seminar_dsp_convolution.toc" 1776613002.46329 244 0dd4bf5370b61e8b8e80e315fe1f7b15 "pdflatex"
+  "chapters/dsp_basics/dsp_basics.tex" 1776703748.83812 261 7373f18d9ea8082d60dbe5b45dee8f67 ""
+  "chapters/introduction/intro.tex" 1776703101.29951 1556 c0fd01b80204c12ce645041d9e00568b ""
+  "seminar_dsp_convolution.aux" 1776703754.36812 2045 cdf70990337b3e8e28c19a50517b72a7 "pdflatex"
+  "seminar_dsp_convolution.bbl" 1776703752.15115 207 b5e0b96f55adab47111576b6414dcebe "bibtex seminar_dsp_convolution"
+  "seminar_dsp_convolution.out" 1776703754.12412 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "seminar_dsp_convolution.tex" 1776703101.21251 2922 e9996d06784d8f3373ee105395401249 ""
+  "seminar_dsp_convolution.toc" 1776703754.37012 313 33672f83063bd085fea623f17136041d "pdflatex"
   (generated)
   "seminar_dsp_convolution.aux"
   "seminar_dsp_convolution.log"
