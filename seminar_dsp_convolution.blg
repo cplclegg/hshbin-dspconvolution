@@ -1,46 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: seminar_dsp_convolution.aux
 The style file: alpha.bst
 Database file #1: bibliography/bibl.bib
-You've used 2 entries,
+You've used 3 entries,
             2543 wiz_defined-function locations,
-            570 strings with 4695 characters,
-and the built_in function-call counts, 580 in all, are:
-= -- 50
-> -- 16
+            577 strings with 4844 characters,
+and the built_in function-call counts, 960 in all, are:
+= -- 85
+> -- 41
 < -- 2
-+ -- 5
-- -- 4
-* -- 32
-:= -- 104
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 10
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 32
-empty$ -- 51
-format.name$ -- 8
-if$ -- 116
++ -- 14
+- -- 13
+* -- 60
+:= -- 173
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 17
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 47
+empty$ -- 76
+format.name$ -- 18
+if$ -- 191
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 4
-newline$ -- 13
-num.names$ -- 6
-pop$ -- 16
+missing$ -- 6
+newline$ -- 18
+num.names$ -- 9
+pop$ -- 24
 preamble$ -- 1
-purify$ -- 12
+purify$ -- 20
 quote$ -- 0
-skip$ -- 21
+skip$ -- 31
 stack$ -- 0
-substring$ -- 15
-swap$ -- 2
+substring$ -- 22
+swap$ -- 3
 text.length$ -- 2
 text.prefix$ -- 2
 top$ -- 0
-type$ -- 8
+type$ -- 12
 warning$ -- 0
-while$ -- 4
-width$ -- 3
-write$ -- 28
+while$ -- 7
+width$ -- 5
+write$ -- 42

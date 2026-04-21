@@ -1,9 +1,14 @@
-\begin{thebibliography}{Smi97}
+\begin{thebibliography}{OSB99}
 
 \bibitem[Lyo10]{lyons2010}
 Richard~G. Lyons.
 \newblock {\em Understanding Digital Signal Processing}.
 \newblock Pearson Education, third edition, 2010.
+
+\bibitem[OSB99]{oppenheim1999}
+Alan~V. Oppenheim, Ronald~W. Schafer, and John~R. Buck.
+\newblock {\em Discrete-time signal processing}.
+\newblock Prentice Hall, Upper Saddle River, N.J, 2nd ed edition, 1999.
 
 \bibitem[Smi97]{smith1997}
 Steven~W. Smith.

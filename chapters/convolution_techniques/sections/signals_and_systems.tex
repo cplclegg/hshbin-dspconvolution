@@ -1,0 +1,42 @@
+\section{Signale und Systeme}
+Bevor wir genauer auf Faltung und ihre Anwendungsfälle in der digitalen Audiobearbeitung eingehen können,
+wollen wir zunächst ein paar wichtige Begriffe definieren. Insbesondere benötigen wir im weiteren Verlauf die Begriffe \textit{Signal} 
+und \textit{System}. Genauer eingehen werden wir auf eine Art von System mit bestimmten Eigenschaften,
+die linearen Zeit-Invarianten Systeme (engl.: \textit{Linear Time-Invariant Systems}, kurz LTI).
+\paragraph{Signal}
+Kurz gefasst ist ein Signal eine Beschreibung davon, wie ein Parameter sich im Verhältnis zu einem anderen Parameter verändert \cite[Kap. 5]{smith1997}.
+Signale übertragen dementsprechend Informationen über den Zustand oder das Verhalten eines physischen Systems. Dabei
+ist unerheblich, ob die Signale durch irgendein Verfahren gemessen, oder künstlich synthetisiert werden.
+Mathematisch werden Signale als
+Funktionen einer oder mehrerer unabhängiger Variablen ausgedrückt. So kann ein Audiosignal, beispielsweise Sprache, als Funktion der Zeit
+ausgedrückt werden.
+\paragraph{Stetige, diskrete, und digitale Signale}
+Die unabhängige Variable eines mathematisch als Funktion ausgedrückten Signals kann stetig
+oder diskret sein, wobei stetige Signale oft als \textit{analoge} Signale bezeichnet werden \cite[Kap. 2]{oppenheim1999}. 
+Sie unterscheiden sich von diskreten Signalen dahingehend, dass ihre unabhängige Variable über die reellen Zahlen definiert ist.
+Diskrete Signale widerum sind über eine endlich oder abzählbar unendliche Menge an Zahlen definiert. Man kann sie sich gut als Liste bzw. Array
+von Funktionswerten vorstellen. Darüber, ob die Funktionswerte stetig oder diskret sind, ist hier noch keine Aussage getroffen.
+Signale bei denen sowohl die unabhängige Variable der Funktion, als auch die Funktionswerte, diskret sind, nennen wir \textit{digitale Signale} \cite[Kap. 2]{oppenheim1999}.
+Wir notieren stetige Signale mit der unabhängigen Variable in runden Klammern:
+$x(t)$ für ein stetiges Signal $x$ in Abhängigkeit von Zeit $t$.
+Diskrete Signale notieren wir in Anlehnung an die von Alan Oppenheim \cite{oppenheim1999} verwendete Notation mit der
+unabhängigen Variable in eckigen Klammern: $x[n]$ für ein diskretes Signal, wobei $n$ den Index des betrachteten Funktionswerts bezeichnet.
+\paragraph{System}
+Ein System produziert als Antwort auf ein Eingangssignal durch irgendeinen Prozess ein Ausgangssignal \cite[Kap. 5]{smith1997}.
+Formal definiert Oppenheim ein diskretes System als ``eine Transformation oder einen Operator, der eine Eingangssequenz mit den Werten $x[n]$
+auf eine Ausgangssequenz mit den Werten $y[n]$ abbildet'' \cite[Seite 16]{oppenheim1999}. Mit 
+\paragraph{Lineare Zeit-Invariante Systeme - LTI}
+Eine besondere Signifikanz in der Signalverarbeitung haben die sogenannten Linearen Zeit-Invarianten Systeme. Damit ein System \textit{linear}
+heißt, muss es die beiden Eigenschaften
+\[
+T(x_1[n]+x_2[n])=T(x_1[n])+T(x_2[n])=y_1[n]+y_2[n]
+\]
+
+und 
+
+\[
+T(a\cdot x[n])=a\cdot T(x[n])=a\cdot y[n]
+\]
+erfüllen, wobei $T$ die durch das System vorgenommene Transformation von Ein- in Ausgangs-Signal bezeichnet \cite{oppenheim1999}
+
+Damit ein System \textit{Zeit-Invariant} heißt, 
