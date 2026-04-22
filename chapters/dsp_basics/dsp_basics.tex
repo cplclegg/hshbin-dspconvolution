@@ -1,5 +1,5 @@
 \chapter{Theoretische Grundlagen}
-\section{Abtasttheorem}
+\section{Abtastung stetiger Eingangssignale}
 
 In der physikalischen Welt sind Töne Luftdruckschwankungen, die sich in Form von Wellen durch ein Medium, wie
 bspw. der Erdatmosphäre ausbreiten. Solche Schwankungen lassen sich mithilfe von Wandlern wie Mikrofonen
@@ -16,18 +16,25 @@ Lyons \cite[Kap. 1]{lyons2010} und Smith \cite[Kap. 3]{smith1997}
     \caption{Stetiges, analoges Audiosignal (5 Hz); Erstellt mit Python (Matplotlib), angelehnt an \cite[Kapitel 1]{lyons2010}}
     \label{fig:stetiges_signal}
 \end{figure}
-
-Stetige bzw \textit{analoge} Audiosignale wie dieses hier sind mathematisch wie folgt definiert
+pagebreak
+Stetige bzw \textit{analoge} Audiosignale wie in Abb. \ref{fig:stetiges_signal} sind mathematisch wie folgt definiert
 \cite[Kap. 1]{lyons2010}:
 \begin{equation}
-    y(t) = \sin(2\pi \cdot f \cdot t)
+    x(t) = \sin(2\pi \cdot f_0 \cdot t)
     \label{eq:stetige_gleichung}
 \end{equation}
+... wobei:
+\begin{itemize}
+    \item[$2\pi$]: Eine vollst. Schwingung
+    \item[$f_0$]: Frequenz d. Signals in Hz
+    \item[$t$]: stetiger Zeitpunkt in Sekunden 
+\end{itemize}
+
 
 Problematisch hierbei ist, dass ein solches analoges Signal aufgrund seiner Stetigkeit eine überabzählbare
-Anzahl an potentiellen Messpunkten aufweist und sich dadurch unmöglich in Form einer Datenstruktur speichern lässt.
+Anzahl an potentiellen Messpunkten aufweist und sich dadurch unmöglich in Form einer Datenstruktur digital speichern lässt.
 
-Um dieses Problem nun zu lösen und das Signal dennoch zu digitalisieren,
+Um dieses Problem nun zu lösen und das Signal zu digitalisieren,
 wird eine Abtastung (engl.: \textit{sampling})
 in zeitlich gleichmäßigen Abständen vorgenommen. Die Anzahl der Messungen, die sog. Abttastrate
 (engl.: \textit{samplerate}) wird in Hertz angegeben (abgekürzt: \textit{Hz}), was
@@ -42,4 +49,27 @@ grafisch wie folgt darstellen lassen:
     \label{fig:diskretes_signal}
 \end{figure}
 
- 
+\clearpage
+
+ Die mathematische Definition einer solchen diskreten Folge an Abtastungen sieht nun wie folgt aus:
+ \begin{equation}
+    x(n) = \sin(2\pi \cdot f_0 \cdot n \cdot t_s)
+    \label{eq:diskrete_Folge}
+\end{equation}
+... wobei:
+\begin{itemize}
+    \item[$2\pi$]: Eine vollst. Schwingung
+    \item[$f_0$]: Frequenz d. Signals in Hz
+    \item[$n$]: Index des Folgenwertes
+    \item[$t_s$]: Zeitl. Abstand zwischen zwei Abtastungen in Sek  
+\end{itemize}
+
+\section{Zeitbereich und Frequenzbereich}
+
+
+
+\section{Nyquist-Shannon Theorem}
+
+Bei einer diskreten Folge von abgetasteten Signalwerten liegt es in der Natur der Sache,
+dass die Schwingungskurve mathematisch in unendlich vielen Variationen interpretiert werden kann.
+Folgende Abbildung soll diesen Umstand visualisieren:
