@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.4.14)  21 APR 2026 19:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.4.14)  22 APR 2026 13:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -587,7 +587,12 @@ Package pdftex.def Info: graphic/python/chapter2/diskretes_signal.pdf  used on i
 chapter 3.
 (./chapters/convolution_techniques/sections/signals_and_systems.tex [7
 
-])) (./seminar_dsp_convolution.bbl [8]) [9
+]))
+Overfull \hbox (7.3502pt too wide) in paragraph at lines 46--96
+\T1/lmr/m/n/12 durch ih-re Im-pul-sant-wort (engl.: \T1/lmr/m/it/12 Im-pul-se Re-spon-se\T1/lmr/m/n/12 , kurz \T1/lmr/m/it/12 IR\T1/lmr/m/n/12 ) aus-ge-drückt wer-den [[]].
+ []
+
+(./seminar_dsp_convolution.bbl [8]) [9
 
 ] (./seminar_dsp_convolution.aux)
 Package rerunfilecheck Info: File `seminar_dsp_convolution.out' has not changed.
@@ -601,11 +606,11 @@ Here is how much of TeX's memory you used:
  555939 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  108i,19n,106p,10737b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on seminar_dsp_convolution.pdf (9 pages, 227108 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on seminar_dsp_convolution.pdf (9 pages, 232634 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
+ 255 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
  32 named destinations out of 1000 (max. 500000)
  69 words of extra memory for PDF output out of 10000 (max. 10000000)
 
