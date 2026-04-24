@@ -8,6 +8,7 @@
 \contentsline {paragraph}{\nonumberline Stetige, diskrete, und digitale Signale}{7}{paragraph*.5}%
 \contentsline {paragraph}{\nonumberline Systeme}{8}{paragraph*.7}%
 \contentsline {paragraph}{\nonumberline Lineare Zeit-Invariante Systeme (LTI)}{8}{paragraph*.9}%
-\contentsline {paragraph}{\nonumberline Impulsantwort}{8}{paragraph*.11}%
 \contentsline {section}{\numberline {3.2}Lineare Zeit-Invariante Systeme in der realen Welt}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Messung von Impulsantworten}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Entfaltung (Deconvolution) von Messungen}{9}{section.3.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

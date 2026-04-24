@@ -3,44 +3,48 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: seminar_dsp_convolution.aux
 The style file: alpha.bst
 Database file #1: bibliography/bibl.bib
-You've used 3 entries,
+Warning--empty journal in farina2000
+Warning--empty journal in farina2007a
+Warning--empty journal in farina2007b
+You've used 6 entries,
             2543 wiz_defined-function locations,
-            577 strings with 4844 characters,
-and the built_in function-call counts, 960 in all, are:
-= -- 85
-> -- 41
-< -- 2
-+ -- 14
-- -- 13
-* -- 60
-:= -- 173
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 17
-chr.to.int$ -- 3
-cite$ -- 3
-duplicate$ -- 47
-empty$ -- 76
-format.name$ -- 18
-if$ -- 191
-int.to.chr$ -- 1
+            586 strings with 5078 characters,
+and the built_in function-call counts, 1750 in all, are:
+= -- 160
+> -- 65
+< -- 5
++ -- 21
+- -- 19
+* -- 101
+:= -- 310
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 32
+chr.to.int$ -- 5
+cite$ -- 9
+duplicate$ -- 89
+empty$ -- 136
+format.name$ -- 30
+if$ -- 344
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 6
-newline$ -- 18
-num.names$ -- 9
-pop$ -- 24
+missing$ -- 9
+newline$ -- 33
+num.names$ -- 18
+pop$ -- 45
 preamble$ -- 1
-purify$ -- 20
+purify$ -- 38
 quote$ -- 0
-skip$ -- 31
+skip$ -- 62
 stack$ -- 0
-substring$ -- 22
+substring$ -- 43
 swap$ -- 3
-text.length$ -- 2
-text.prefix$ -- 2
+text.length$ -- 5
+text.prefix$ -- 5
 top$ -- 0
-type$ -- 12
-warning$ -- 0
-while$ -- 7
-width$ -- 5
-write$ -- 42
+type$ -- 36
+warning$ -- 3
+while$ -- 13
+width$ -- 9
+write$ -- 75
+(There were 3 warnings)

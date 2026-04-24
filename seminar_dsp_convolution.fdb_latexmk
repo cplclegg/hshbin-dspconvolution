@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex seminar_dsp_convolution"] 1777045703.51822 "seminar_dsp_convolution.aux" "seminar_dsp_convolution.bbl" "seminar_dsp_convolution" 1777045704.10067 0
-  "./bibliography/bibl.bib" 1777045570.67734 1373 3a353bde00ab0e2801e963302883b6d0 ""
+["bibtex seminar_dsp_convolution"] 1777064598.02906 "seminar_dsp_convolution.aux" "seminar_dsp_convolution.bbl" "seminar_dsp_convolution" 1777064598.59618 0
+  "./bibliography/bibl.bib" 1777061182.23169 2721 16bf26f12ecae7210331176a07dfc6b2 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/alpha.bst" 1775001600 23907 a5f93555796fb564b924339521f10a7c ""
-  "seminar_dsp_convolution.aux" 1777045704.03215 6390 73b3ad839b1244a16ffd96ecfb63c49f "pdflatex"
+  "seminar_dsp_convolution.aux" 1777064598.52812 7728 ccaf46486f268d5ff5c3cd45265bb491 "pdflatex"
   (generated)
   "seminar_dsp_convolution.bbl"
   "seminar_dsp_convolution.blg"
   (rewritten before read)
-["pdflatex"] 1777045703.52871 "/home/tomnir/Documents/devel/hshbin/seminar_digitalaudio_convolution/hshbin-dspconvolution/seminar_dsp_convolution.tex" "seminar_dsp_convolution.pdf" "seminar_dsp_convolution" 1777045704.10082 0
+["pdflatex"] 1777064598.03867 "/home/tomnir/Documents/devel/hshbin/seminar_digitalaudio_convolution/hshbin-dspconvolution/seminar_dsp_convolution.tex" "seminar_dsp_convolution.pdf" "seminar_dsp_convolution" 1777064598.59635 0
   "/home/tomnir/Documents/devel/hshbin/seminar_digitalaudio_convolution/hshbin-dspconvolution/seminar_dsp_convolution.tex" 1776778922.68758 2988 aacdafd86f9f67d4605a6f4914d57e2b ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -133,18 +133,19 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1776174588 6888991 d133369466778896525e86303d127ecc ""
   "H_WI_Pantone1665.pdf" 1776776689.76376 7439 da052d383040ca24b29c150780344e39 ""
   "Wortmarke_WI_schwarz.pdf" 1776776689.76417 43749 83ab1940fe374e4312be1a2db47a85ff ""
-  "chapters/convolution_techniques/convolution_techniques.tex" 1777045702.22819 190 de2347e731c4be661d073e3315b25ff2 ""
-  "chapters/convolution_techniques/sections/real_world_LTI.tex" 1777045570.66892 421 91a0a8d6fe13bd90ee790b5f0958c8de ""
-  "chapters/convolution_techniques/sections/signals_and_systems.tex" 1777045570.67766 4121 b0ad131e64fe29e6c8e5a5bbe0677b02 ""
-  "chapters/dsp_basics/dsp_basics.tex" 1776776689.76438 2111 25c0057fa988d0bae40e1365c5c97c1e ""
+  "chapters/convolution_techniques/convolution_techniques.tex" 1777063690.86147 272 0f030855c997fbba0ff83e25c6ebfc6b ""
+  "chapters/convolution_techniques/sections/IR_measurement_deconvolution.tex" 1777064596.74358 1475 2e64d2e1484726bd7b5c1c81594e4671 ""
+  "chapters/convolution_techniques/sections/real_world_LTI.tex" 1777061182.15222 1835 ec74c6a3fa12bf2b307ad59ba72185fc ""
+  "chapters/convolution_techniques/sections/signals_and_systems.tex" 1777063685.94603 4095 3054c9143cf96f86d23ffc463227e335 ""
+  "chapters/dsp_basics/dsp_basics.tex" 1777046805.33941 2111 25c0057fa988d0bae40e1365c5c97c1e ""
   "chapters/introduction/intro.tex" 1776776689.7647 1556 c0fd01b80204c12ce645041d9e00568b ""
   "graphic/python/chapter2/diskretes_signal.pdf" 1776776689.76529 12976 352d81b80ee649a94d47b80642be87be ""
   "graphic/python/chapter2/stetiges_signal.pdf" 1776776689.76539 15728 73376b199d561a604dbca6f88bf5e66c ""
-  "seminar_dsp_convolution.aux" 1777045704.03215 6390 73b3ad839b1244a16ffd96ecfb63c49f "pdflatex"
-  "seminar_dsp_convolution.bbl" 1777045703.52515 598 15f41600a733e81a0c87b8a88d53792b "bibtex seminar_dsp_convolution"
-  "seminar_dsp_convolution.out" 1777045703.97514 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "seminar_dsp_convolution.aux" 1777064598.52812 7728 ccaf46486f268d5ff5c3cd45265bb491 "pdflatex"
+  "seminar_dsp_convolution.bbl" 1777064598.03585 1008 58f2c9fb4c6d3723f3720dcc7ff53674 "bibtex seminar_dsp_convolution"
+  "seminar_dsp_convolution.out" 1777064598.46527 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "seminar_dsp_convolution.tex" 1776778922.68758 2988 aacdafd86f9f67d4605a6f4914d57e2b ""
-  "seminar_dsp_convolution.toc" 1777045704.03315 1001 af19cf4d18f208935864455d592f282e "pdflatex"
+  "seminar_dsp_convolution.toc" 1777064598.52985 1114 51cb5fd3cd27e5bf63a9ef214a4f4ee2 "pdflatex"
   (generated)
   "seminar_dsp_convolution.aux"
   "seminar_dsp_convolution.log"

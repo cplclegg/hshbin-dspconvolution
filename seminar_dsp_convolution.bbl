@@ -1,4 +1,19 @@
-\begin{thebibliography}{OSB99}
+\begin{thebibliography}{Far07b}
+
+\bibitem[Far00]{farina2000}
+Angelo Farina.
+\newblock Simultaneous measurement of impulse response and distortion with a swept-sine technique.
+\newblock February 2000.
+
+\bibitem[Far07a]{farina2007a}
+Angelo Farina.
+\newblock Advancements in impulse response measurements by sine sweeps.
+\newblock 2007.
+
+\bibitem[Far07b]{farina2007b}
+Angelo Farina.
+\newblock Impulse {Response} {Measurements}.
+\newblock 2007.
 
 \bibitem[Lyo10]{lyons2010}
 Richard~G. Lyons.
