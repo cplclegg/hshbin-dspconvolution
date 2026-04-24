@@ -1,5 +1,17 @@
 \section{Lineare Zeit-Invariante Systeme in der realen Welt}
 Die Eigenschaften von Linearen Zeit-Invarianten Systemen sind für Anwendungen in der digitalen
-Audiobearbeitung besonders dort interessant, wo Systeme in der realen Welt als LTI-System interpretiert
-und so durch ihre Impulsantwort approximiert werden können. In der Tat gibt es einige Systeme
-in der realen Welt, bei denen diese Approximation als LTI-System
+Audiobearbeitung besonders dort interessant, wo in der realen Welt auftretende Systeme als LTI-System interpretiert
+und so durch ihre Impulsantwort approximiert werden können. In der Tat gibt es einige solche Systeme.
+Genauer eingehen wollen wir hier auf den Anwendungsfall des Faltungshalls (Engl.: \textit{Convolution Reverb}). Dabei
+wird die Akustik eines Raumes durch ein sorgfältig ausgewähltes Signals angeregt. In ausreichender Entfernung
+zur Schallquelle wird die Akustik des Raumes mit einem Mikrofon gemessen (aufgenommen) und digital gespeichert. 
+Die so aufgenommene Raumakustik entspricht näherungsweise dem Ergebnis einer Faltung von Impuls und der Impulsantwort
+des Raums. Mithilfe von Techniken, auf die wir in KAPITEL ERGÄNZEN noch genauer eingehen werden, wird aus dem 
+Messergebnis die Impulsantwort des Raums berechnet. Wird diese mit im Anschluss mit einem beliebigen Eingangssignal gefaltet, dann ist das Ergebnis
+eine Annäherung dessen, wie die Akustik des aufgenommenen Raums dieses Eingangssignal beeinflussen würde.
+Im Falle von Raumhall-Effekten weist der Raum selbst lineare Eigenschaften auf, während jedoch die eingesetzten Schallwandler und
+verwandte Hardware leichte nonlineare Verzerrungen verursachen. Die auf die Schallwandlung folgende Ausbreitung im 
+Raum ist widerum nicht vollständig Zeit-Invariant \cite{farina2000}, \cite{farina2007a}. 
+Durch geeignete Messverfahren in Kombination mit
+entsprechenden Verfahren zur Berechnung der Impulsantwort (\textit{Entfaltung}, engl. \textit{Deconvolution}) können auch Systeme mit leicht
+nonlinearen und Zeit-Varianten Eigenschaften vollständig charakterisiert werden \cite{farina2000}. 
