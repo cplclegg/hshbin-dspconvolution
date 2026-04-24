@@ -3,7 +3,7 @@ Bevor wir genauer auf Faltung und ihre Anwendungsfälle in der digitalen Audiobe
 wollen wir zunächst ein paar wichtige Begriffe definieren. Insbesondere benötigen wir im weiteren Verlauf die Begriffe \textit{Signal} 
 und \textit{System}. Genauer eingehen werden wir auf eine Art von System mit bestimmten Eigenschaften,
 die linearen Zeit-Invarianten Systeme (engl.: \textit{Linear Time-Invariant Systems}, kurz LTI).
-\paragraph{Signal}
+\paragraph{Signale}
 Kurz gefasst ist ein Signal eine Beschreibung davon, wie ein Parameter sich im Verhältnis zu einem anderen Parameter verändert \cite[Kap. 5]{smith1997}.
 Signale übertragen dementsprechend Informationen über den Zustand oder das Verhalten eines physischen Systems. Dabei
 ist unerheblich, ob die Signale durch irgendein Verfahren gemessen, oder künstlich synthetisiert werden.
@@ -21,11 +21,11 @@ Wir notieren stetige Signale mit der unabhängigen Variable in runden Klammern:
 $x(t)$ für ein stetiges Signal $x$ in Abhängigkeit von Zeit $t$.
 Diskrete Signale notieren wir in Anlehnung an die von Alan Oppenheim \cite{oppenheim1999} verwendete Notation mit der
 unabhängigen Variable in eckigen Klammern: $x[n]$ für ein diskretes Signal, wobei $n$ den Index des betrachteten Funktionswerts bezeichnet.
-\paragraph{System}
+\paragraph{Systeme}
 Ein System produziert als Antwort auf ein Eingangssignal durch irgendeinen Prozess ein Ausgangssignal \cite[Kap. 5]{smith1997}.
 Formal definiert Oppenheim ein diskretes System als ``eine Transformation oder einen Operator, der eine Eingangssequenz mit den Werten $x[n]$
 auf eine Ausgangssequenz mit den Werten $y[n]$ abbildet'' \cite[Seite 16]{oppenheim1999}. Mit 
-\paragraph{Lineare Zeit-Invariante Systeme - LTI}
+\paragraph{Lineare Zeit-Invariante Systeme (LTI)}
 Eine besondere Signifikanz in der Signalverarbeitung haben die sogenannten Linearen Zeit-Invarianten Systeme. Damit ein System \textit{linear}
 heißt, muss es die beiden Eigenschaften
 \[
@@ -45,4 +45,7 @@ $x'[n]=x[n-n_0]$ das entsprechende Ausgangssignal $y$ mit den Werten $y'[n]=y[n-
 
 Ist nun ein System sowohl linear als auch Zeit-Invarant, dann heißt es \textit{lineare Zeit-Invariantes System (LTI)}. LTI werden durch eine besonders praktische Eigenschaft ausgezeichnet:
 ihre Auswirkungen auf ein beliebiges Eingangssignal können vollständig durch ihre Impulsantwort (engl.: \textit{Impulse Response}, kurz \textit{IR}) ausgedrückt werden \cite{oppenheim1999}.
+
+\paragraph{Impulsantwort}
+
 Wir notieren die Impulsantwort eines Systems, wenn sie keinen deskriptiveren Namen aus dem Kontext des Systems erhält, mit $h[n]$.

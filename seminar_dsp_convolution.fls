@@ -841,6 +841,10 @@ INPUT ./chapters/convolution_techniques/sections/signals_and_systems.tex
 INPUT chapters/convolution_techniques/sections/signals_and_systems.tex
 INPUT ./chapters/convolution_techniques/sections/signals_and_systems.tex
 INPUT chapters/convolution_techniques/sections/signals_and_systems.tex
+INPUT ./chapters/convolution_techniques/sections/real_world_LTI.tex
+INPUT chapters/convolution_techniques/sections/real_world_LTI.tex
+INPUT ./chapters/convolution_techniques/sections/real_world_LTI.tex
+INPUT chapters/convolution_techniques/sections/real_world_LTI.tex
 INPUT ./seminar_dsp_convolution.bbl
 INPUT seminar_dsp_convolution.bbl
 INPUT ./seminar_dsp_convolution.bbl
