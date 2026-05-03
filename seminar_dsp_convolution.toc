@@ -2,17 +2,18 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{4}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Abtasttheorem}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Nyquist-Shannon Theorem}{6}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Messung und Faltung von Impulsantworten}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Signale und Systeme}{8}{section.3.1}%
-\contentsline {paragraph}{\nonumberline Signale}{8}{paragraph*.3}%
-\contentsline {paragraph}{\nonumberline Stetige, diskrete, und digitale Signale}{8}{paragraph*.5}%
-\contentsline {paragraph}{\nonumberline Systeme}{9}{paragraph*.7}%
-\contentsline {paragraph}{\nonumberline Lineare Zeit-Invariante Systeme (LTI)}{9}{paragraph*.9}%
-\contentsline {section}{\numberline {3.2}Lineare Zeit-Invariante Systeme in der realen Welt}{9}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Messung von Impulsantworten}{10}{section.3.3}%
-\contentsline {paragraph}{\nonumberline Time Delay Spectrometry}{10}{paragraph*.11}%
-\contentsline {paragraph}{\nonumberline Minimum Length Sequence}{11}{paragraph*.13}%
-\contentsline {paragraph}{\nonumberline Exponential/Logarithmic Sine Sweep}{11}{paragraph*.15}%
-\contentsline {section}{\numberline {3.4}Entfaltung (Deconvolution) von Messungen}{11}{section.3.4}%
+\contentsline {section}{\numberline {2.2}Zeit- und Frequenzbereich}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Nyquist-Shannon Theorem}{7}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Messung und Faltung von Impulsantworten}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Signale und Systeme}{9}{section.3.1}%
+\contentsline {paragraph}{\nonumberline Signale}{9}{paragraph*.3}%
+\contentsline {paragraph}{\nonumberline Stetige, diskrete, und digitale Signale}{9}{paragraph*.5}%
+\contentsline {paragraph}{\nonumberline Systeme}{10}{paragraph*.7}%
+\contentsline {paragraph}{\nonumberline Lineare Zeit-Invariante Systeme (LTI)}{10}{paragraph*.9}%
+\contentsline {section}{\numberline {3.2}Lineare Zeit-Invariante Systeme in der realen Welt}{10}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Messung von Impulsantworten}{11}{section.3.3}%
+\contentsline {paragraph}{\nonumberline Time Delay Spectrometry}{11}{paragraph*.11}%
+\contentsline {paragraph}{\nonumberline Minimum Length Sequence}{12}{paragraph*.13}%
+\contentsline {paragraph}{\nonumberline Exponential/Logarithmic Sine Sweep}{12}{paragraph*.15}%
+\contentsline {section}{\numberline {3.4}Entfaltung (Deconvolution) von Messungen}{12}{section.3.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

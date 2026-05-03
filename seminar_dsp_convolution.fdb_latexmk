@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex seminar_dsp_convolution"] 1777825711.28007 "seminar_dsp_convolution.aux" "seminar_dsp_convolution.bbl" "seminar_dsp_convolution" 1777825714.28391 0
+["bibtex seminar_dsp_convolution"] 1777837345.09381 "seminar_dsp_convolution.aux" "seminar_dsp_convolution.bbl" "seminar_dsp_convolution" 1777837582.58104 0
   "./bibliography/bibl.bib" 1777818994.20116 3854 8d9c2f277db6466b7d6d79ce84984975 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/alpha.bst" 1292289607 23907 a5f93555796fb564b924339521f10a7c ""
-  "seminar_dsp_convolution.aux" 1777825713.75774 9159 c3b5134b98e4dd7fc503a3386ff71399 "pdflatex"
+  "seminar_dsp_convolution.aux" 1777837582.08804 10167 eceb0c0beb0d2d5f5bf1fb55f8fd7436 "pdflatex"
   (generated)
   "seminar_dsp_convolution.bbl"
   "seminar_dsp_convolution.blg"
   (rewritten before read)
-["pdflatex"] 1777825711.45656 "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/seminar_dsp_convolution.tex" "seminar_dsp_convolution.pdf" "seminar_dsp_convolution" 1777825714.28431 0
+["pdflatex"] 1777837579.44069 "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/seminar_dsp_convolution.tex" "seminar_dsp_convolution.pdf" "seminar_dsp_convolution" 1777837582.58137 0
   "/etc/texmf/web2c/texmf.cnf" 1776529841.68766 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/seminar_dsp_convolution.tex" 1777819042.91047 2988 aacdafd86f9f67d4605a6f4914d57e2b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -142,16 +142,20 @@
   "chapters/convolution_techniques/sections/IR_measurement_deconvolution.tex" 1777818994.20153 4451 567ba7707d6b3c2de4ed1a72afbc685f ""
   "chapters/convolution_techniques/sections/real_world_LTI.tex" 1777818994.20166 1854 6fff4aae7a39c0902840e33ebef2233a ""
   "chapters/convolution_techniques/sections/signals_and_systems.tex" 1777818994.20188 4099 ed3c273ebaa0bc1c32411c47ba5b161a ""
-  "chapters/dsp_basics/dsp_basics.tex" 1777825708.07811 3951 d5b1d8eb65326973962da0a23cd35202 ""
+  "chapters/dsp_basics/dsp_basics.tex" 1777831892.2726 209 8d2d2cb861c42b299f7f46037554a46f ""
+  "chapters/dsp_basics/sections/abtasttheorem.tex" 1777830020.87676 2074 4037ed79ab9f54268f7e6a15730b3d60 ""
+  "chapters/dsp_basics/sections/frequenzbereich.tex" 1777836715.15074 1554 702b57b903d2ea5c4cdf3ce950e8af4c ""
+  "chapters/dsp_basics/sections/nyquistshannon.tex" 1777837579.15409 2468 ff55891b0dad878024b18441e8e1e9e4 ""
   "chapters/introduction/intro.tex" 1776706015.30178 1556 c0fd01b80204c12ce645041d9e00568b ""
+  "graphic/img/chapter2/Lyons_time_freq_domain.png.png" 1777834042.55089 27893 55f22c4cf0d482ae8104eee53dd922dc ""
   "graphic/python/chapter2/aliasing_vergleich.pdf" 1777820723.77292 25780 bb34ab1225c8336e60de33b2253aa565 ""
   "graphic/python/chapter2/diskretes_signal.pdf" 1776713699.34208 12976 352d81b80ee649a94d47b80642be87be ""
   "graphic/python/chapter2/stetiges_signal.pdf" 1777820620.61567 15728 dab914756d3e8d901121c751f4af5b7a ""
-  "seminar_dsp_convolution.aux" 1777825713.75774 9159 c3b5134b98e4dd7fc503a3386ff71399 "pdflatex"
-  "seminar_dsp_convolution.bbl" 1777825711.44379 2143 3d066fdba15b5272882de0cb4ad32eb6 "bibtex seminar_dsp_convolution"
-  "seminar_dsp_convolution.out" 1777825713.40775 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "seminar_dsp_convolution.aux" 1777837582.08804 10167 eceb0c0beb0d2d5f5bf1fb55f8fd7436 "pdflatex"
+  "seminar_dsp_convolution.bbl" 1777837345.25154 2143 3d066fdba15b5272882de0cb4ad32eb6 "bibtex seminar_dsp_convolution"
+  "seminar_dsp_convolution.out" 1777837581.64505 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "seminar_dsp_convolution.tex" 1777819042.91047 2988 aacdafd86f9f67d4605a6f4914d57e2b ""
-  "seminar_dsp_convolution.toc" 1777825713.76074 1465 ea94e45c7769bed8b34bcf36c20b3ca7 "pdflatex"
+  "seminar_dsp_convolution.toc" 1777837582.09204 1553 89a5b1fc72a193778e271c350792d6e7 "pdflatex"
   (generated)
   "seminar_dsp_convolution.aux"
   "seminar_dsp_convolution.log"
