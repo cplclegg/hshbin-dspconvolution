@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2023)
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: seminar_dsp_convolution.aux
 The style file: alpha.bst
@@ -6,45 +6,45 @@ Database file #1: bibliography/bibl.bib
 Warning--empty journal in farina2000
 Warning--empty journal in farina2007a
 Warning--empty journal in farina2007b
-You've used 6 entries,
+You've used 10 entries,
             2543 wiz_defined-function locations,
-            586 strings with 5078 characters,
-and the built_in function-call counts, 1750 in all, are:
-= -- 160
-> -- 65
-< -- 5
-+ -- 21
-- -- 19
-* -- 101
-:= -- 310
-add.period$ -- 18
-call.type$ -- 6
-change.case$ -- 32
-chr.to.int$ -- 5
-cite$ -- 9
-duplicate$ -- 89
-empty$ -- 136
-format.name$ -- 30
-if$ -- 344
+            615 strings with 5923 characters,
+and the built_in function-call counts, 3645 in all, are:
+= -- 359
+> -- 159
+< -- 6
++ -- 54
+- -- 52
+* -- 247
+:= -- 613
+add.period$ -- 31
+call.type$ -- 10
+change.case$ -- 59
+chr.to.int$ -- 9
+cite$ -- 13
+duplicate$ -- 162
+empty$ -- 270
+format.name$ -- 67
+if$ -- 738
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 9
-newline$ -- 33
-num.names$ -- 18
-pop$ -- 45
+missing$ -- 13
+newline$ -- 53
+num.names$ -- 30
+pop$ -- 70
 preamble$ -- 1
-purify$ -- 38
+purify$ -- 69
 quote$ -- 0
-skip$ -- 62
+skip$ -- 122
 stack$ -- 0
-substring$ -- 43
-swap$ -- 3
-text.length$ -- 5
+substring$ -- 161
+swap$ -- 18
+text.length$ -- 6
 text.prefix$ -- 5
 top$ -- 0
-type$ -- 36
+type$ -- 68
 warning$ -- 3
-while$ -- 13
-width$ -- 9
-write$ -- 75
+while$ -- 32
+width$ -- 14
+write$ -- 129
 (There were 3 warnings)
