@@ -1,4 +1,4 @@
-\section{Messung von Impulsantworten} \label{ir_msrmt}
+\section{Messung von Raum-Impulsantworten} \label{ir_msrmt}
 Um die akustischen Eigenschaften eines physischen Raumes in Form einer Impulsantwort abbilden zu können, wird der Raum
 zunächst durch einen Messton angeregt. Dieser muss das gesamte Frequenzspektrum, auf das die IR später angewandt werden soll, enthalten \cite{smpm2001}.
 Der im Raum resultierende Raumschall (der aus den Eigenschaften des Raumes sowie der Beschaffenheit
@@ -31,12 +31,8 @@ Diese äußern sich in Form von Zeitaliasing-Artefakten, selbst wenn die Länge 
 IR als unerwartete Peaks zu erkennen. Messverfahren mit linearen Sinus-Sweeps wie die TDS-Methode verbergen diese Peaks. Sie äußern sich bei diesen Verfahren in Form
 eines mit dem Eingangssignal korrellierten Rauschens, welches nicht durch wiederholte Messung und Mittelwertbildung reduziert werden kann. Werden stattdessen
 exponentielle Sinus-Sweeps, bei denen die momentäre Frequenz sich in Abhängigkeit der Zeit exponentiell verändert genutzt, dann sind diese Artefakte in der IR wieder gut
-erkennbar \cite{farina2000}. Angelo Farina beschreibt ein Entfaltungs-Verfahren, mit dem diese Artefakte einfach aus der IR herausgerechnet werden können.
+erkennbar \cite{farina2000}. Angelo Farina beschreibt ein Entfaltungs-Verfahren, mit dem diese Artefakte einfach von der IR getrennt werden können.
 Unter Anwendung dieser Methodik ist sind ESS/LSS-Verfahren die geeignetsten Messverfahren für die Messung der Impulsantworten von Räumen.
 
-\section{Entfaltung (Deconvolution) von Messungen} \label{deconvolution}
-Hat man mit einem der in \ref{ir_msrmt} beschriebenen Verfahren das Ausgangssignal eines Raums gemessen, dann ist der nächste wichtige Schritt die Berechnung der
-Impulsantwort des Raumes. Laut dem Faltungssatz ist eine Convolution in der Zeitdomäne äquivalent zu einer Multiplikation in der Frequenzdomäne \cite{oppenheim1999}.
-Naiv liegt es damit nahe, dass eine Deconvolution in der Zeitdomäne äquivalent zu einer Division in der Frequenzdomäne ist. Mathematisch ist diese Annahme auch korrekt,
-allerdings treten in der praktischen Anwendung gewisse Probleme auf. 
+
 
