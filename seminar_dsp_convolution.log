@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.18)  4 MAY 2026 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.18)  5 MAY 2026 00:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -583,46 +583,56 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
 chapter 2.
-(./chapters/convolution_techniques/sections/signals_and_systems.tex [5
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}]) (./chapters/dsp_basics/sections/abtasttheorem.tex
-<graphic/python/chapter2/stetiges_signal.pdf, id=89, 462.52798pt x 346.89601pt>
+(./chapters/dsp_basics/sections/abtasttheorem.tex
+<graphic/python/chapter2/stetiges_signal.pdf, id=67, 462.52798pt x 346.89601pt>
 File: graphic/python/chapter2/stetiges_signal.pdf Graphic file (type pdf)
 <use graphic/python/chapter2/stetiges_signal.pdf>
 Package pdftex.def Info: graphic/python/chapter2/stetiges_signal.pdf  used on input line 14.
 (pdftex.def)             Requested size: 223.5574pt x 167.66739pt.
- [6{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}]
-<graphic/python/chapter2/diskretes_signal.pdf, id=108, 722.7pt x 289.08pt>
+ [5
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} <./graphic/python/chapter2/stetiges_signal.pdf>]
+<graphic/python/chapter2/diskretes_signal.pdf, id=119, 722.7pt x 289.08pt>
 File: graphic/python/chapter2/diskretes_signal.pdf Graphic file (type pdf)
 <use graphic/python/chapter2/diskretes_signal.pdf>
 Package pdftex.def Info: graphic/python/chapter2/diskretes_signal.pdf  used on input line 39.
 (pdftex.def)             Requested size: 357.69322pt x 143.07518pt.
-) (./chapters/dsp_basics/sections/frequenzbereich.tex [7 <./graphic/python/chapter2/stetiges_signal.pdf> <./graphic/python/chapter2/diskretes_signal.pdf>]
-<graphic/img/chapter2/Lyons_time_freq_domain.png.png, id=188, 853.1875pt x 251.94125pt>
+) (./chapters/dsp_basics/sections/frequenzbereich.tex
+<graphic/img/chapter2/Lyons_time_freq_domain.png.png, id=122, 853.1875pt x 251.94125pt>
 File: graphic/img/chapter2/Lyons_time_freq_domain.png.png Graphic file (type png)
 <use graphic/img/chapter2/Lyons_time_freq_domain.png.png>
 Package pdftex.def Info: graphic/img/chapter2/Lyons_time_freq_domain.png.png  used on input line 9.
 (pdftex.def)             Requested size: 357.69322pt x 105.62622pt.
-) (./chapters/dsp_basics/sections/nyquistshannon.tex
-<graphic/python/chapter2/aliasing_vergleich.pdf, id=195, 738.06992pt x 393.98067pt>
+) (./chapters/dsp_basics/sections/nyquistshannon.tex [6 <./graphic/python/chapter2/diskretes_signal.pdf> <./graphic/img/chapter2/Lyons_time_freq_domain.png.png>]
+<graphic/python/chapter2/aliasing_vergleich.pdf, id=170, 738.06992pt x 393.98067pt>
 File: graphic/python/chapter2/aliasing_vergleich.pdf Graphic file (type pdf)
 <use graphic/python/chapter2/aliasing_vergleich.pdf>
 Package pdftex.def Info: graphic/python/chapter2/aliasing_vergleich.pdf  used on input line 10.
 (pdftex.def)             Requested size: 223.5574pt x 119.3313pt.
- [8 <./graphic/img/chapter2/Lyons_time_freq_domain.png.png>]
+
 Overfull \hbox (17.72202pt too wide) in paragraph at lines 29--32
 []\T1/lmr/m/n/12 Den ma-the-ma-ti-schen Be-weis da-für spa-ren wir uns, da es den Rah-men spren-gen würde[[],
  []
 
-)) (./chapters/convolution_techniques/convolution_techniques.tex [9 <./graphic/python/chapter2/aliasing_vergleich.pdf>]
+[7 <./graphic/python/chapter2/aliasing_vergleich.pdf>]) (./chapters/convolution_techniques/sections/signals_and_systems.tex
+Overfull \hbox (10.90291pt too wide) in paragraph at lines 25--27
+[] []\T1/lmss/bx/n/12 Der Ein-heits-im-puls[][] \T1/lmr/m/n/12 Ei-ne be-son-de-re Art von dis-kre-tem Si-gnal ist die so-ge-nann-te \T1/lmr/m/it/12 Einheits-
+ []
+
+[8])) (./chapters/convolution_techniques/convolution_techniques.tex
+Overfull \hbox (2.23694pt too wide) in paragraph at lines 63--1
+[]\T1/lmr/m/n/12 Ist ein Sys-tem so-wohl li-ne-ar als auch Zeit-Invarant, dann heiÿt es \T1/lmr/m/it/12 li-nea-res Zeit-Invariantes
+ []
+
+[9{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]
 chapter 3.
-(./chapters/convolution_techniques/sections/convolution.tex) (./chapters/convolution_techniques/sections/real_world_LTI.tex) (./chapters/convolution_techniques/sections/IR_measurement.tex [10
+(./chapters/convolution_techniques/sections/convolution.tex [10
 
-] [11]) (./chapters/convolution_techniques/sections/deconvolution.tex)) (./chapters/implementation/implementation.tex [12]
+]) (./chapters/convolution_techniques/sections/real_world_LTI.tex) (./chapters/convolution_techniques/sections/IR_measurement.tex [11] [12]) (./chapters/convolution_techniques/sections/deconvolution.tex)) (./chapters/implementation/implementation.tex [13]
 chapter 4.
-(./chapters/implementation/sections/introImpl.tex)) (./seminar_dsp_convolution.bbl [13
+(./chapters/implementation/sections/introImpl.tex)) (./seminar_dsp_convolution.bbl [14
 
-]) [14
+]) [15
 
 ] (./seminar_dsp_convolution.aux)
  ***********
@@ -633,18 +643,18 @@ Package rerunfilecheck Info: File `seminar_dsp_convolution.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16196 strings out of 474222
- 310674 string characters out of 5748733
- 1939975 words of memory out of 5000000
- 38121 multiletter control sequences out of 15000+600000
+ 16213 strings out of 474222
+ 310946 string characters out of 5748733
+ 1938975 words of memory out of 5000000
+ 38128 multiletter control sequences out of 15000+600000
  601721 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,107p,11016b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on seminar_dsp_convolution.pdf (14 pages, 309235 bytes).
+ 108i,20n,107p,11016b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on seminar_dsp_convolution.pdf (15 pages, 319630 bytes).
 PDF statistics:
- 444 PDF objects out of 1000 (max. 8388607)
- 282 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
+ 474 PDF objects out of 1000 (max. 8388607)
+ 308 compressed objects within 4 object streams
+ 75 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,22 +1,23 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{4}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Signale und Systeme}{5}{section.2.1}%
-\contentsline {paragraph}{\nonumberline Signale}{5}{paragraph*.3}%
-\contentsline {paragraph}{\nonumberline Stetige, diskrete, und digitale Signale}{5}{paragraph*.5}%
-\contentsline {paragraph}{\nonumberline Systeme}{6}{paragraph*.7}%
-\contentsline {paragraph}{\nonumberline Lineare Zeit-Invariante Systeme (LTI)}{6}{paragraph*.9}%
-\contentsline {section}{\numberline {2.2}Abtasttheorem}{6}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Zeit- und Frequenzdomäne}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Nyquist-Shannon Theorem}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.1}Abtasttheorem}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Zeit- und Frequenzdomäne}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Nyquist-Shannon Theorem}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Signale und Systeme}{8}{section.2.4}%
+\contentsline {paragraph}{\nonumberline Signale}{8}{paragraph*.3}%
+\contentsline {paragraph}{\nonumberline Stetige, diskrete, und digitale Signale}{8}{paragraph*.5}%
+\contentsline {paragraph}{\nonumberline Der Einheitsimpuls}{9}{paragraph*.7}%
+\contentsline {paragraph}{\nonumberline Systeme}{9}{paragraph*.9}%
+\contentsline {paragraph}{\nonumberline Lineare Zeit-Invariante Systeme (LTI)}{9}{paragraph*.11}%
 \contentsline {chapter}{\numberline {3}Nutzung von faltungsbasierten Verfahren in der digitalen Audiobearbeitung}{10}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Faltung (Convolution)}{10}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Lineare Zeit-Invariante Systeme in der realen Welt}{10}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Messung von Raum-Impulsantworten}{11}{section.3.3}%
-\contentsline {paragraph}{\nonumberline Time Delay Spectrometry}{11}{paragraph*.11}%
-\contentsline {paragraph}{\nonumberline Minimum Length Sequence}{11}{paragraph*.13}%
-\contentsline {paragraph}{\nonumberline Exponential/Logarithmic Sine Sweep}{12}{paragraph*.15}%
-\contentsline {section}{\numberline {3.4}Entfaltung (Deconvolution) von Messungen}{12}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Digitale Audiobearbeitung: Implementierung der Faltung}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Einleitung}{13}{section.4.1}%
+\contentsline {section}{\numberline {3.2}LTI-Systeme in der realen Welt}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Techniken zur Messung von Raum-Impulsantworten}{11}{section.3.3}%
+\contentsline {paragraph}{\nonumberline Time Delay Spectrometry}{12}{paragraph*.13}%
+\contentsline {paragraph}{\nonumberline Minimum Length Sequence}{12}{paragraph*.15}%
+\contentsline {paragraph}{\nonumberline Exponential/Logarithmic Sine Sweep}{12}{paragraph*.17}%
+\contentsline {section}{\numberline {3.4}Entfaltung (Deconvolution) von Messungen}{13}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Digitale Audiobearbeitung: Implementierung der Faltung}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Einleitung}{14}{section.4.1}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
