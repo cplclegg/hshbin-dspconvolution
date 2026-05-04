@@ -2,7 +2,7 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{4}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Abtasttheorem}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Zeit- und Frequenzbereich}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Zeit- und Frequenzdomäne}{6}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Nyquist-Shannon Theorem}{7}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Messung und Faltung von Impulsantworten}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Signale und Systeme}{9}{section.3.1}%
@@ -16,4 +16,6 @@
 \contentsline {paragraph}{\nonumberline Minimum Length Sequence}{12}{paragraph*.13}%
 \contentsline {paragraph}{\nonumberline Exponential/Logarithmic Sine Sweep}{12}{paragraph*.15}%
 \contentsline {section}{\numberline {3.4}Entfaltung (Deconvolution) von Messungen}{12}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Digitale Audiobearbeitung: Implementierung der Faltung}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Einleitung}{13}{section.4.1}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

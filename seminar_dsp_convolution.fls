@@ -289,6 +289,12 @@ INPUT chapters/convolution_techniques/sections/real_world_LTI.tex
 INPUT ./chapters/convolution_techniques/sections/IR_measurement_deconvolution.tex
 INPUT ./chapters/convolution_techniques/sections/IR_measurement_deconvolution.tex
 INPUT chapters/convolution_techniques/sections/IR_measurement_deconvolution.tex
+INPUT ./chapters/implementation/implementation.tex
+INPUT ./chapters/implementation/implementation.tex
+INPUT chapters/implementation/implementation.tex
+INPUT ./chapters/implementation/sections/introImpl.tex
+INPUT ./chapters/implementation/sections/introImpl.tex
+INPUT chapters/implementation/sections/introImpl.tex
 INPUT ./seminar_dsp_convolution.bbl
 INPUT ./seminar_dsp_convolution.bbl
 INPUT seminar_dsp_convolution.bbl

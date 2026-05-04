@@ -1,0 +1,20 @@
+\section{Einleitung}
+
+In den folgenden Sektionen widmen wir uns Beispielen konkreter Umsetzungen der Faltung.
+Dabei verwenden wir die Sprache \textit{C++} und dabei das Framework \textit{JUCE} \cite{juce}.
+\textit{JUCE} ist ein open source Framework für digitale Audiobearbeitung und wird weltweit
+für die Entwicklung von DSP-Software genutzt.
+
+Dementsprechend sind Grundkenntnisse in der Syntax von \textit{C++} und dem Konzept der Objektorientierung
+in Programmiersprachen für dieses Kapitel sehr empfohlen.
+
+Wir werden zunächst eine Variante zeigen, in der wir die diskrete Faltungsformel implementieren, die
+ein Eingangssignal in seiner Zeitdomäne direkt mit einem Signal einer Impulsantwort verrechnet. Dabei beobachten wir
+das Laufzeitverhalten des Programmes und vergleichen es mit einer alternativen Implementierung, die stattdessen auf die FFT zurückgreift. 
+Die Impulsantwort soll bei der Verrechnung dem Eingangssignal einen Halleffekt verleihen.
+
+Das \textit{JUCE}-Framework verfügt über viele Features, die eine schnelle Implementierung von DSP-Anwendungen
+ermöglicht, einschließlich dem Design von UI-Elementen.
+Wir werden im Rahmen dieser Arbeit jedoch so weit es möglich ist, nur auf die Schnittstellen und Klassen von \textit{JUCE} eingehen,
+die es uns ermöglichen, direkt auf die diskreten Signale von \textit{.wav}-Dateien zuzugreifen und diese zu bearbeiten.
+Bei Interesse an den zusätzlichen Inhalten stehen offizielle Tutorials auf der Website zur Verfügung. \cite{juce}
