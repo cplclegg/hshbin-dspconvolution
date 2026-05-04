@@ -21,6 +21,18 @@ Wir notieren stetige Signale mit der unabhängigen Variable in runden Klammern:
 $x(t)$ für ein stetiges Signal $x$ in Abhängigkeit von Zeit $t$.
 Diskrete Signale notieren wir in Anlehnung an die von Alan Oppenheim \cite{oppenheim1999} verwendete Notation mit der
 unabhängigen Variable in eckigen Klammern: $x[n]$ für ein diskretes Signal $x$, wobei $n$ den Index des betrachteten Funktionswerts bezeichnet.
+\paragraph{Der Einheitsimpuls}
+Eine besondere Art von diskretem Signal ist die sogenannte \textit{Einheits-Sample-Reihe}. Dieses Signal ist definiert als die Reihe
+\begin{equation}
+    \delta[n]=
+    \begin{cases}
+        0,\,n\ne0\\
+        1,\,n=0
+    \end{cases}
+\end{equation}
+Die Einheits-Sample-Reihe hat also im ersten Index den Wert $1$, und in allen weiteren Indizes den Wert $0$.
+Jedes diskrete Signal lässt sich als eine Summe von skalierten und verzögerten Einheitsimpulsen darstellen \cite[Kap. 2]{oppenheim1999}.
+Wir bezeichnen die Einheits-Sample-Reihe im weiteren Verlauf etwas vereinfacht als \textit{Einheitsimpuls}.
 \paragraph{Systeme}
 Ein System produziert als Antwort auf ein Eingangssignal durch irgendeinen Prozess ein Ausgangssignal \cite[Kap. 5]{smith1997}.
 Formal definiert Oppenheim ein diskretes System als ``eine Transformation oder einen Operator, der eine Eingangssequenz mit den Werten $x[n]$
@@ -43,6 +55,6 @@ Ein System heißt \textit{Zeit-Invariant}, wenn eine Verschiebung bzw. Verzöger
 Verzögerung des Ausgangssignals verursacht. Genauer gesagt: wenn für jedes $n_0$ und jedes Eingangssignal $x$ mit den Werten
 $x'[n]=x[n-n_0]$ das entsprechende Ausgangssignal $y$ mit den Werten $y'[n]=y[n-n_0]$ erzeugt wird \cite{oppenheim1999}.
 
-Ist nun ein System sowohl linear als auch Zeit-Invarant, dann heißt es \textit{lineares Zeit-Invariantes System (LTI)}. LTI werden durch eine besonders praktische Eigenschaft ausgezeichnet:
-ihre Auswirkungen auf ein beliebiges Eingangssignal können vollständig durch ihre Impulsantwort (engl.: \textit{Impulse Response}, kurz \textit{IR}) ausgedrückt werden \cite{oppenheim1999}.
+Ist ein System sowohl linear als auch Zeit-Invarant, dann heißt es \textit{lineares Zeit-Invariantes System (LTI-System)}. LTI-Systeme werden durch eine besonders praktische Eigenschaft ausgezeichnet:
+ihre Auswirkungen auf ein beliebiges Eingangssignal können vollständig durch ihre Impulsantwort (engl.: \textit{Impulse Response}, kurz \textit{IR}, siehe \ref{convolution}) ausgedrückt werden \cite{oppenheim1999}.
 Wir notieren die Impulsantwort eines Systems, wenn sie keinen deskriptiveren Namen aus dem Kontext des Systems erhält, mit $h[n]$.
