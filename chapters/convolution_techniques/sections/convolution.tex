@@ -1,2 +1,37 @@
-\section{Faltung (Convolution)}
+\section{Faltung (Convolution)} \label{convolution}
+In \ref{signals_and_systems} haben wir für Lineare Zeit-invariante Systeme definiert, dass sie sich vollständig durch ihre Impulsantwort
+charakterisieren lassen. In diesem Abschnitt werden auf diese Tatsache genauer eingehen, und dabei definieren, was die Impulsantwort eigentlich
+ist. Wir werden außerdem zeigen, wie die Impulsantwort eines Systems auf ein Signal angewendet wird, um den Effekt des Systems auf das Signal
+zu erzeugen.
 
+Eine beliebige Reihe (also ein beliebiges diskretes Signal) kann laut \ref{signals_and_systems}
+als Summe von skalierten und verzögerten Einheitsimpulsen dargestellt werden kann.
+Oppenheim formuliert zur Präzisierung eine allgemeine Summenformel, mit der eine beliebige Reihe $x[n]$ ausgedrückt werden:
+\begin{equation}
+    x[n]=\sum_{k=-\infty}^\infty x[k]\delta[n-k]
+    \label{scaled_unit_sum}
+\end{equation}
+Die mathematische Beschreibung der diskreten Faltung leitet Oppenheim daraus wie folgt ab: 
+
+Sei $y[n]$ das Ausgangssignal eines LTI-Systems, resultierend aus einem Eingangssignal $x[n]$. Sei $h_k[n]$ die Antwort eines Systems
+auf einen Einheitsimpuls an Index $n=k$. Es gilt:
+
+\begin{equation}
+    y[n]=T\left( \sum_{k=-\infty}^{\infty}x[k]\delta[n-k] \right).
+\end{equation}
+
+Nach Superposition (Linearität) gilt auch:
+
+\begin{equation}
+    y[n]=\sum_{k=-\infty}^{\infty}x[k]T(\delta[n-k])=\sum_{k=-\infty}^{\infty}x[k]h_k[n].
+    \label{timevariant_equation}
+\end{equation}
+In Gleichung \ref{timevariant_equation} ist $h_k[n]$ vom Laufindex der Summenfunktion abhängig. Es würden für die Berechnung der Summe also
+genauso viele System-Antworten benötigt, wie Summierungen ausgeführt werden.
+Unter Forderung der Zeitinvarianz des Systems fällt diese Eigenschaft weg:
+
+\begin{equation}
+    y[n]=\sum_{k=-\infty}^{\infty}x[k]h[n-k].
+    \label{convolution_sum}
+\end{equation}
+Die Gleichung \ref{convolution_sum} wird als \textit{Faltungssumme} (engl.: \textit{Convolution Sum}) bezeichnet \cite[Seite 22f]{oppenheim1999}.
