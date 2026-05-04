@@ -1,4 +1,4 @@
-\section{Signale und Systeme}
+\section{Signale und Systeme} \label{signals_and_systems}
 Bevor wir genauer auf Faltung und ihre Anwendungsfälle in der digitalen Audiobearbeitung eingehen können,
 wollen wir zunächst ein paar wichtige Begriffe definieren. Insbesondere benötigen wir im weiteren Verlauf die Begriffe \textit{Signal} 
 und \textit{System}. Genauer eingehen werden wir auf eine Art von System mit bestimmten Eigenschaften,
@@ -22,7 +22,8 @@ $x(t)$ für ein stetiges Signal $x$ in Abhängigkeit von Zeit $t$.
 Diskrete Signale notieren wir in Anlehnung an die von Alan Oppenheim \cite{oppenheim1999} verwendete Notation mit der
 unabhängigen Variable in eckigen Klammern: $x[n]$ für ein diskretes Signal $x$, wobei $n$ den Index des betrachteten Funktionswerts bezeichnet.
 \paragraph{Der Einheitsimpuls}
-Eine besondere Art von diskretem Signal ist die sogenannte \textit{Einheits-Sample-Reihe}. Dieses Signal ist definiert als die Reihe
+Eine besondere Art von diskretem Signal ist die sogenannte \textit{Einheits-Sample-Reihe}.
+Dieses Signal ist definiert als die Reihe
 \begin{equation}
     \delta[n]=
     \begin{cases}
@@ -49,7 +50,11 @@ und
     T(a\cdot x[n])=a\cdot T(x[n])=a\cdot y[n]
 \end{equation}
 
-erfüllen, wobei $T$ die Transferfunktion des Systems bezeichnet \cite{oppenheim1999}.
+erfüllen, wobei $T$ die Transferfunktion des Systems bezeichnet \cite{oppenheim1999}. Daraus resultiert die sogenannte \textit{Superposition} von Eingangssignalen:
+\begin{equation}
+    x[n]=\sum_{k}a_kx_k[n]\Rightarrow y[n]=\sum_{k}a_ky_k[n]
+\end{equation}
+Wobei $x[n]$ das Eingangssignal, $y[n]$ das Ausgangssignal, und $a_k$ eine Reihe von Konstanten bezeichnen \cite{oppenheim1999}.
 
 Ein System heißt \textit{Zeit-Invariant}, wenn eine Verschiebung bzw. Verzögerung des Eingangssignals eine entsprechende Verschiebung bzw.
 Verzögerung des Ausgangssignals verursacht. Genauer gesagt: wenn für jedes $n_0$ und jedes Eingangssignal $x$ mit den Werten
