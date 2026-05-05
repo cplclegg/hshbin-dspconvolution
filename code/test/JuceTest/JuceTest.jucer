@@ -6,6 +6,8 @@
     <GROUP id="{A0A883B0-5CE5-C79C-E982-F6D7C5425297}" name="Source">
       <FILE id="KsghAD" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
     </GROUP>
+    <FILE id="ijqvHB" name="LoadingBar.cpp" compile="1" resource="0" file="Source/LoadingBar.cpp"/>
+    <FILE id="DQwvpG" name="LoadingBar.h" compile="0" resource="0" file="Source/LoadingBar.h"/>
   </MAINGROUP>
   <MODULES>
     <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>

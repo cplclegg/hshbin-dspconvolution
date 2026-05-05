@@ -11,8 +11,23 @@
 #include <memory>
 #include <string>
 #include <vector>
+#include "LoadingBar.h"
 
 //==============================================================================
+
+void normalizeSamples(std::vector<float>& samples) {
+
+  float maxVal = 0.0f;
+  for (float& sample : samples) {
+    maxVal = maxVal < std::abs(sample) ? std::abs(sample) : maxVal;
+  }
+
+  if (maxVal > 1.0f) {
+    for (float& sample : samples) {
+      sample = sample / maxVal;
+    }
+  }
+}
 
 int writeFile(std::vector<float>& outputSamples, double sampleRate) {
 
@@ -22,12 +37,16 @@ int writeFile(std::vector<float>& outputSamples, double sampleRate) {
   }
 
   juce::WavAudioFormat wavFormat {};
-  std::unique_ptr<juce::FileOutputStream> fos {outputFile.createOutputStream()};
-  std::unique_ptr<juce::OutputStream> os {fos.get()};
+  std::unique_ptr<juce::OutputStream> os {outputFile.createOutputStream()};
+
+  if (os == nullptr) {
+    std::cerr << "Error creating OutputStream!\n";
+    return -1;
+  }
 
   juce::AudioFormatWriterOptions options {};
   options = options.withSampleRate(sampleRate)
-                   .withNumChannels(0)
+                   .withNumChannels(1)
                    .withBitsPerSample(16);
 
   std::unique_ptr<juce::AudioFormatWriter> writer { wavFormat.createWriterFor(
@@ -40,9 +59,12 @@ int writeFile(std::vector<float>& outputSamples, double sampleRate) {
     return -1; 
   }
 
+  std::cout << "Normalisiere Ausgangssignal ..." << std::endl;
+  normalizeSamples(outputSamples);
+
   float* channelPtr[] {outputSamples.data()};
-  juce::AudioBuffer<float> outputBuffer (channelPtr, 1, 0,  (int)outputSamples.size());
-  
+  writer->writeFromFloatArrays(channelPtr, 1, (int)outputSamples.size());
+
 
   return 0;
 }
@@ -55,7 +77,21 @@ std::vector<float> convolution(std::vector<float>& input, std::vector<float>& ir
 
   std::vector<float> output (outputLen, 0.0f); //<-- Initialisiere vector mit der Pufferlänge = outputLen und 0.0f als Werte
 
+  std::cout << "Starting convolution ... " << std::endl;
+  LoadingBar loadBar {0, (long)outputLen};
+  int lastCheck {0};
+
   for (int i = 0; i < outputLen; i++) {
+
+    if (lastCheck < 5000) {
+      lastCheck++;
+    } else {
+      lastCheck = 0;
+      loadBar.setCurrVal(i);
+      loadBar.update();
+      loadBar.print();
+    }
+
     for (int k = 0; k < irLen; k++) {
       if (i - k < 0 || inputLen <= i - k) {
         continue;
@@ -63,6 +99,8 @@ std::vector<float> convolution(std::vector<float>& input, std::vector<float>& ir
       output[i] += ir[k] * input[i - k];
     }
   }
+
+  std::cout << std::endl;
 
   return output;
 }
@@ -79,7 +117,7 @@ int main (int argc, char* argv[])
 
     if (argc < 3) {
       inputFilePath = "guitar_02.wav";
-      irFilePath = "impResp.wav";
+      irFilePath = "impResp2.wav";
     } else {
       inputFilePath = argv[1];
       irFilePath = argv[2];
@@ -107,11 +145,12 @@ int main (int argc, char* argv[])
     }
     if (irReader == nullptr) {
       std::cerr << "Fehler: IR Reader konnte nicht initialisiert werden!" << std::endl;
+      return -1;
     }
     
     // Folge des Eingangssignals laden
     int inputSignalSampleLen {(int)inputReader->lengthInSamples};
-    std::vector<float> inputSamples {};
+    std::vector<float> inputSamples (inputSignalSampleLen);
     float* channelInputPointers[] {inputSamples.data()};
     inputReader->read(channelInputPointers, 1, 0, inputSignalSampleLen);
 
@@ -119,7 +158,7 @@ int main (int argc, char* argv[])
 
     //Folge der Impulsantwort laden
     int irSignalSampleLen {(int)irReader->lengthInSamples};
-    std::vector<float> irSamples {};
+    std::vector<float> irSamples (irSignalSampleLen);
     float* channelIRPointers[] {irSamples.data()};
     irReader->read(channelIRPointers, 1, 0, irSignalSampleLen);
 

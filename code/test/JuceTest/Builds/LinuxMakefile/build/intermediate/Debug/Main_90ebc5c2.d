@@ -253,4 +253,5 @@ build/intermediate/Debug/Main_90ebc5c2.o: ../../Source/Main.cpp \
  /home/jm/JUCE/modules/juce_data_structures/values/juce_CachedValue.h \
  /home/jm/JUCE/modules/juce_data_structures/values/juce_ValueTreePropertyWithDefault.h \
  /home/jm/JUCE/modules/juce_data_structures/app_properties/juce_PropertiesFile.h \
- /home/jm/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.h
+ /home/jm/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.h \
+ ../../Source/LoadingBar.h
