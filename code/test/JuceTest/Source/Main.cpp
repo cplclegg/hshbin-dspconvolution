@@ -78,22 +78,24 @@ int main (int argc, char* argv[])
     std::string irFilePath {};
 
     if (argc < 3) {
-      inputFilePath = "testInput.wav";
-      irFilePath = "testIRPath";
+      inputFilePath = "guitar_02.wav";
+      irFilePath = "impResp.wav";
     } else {
       inputFilePath = argv[1];
       irFilePath = argv[2];
     }
 
-    juce::File inputFile {inputFilePath};
-    juce::File irFile {irFilePath};
+    juce::File inputFile {juce::File::getCurrentWorkingDirectory().getChildFile(inputFilePath)};
+    juce::File irFile {juce::File::getCurrentWorkingDirectory().getChildFile(irFilePath)};
+
+    std::cout << "input File path currently: " << inputFile.getFullPathName() << std::endl;
 
     if (!inputFile.exists()) {
-      std::cerr << "Error: File " << inputFilePath <<  " is not existing!" << std::endl;
+      std::cerr << "Error reading input file: " << inputFilePath <<  " is not existing!" << std::endl;
       return -1;
     }
     if (!irFile.exists()) {
-      std::cerr << "Error: File " << irFilePath << " is not existing!" << std::endl;
+      std::cerr << "Error reading impulse response file: " << irFilePath << " is not existing!" << std::endl;
       return -1;
     }
 
