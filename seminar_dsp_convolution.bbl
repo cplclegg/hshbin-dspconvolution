@@ -14,6 +14,7 @@ Angelo Farina.
 Angelo Farina.
 \newblock Impulse {Response} {Measurements}.
 \newblock 2007.
+\newblock URL: \url{https://www.angelofarina.it/Public/papers/238-NordicSound2007.pdf}.
 
 \bibitem[HCZ09]{holters2009}
 Martin Holters, Tobias Corbach, and Udo Zölzer.
@@ -22,6 +23,7 @@ Martin Holters, Tobias Corbach, and Udo Zölzer.
 
 \bibitem[juc25]{juce}
 Juce, 2025.
+\newblock URL: \url{https://juce.com}.
 
 \bibitem[Lyo10]{lyons2010}
 Richard~G. Lyons.
@@ -32,11 +34,13 @@ Richard~G. Lyons.
 Swen Müller and Paulo Massarani.
 \newblock Transfer {Function} {Measurement} with {Sweeps}.
 \newblock {\em Journal of the Audio Engineering Society}, 49(6):443--471, June 2001.
+\newblock URL: \url{https://www.aes.org/e-lib/browse.cfm?elib=10189}.
 
 \bibitem[NRH16]{novak2016}
 Antonin Novak, Frantisek Rund, and Petr Honzik.
 \newblock Impulse {Response} {Measurements} using {MLS} {Technique} on {Nonsynchronous} {Devices}.
 \newblock {\em Journal of the Audio Engineering Society}, 64(12):978--987, December 2016.
+\newblock URL: \url{http://www.aes.org/e-lib/browse.cfm?elib=18532}, \href {https://doi.org/10.17743/jaes.2016.0050} {\path{doi:10.17743/jaes.2016.0050}}.
 
 \bibitem[OSB99]{oppenheim1999}
 Alan~V. Oppenheim, Ronald~W. Schafer, and John~R. Buck.
@@ -47,6 +51,7 @@ Alan~V. Oppenheim, Ronald~W. Schafer, and John~R. Buck.
 K.~Prawda, S.~Schlecht, and V.~Välimäki.
 \newblock Time {Variance} in {Measured} {Room} {Impulse} {Responses}.
 \newblock In {\em Proceedings of the 10th {Convention} of the {European} {Acoustics} {Association} {Forum} {Acusticum} 2023}, pages 1639--1646, Turin, Italy, January 2024. European Acoustics Association.
+\newblock \href {https://doi.org/10.61782/fa.2023.0398} {\path{doi:10.61782/fa.2023.0398}}.
 
 \bibitem[RV89]{rife1989}
 Douglas~D Rife and John Vanderkooy.

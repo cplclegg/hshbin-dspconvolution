@@ -21,3 +21,10 @@ Bestandteile zerlegt.
 Hier steht die vertikale Achse für die jeweilige Frequenzstärke, als positiver Amplitudenwert definiert.
 Die horizontale Achse repräsentiert die Frequenz in $Hz$ (bei Audiosignalen wären das verschiedene Tonhöhen, die
 gleichzeitig und in verschiedenen Stärken erklingen). \cite[Kap. 2]{lyons2010}
+
+Ein Signal in seiner Zeitdomäne lässt sich durch die \textit{Diskrete Fourier Transformation (kurz: \textit{DFT})}
+in die Frequenzdomäne umwandeln:
+\begin{equation}
+X[m] = \sum_{n=0}^{N-1}x[n]e^{-i2\pi nm/N}
+\label{eq:DFT}
+\end{equation}

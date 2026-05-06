@@ -1,21 +1,30 @@
 \section{Einleitung}
 
-In den folgenden Sektionen widmen wir uns Beispielen konkreter Umsetzungen der Faltung.
-Dabei verwenden wir die Sprache \textit{C++} und mit ihr das Framework \textit{JUCE} \cite{juce}.
-\textit{JUCE} ist ein open source Framework für digitale Audiobearbeitung und wird weltweit
-für die Entwicklung von DSP-Software genutzt.
+In der folgenden Sektion werden wir nun das Wissen aus den vorherigen Kapiteln nutzen und
+einmal selbst eine Faltung zweier Audiosignale durchführen.
+Dafür verwenden wir die zuvor vorgestellte Gleichung der diskreten Faltung \ref{scaled_unit_sum}
+aus dem Kapitel \ref{sec:convolution}:
 
-Dementsprechend sind Grundkenntnisse in der Syntax von \textit{C++} und dem Konzept der Objektorientierung
-in Programmiersprachen für dieses Kapitel sehr empfohlen.
+\begin{equation}
+    y[n] = \sum_{k=0}^{M-1}h[k] \cdot x[n-k]
+    \label{eq:directConv}
+\end{equation}
+Wobei:
+\begin{itemize}
+    \item[$n$]: Folgenindex (Maximum ist Länge des Ausgangssignals)
+    \item[$M$]: Länge der Impulsantwort 
+\end{itemize}
 
-Wir werden zunächst eine Variante zeigen, in der wir die diskrete Faltungsformel implementieren, die
-ein Eingangssignal in seiner Zeitdomäne direkt mit einem Signal einer Impulsantwort verrechnet. Dabei beobachten wir
-das Laufzeitverhalten des Programms und vergleichen es mit einer alternativen Implementierung,
-die stattdessen auf die \textit{Fast Fourier Transformation} (FFT) zurückgreift. 
-Die Impulsantwort soll dem Eingangssignal einen Halleffekt verleihen.
+Für die konkrete Umsetzung als Programm nutzen wir die Sprache \textit{C++}.
+Es sollen zuerst die diskreten Abtastwerte der jeweiligen Audiodateien in Arrays
+geladen werden. Danach soll die Faltung durchgeführt und anschließend das Ergebnis als neue
+Audiodatei im Hintergrundspeicher abgelegt werden.
 
-Das \textit{JUCE}-Framework verfügt über viele Features, die eine schnelle Implementierung von DSP-Anwendungen
-ermöglicht, einschließlich dem Design von UI-Elementen.
-Wir werden im Rahmen dieser Arbeit jedoch so weit es möglich ist, nur auf die Schnittstellen und Klassen eingehen,
-die es uns ermöglichen, direkt auf die diskreten Signale von \textit{.wav}-Dateien zuzugreifen und diese zu bearbeiten.
-Bei Interesse an den zusätzlichen Inhalten stehen offizielle Tutorials auf der Website zur Verfügung. \cite{juce}
+Für das Laden und speichern von Audiodateien im .wav-Format nutzen wir ein bekanntes Framework
+namens \textit{JUCE} \cite{juce}.
+\textit{JUCE} bietet noch sehr viele weitere Funktionalitäten, wie bspw. Klassen
+zum Entwurf von Benutzeroberflächen oder Schnittstellen zur Entwicklungen von \textit{Plug-ins},
+die direkt in Programmen wie \textit{Cubase} eingebunden werden können.
+Die Implementierung solcher Anwendungen würden hierbei jedoch absolut den Rahmen sprengen, weshalb
+wir uns hier lediglich auf die Faltung an sich beschränken.
+Bei Interesse sei also hiermit die offizielle Website von \textit{JUCE} erwähnt: \cite{juce}.

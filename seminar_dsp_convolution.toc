@@ -10,15 +10,16 @@
 \contentsline {paragraph}{\nonumberline Der Einheitsimpuls}{9}{paragraph*.7}%
 \contentsline {paragraph}{\nonumberline Systeme}{9}{paragraph*.9}%
 \contentsline {paragraph}{\nonumberline Lineare Zeit-Invariante Systeme (LTI)}{9}{paragraph*.11}%
-\contentsline {chapter}{\numberline {3}Nutzung von faltungsbasierten Verfahren in der digitalen Audiobearbeitung}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Faltung (Convolution)}{10}{section.3.1}%
-\contentsline {section}{\numberline {3.2}LTI-Systeme in der realen Welt}{11}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Techniken zur Messung von Raum-Impulsantworten}{11}{section.3.3}%
-\contentsline {paragraph}{\nonumberline Time Delay Spectrometry}{12}{paragraph*.13}%
-\contentsline {paragraph}{\nonumberline Minimum Length Sequence}{12}{paragraph*.15}%
-\contentsline {paragraph}{\nonumberline Exponential/Logarithmic Sine Sweep}{12}{paragraph*.17}%
-\contentsline {section}{\numberline {3.4}Entfaltung (Deconvolution) von Messungen}{13}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Digitale Audiobearbeitung: Implementierung der Faltung}{14}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Einleitung}{14}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Direkte Faltung in der Zeitdomäne}{14}{section.4.2}%
+\contentsline {chapter}{\numberline {3}Nutzung von faltungsbasierten Verfahren in der digitalen Audiobearbeitung}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Faltung (Convolution)}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}LTI-Systeme in der realen Welt}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Techniken zur Messung von Raum-Impulsantworten}{12}{section.3.3}%
+\contentsline {paragraph}{\nonumberline Time Delay Spectrometry}{13}{paragraph*.13}%
+\contentsline {paragraph}{\nonumberline Minimum Length Sequence}{13}{paragraph*.15}%
+\contentsline {paragraph}{\nonumberline Exponential/Logarithmic Sine Sweep}{13}{paragraph*.17}%
+\contentsline {section}{\numberline {3.4}Entfaltung (Deconvolution) von Messungen}{14}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Digitale Audiobearbeitung: Implementierung der Faltung}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Einleitung}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Implementierung in \textit {C++}}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Fazit und Ausblick auf FFT}{17}{section.4.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
