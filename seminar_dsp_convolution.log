@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.18)  6 MAY 2026 18:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.18)  6 MAY 2026 21:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -649,17 +649,17 @@ File: graphic/img/chapter2/Lyons_time_freq_domain.png.png Graphic file (type png
 Package pdftex.def Info: graphic/img/chapter2/Lyons_time_freq_domain.png.png  used on input line 9.
 (pdftex.def)             Requested size: 357.69322pt x 105.62622pt.
  [6 <./graphic/python/chapter2/diskretes_signal.pdf> <./graphic/img/chapter2/Lyons_time_freq_domain.png.png>]) (./chapters/dsp_basics/sections/nyquistshannon.tex
-<graphic/python/chapter2/aliasing_vergleich.pdf, id=174, 738.06992pt x 393.98067pt>
+<graphic/python/chapter2/aliasing_vergleich.pdf, id=175, 738.06992pt x 393.98067pt>
 File: graphic/python/chapter2/aliasing_vergleich.pdf Graphic file (type pdf)
 <use graphic/python/chapter2/aliasing_vergleich.pdf>
 Package pdftex.def Info: graphic/python/chapter2/aliasing_vergleich.pdf  used on input line 10.
 (pdftex.def)             Requested size: 223.5574pt x 119.3313pt.
-
+ [7{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc} <./graphic/python/chapter2/aliasing_vergleich.pdf>]
 Overfull \hbox (17.72202pt too wide) in paragraph at lines 29--32
 []\T1/lmr/m/n/12 Den ma-the-ma-ti-schen Be-weis da-für spa-ren wir uns, da es den Rah-men spren-gen würde[[],
  []
 
-[7{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc} <./graphic/python/chapter2/aliasing_vergleich.pdf>]) (./chapters/convolution_techniques/sections/signals_and_systems.tex [8]
+) (./chapters/convolution_techniques/sections/signals_and_systems.tex [8]
 Overfull \hbox (10.90291pt too wide) in paragraph at lines 25--27
 [] []\T1/lmss/bx/n/12 Der Ein-heits-im-puls[][] \T1/lmr/m/n/12 Ei-ne be-son-de-re Art von dis-kre-tem Si-gnal ist die so-ge-nann-te \T1/lmr/m/it/12 Einheits-
  []
@@ -692,43 +692,33 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./code/test/JuceTest/Source/convolution.cpp [15
 
 ])
-
-LaTeX Warning: Reference `eq:directConvolution' on page 16 undefined on input line 43.
-
-
-LaTeX Warning: Reference `eq:directConvolution' on page 16 undefined on input line 48.
-
-<graphic/img/chapterImpl/LfzDirekteFaltung.png, id=360, 1120.185pt x 269.005pt>
+<graphic/img/chapterImpl/LfzDirekteFaltung.png, id=363, 1120.185pt x 269.005pt>
 File: graphic/img/chapterImpl/LfzDirekteFaltung.png Graphic file (type png)
 <use graphic/img/chapterImpl/LfzDirekteFaltung.png>
 Package pdftex.def Info: graphic/img/chapterImpl/LfzDirekteFaltung.png  used on input line 55.
-(pdftex.def)             Requested size: 268.27162pt x 64.42296pt.
-[16]) (./chapters/implementation/sections/conclusion.tex)) (./seminar_dsp_convolution.bbl [17 <./graphic/img/chapterImpl/LfzDirekteFaltung.png>] [18
+(pdftex.def)             Requested size: 447.11482pt x 107.37022pt.
+ [16]) (./chapters/implementation/sections/conclusion.tex)) (./seminar_dsp_convolution.bbl [17 <./graphic/img/chapterImpl/LfzDirekteFaltung.png>] [18
 
 ]) [19] (./seminar_dsp_convolution.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `seminar_dsp_convolution.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18183 strings out of 474222
- 338346 string characters out of 5748733
+ 18182 strings out of 474222
+ 338324 string characters out of 5748733
  2063975 words of memory out of 5000000
- 40030 multiletter control sequences out of 15000+600000
+ 40029 multiletter control sequences out of 15000+600000
  611138 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,107p,11016b,2229s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on seminar_dsp_convolution.pdf (19 pages, 467484 bytes).
+</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on seminar_dsp_convolution.pdf (19 pages, 447247 bytes).
 PDF statistics:
- 578 PDF objects out of 1000 (max. 8388607)
+ 576 PDF objects out of 1000 (max. 8388607)
  395 compressed objects within 4 object streams
  105 named destinations out of 1000 (max. 500000)
  164 words of extra memory for PDF output out of 10000 (max. 10000000)

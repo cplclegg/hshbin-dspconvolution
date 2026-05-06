@@ -40,19 +40,19 @@ Als Parameter werden in Listing \ref{lst:directConvolution} zwei Listen, nämlic
 an normalisierten Abttaswerten des Eingangssignals und der Impulssantwort übergeben.
 Dadurch, dass die Beträge/Längen der Folgen bekannt sind, lässt sich in Zeilen 5 bis einschl. 8
 im Voraus die Länge der Ausgangssignalfolge nach $|y[n]| = |h[n]| + |x[n]| - 1$ berechnen und die Werte mit 0 initialisieren.
-Schließlich wird die Formel \ref{eq:directConvolution} in Form der verschachtelten Schleife
+Schließlich wird die Formel \ref{eq:directConv} in Form der verschachtelten Schleife
 in Zeilen 9 bis 16 umgesetzt. In manchen Schleifeniterationen kommt es dazu, dass der Index von $x[n - k]$
 kleiner als null wird oder die Länge des Eingangssignals übersteigt. Diese Fälle werden in Zeile 11 geprüft und
 ggf. wird die jeweilige Iteration der Schleife übersprungen.
 
-Diese Vorgehensweise ist unter Kenntnis der diskreten Faltungslgeichung \ref{eq:directConvolution}
+Diese Vorgehensweise ist unter Kenntnis der diskreten Faltungslgeichung \ref{eq:directConv}
 leicht nachzuvollziehen, weil sie hier direkt in Code umgesetzt wird.
 Es gibt aber hinsichtlich der Nutzung in der Praxis ein großes Problem, das durch das folgende
 Bildschirmfoto unterstrichen wird:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{graphic/img/chapterImpl/LfzDirekteFaltung.png}
+    \includegraphics[width=1.0\textwidth]{graphic/img/chapterImpl/LfzDirekteFaltung.png}
     \caption{Laufzeitmessung des Algorithmus \ref{lst:directConvolution} unter Verwendung
     des Linux-Kommandos \textit{time}}
     \label{img:LfzMessungDirekteFaltung}
@@ -63,16 +63,15 @@ bezieht sich auf die Faltung eines 10-sekündigen Gitarrensignals (416.960 Abtas
 5 Sekunden (176.584 Abtastungen). Ergebnis ist ein Halleffekt auf der Gitarre.
 Wie an der Messung zu sehen, dauerte die Berechnung des 15-sekündigen Resultats fast ganze 9 Minuten an.
 Diese Dauer ergibt in Anbetracht der zweifach verschachtelten Schleife und der Menge an Abtastwerten durchaus Sinn.
-Schaut man sich im Quellcode \ref{lst:directConvolution} die Iterationszahlen der jew. inneren und äußeren
-Schleife an, dann kommt man Laufzeittechnisch grob auf eine Klasse von:
-
+Schaut man sich im Quellcode \ref{lst:directConvolution} die Anzahl der Schleifendurchläufe, jew. von innerer und äußerer
+Schleife an, dann ergibt sich folgende Laufzeitklasse:
 \begin{equation}
-\mathcal{O}(N \cdot M)
+\mathcal{O}(N \cdot M) \approx \mathcal{O}(n^2)
 \label{eq:LfzDirekteFaltung}
 \end{equation}
 \textit{N} sei hierbei die Länge des Ausgangssignals und \textit{M} die Länge der Impulsantwort
 
-Das entspricht ausmultipliziert 104.805.076.176 Berechnungen, die der Prozessor also für ein
-15-sekündiges Audiosignal ausführen müsste.
-Eine solche Laufzeit ist für den Gebrauch in der Praxis nicht hinnehmbar und der Grund, weshalb der Gebrauch
-der Faltungssumme lange Zeit ausschließlich in der Forschung sinnvoll war \cite[Kap. 4]{lyons2010}.
+Das entspricht speziell in diesem Experiment ausmultipliziert 104.805.076.176 Berechnungen, die der Prozessor also für ein
+15-sekündiges Audiosignal ausführen muss.
+Eine solche Laufzeit ist für den Gebrauch in der Praxis nicht hinnehmbar und der Grund, weshalb Berechnungen
+von Faltungssummen lange Zeit ausschließlich in der Forschung ihren Platz fanden \cite[Kap. 4]{lyons2010}.
