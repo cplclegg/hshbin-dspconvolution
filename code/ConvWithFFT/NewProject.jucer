@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="tVhe9s" name="JuceTest" projectType="consoleapp" useAppConfig="0"
+<JUCERPROJECT id="uJOkJ7" name="NewProject" projectType="consoleapp" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
-  <MAINGROUP id="jkyyZD" name="JuceTest">
-    <GROUP id="{A0A883B0-5CE5-C79C-E982-F6D7C5425297}" name="Source">
-      <FILE id="KsghAD" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+  <MAINGROUP id="Yjdi0i" name="NewProject">
+    <GROUP id="{B8403062-750A-2CE0-DA91-503D160DA101}" name="Source">
+      <FILE id="ja7im8" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
     </GROUP>
-    <FILE id="lzOcHR" name="File.cpp" compile="1" resource="0" file="Source/File.cpp"/>
-    <FILE id="m24jQ0" name="File.h" compile="0" resource="0" file="Source/File.h"/>
-    <FILE id="ijqvHB" name="LoadingBar.cpp" compile="1" resource="0" file="Source/LoadingBar.cpp"/>
-    <FILE id="DQwvpG" name="LoadingBar.h" compile="0" resource="0" file="Source/LoadingBar.h"/>
   </MAINGROUP>
   <MODULES>
     <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
@@ -22,8 +18,8 @@
   <EXPORTFORMATS>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
       <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug" targetName="JuceTest"/>
-        <CONFIGURATION isDebug="0" name="Release" targetName="JuceTest"/>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="NewProject"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="NewProject"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_core" path="../../../../../../../../JUCE/modules"/>

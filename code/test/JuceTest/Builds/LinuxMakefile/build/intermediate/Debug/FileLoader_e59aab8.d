@@ -1,4 +1,5 @@
-build/intermediate/Debug/Main_90ebc5c2.o: ../../Source/Main.cpp \
+build/intermediate/Debug/FileLoader_e59aab8.o: \
+ ../../Source/FileLoader.cpp ../../Source/FileLoader.h \
  ../../JuceLibraryCode/JuceHeader.h \
  /home/jm/JUCE/modules/juce_audio_basics/juce_audio_basics.h \
  /home/jm/JUCE/modules/juce_core/juce_core.h \
@@ -253,5 +254,4 @@ build/intermediate/Debug/Main_90ebc5c2.o: ../../Source/Main.cpp \
  /home/jm/JUCE/modules/juce_data_structures/values/juce_CachedValue.h \
  /home/jm/JUCE/modules/juce_data_structures/values/juce_ValueTreePropertyWithDefault.h \
  /home/jm/JUCE/modules/juce_data_structures/app_properties/juce_PropertiesFile.h \
- /home/jm/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.h \
- ../../Source/LoadingBar.h ../../Source/File.h
+ /home/jm/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.h

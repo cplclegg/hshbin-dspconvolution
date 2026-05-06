@@ -1,0 +1,49 @@
+\section{Direkte Faltung in der Zeitdomäne}
+
+Der folgende Quellcodeausschnitt zeigt eine Implementierung der direkten, diskreten Faltung
+nach Summenformel:
+\begin{equation}
+y[n] = (x * h)[n] = \sum_{k=0}^{M-1} h[k] \cdot x[n-k]
+\label{eq:directConvolution}
+\end{equation}
+
+% Farben für Code definieren
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstset{
+    language=C++,
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstinputlisting
+[language=C++, linerange={20-38}, caption={Grundalgorithmus der Faltung im Zeitbereich},
+label={lst:directConvolution}
+]
+{code/test/JuceTest/Source/convolution.cpp}
+
+Als Parameter des Algorithmus \ref{lst:directConvolution} werden zwei Listen, nämlich jeweils die Folgen
+an normalisierten Abttaswerten des Eingangssignals und der Impulssantwort übergeben.
+Dadurch, dass die Beträge der Folgen bekannt sind, lässt sich in Zeilen 5 bis einschl. 8
+im Voraus die Länge der Ausgangssignalfolge nach $|y[n]| = |h[n]| + |x[n]| - 1$ berechnen und die Werte mit 0 initialisieren.
+Schließlich wird die Formel \ref{eq:directConvolution} in Form der verschachtelten Schleife
+in Zeilen 9 bis 16 umgesetzt. In manchen Schleifeniterationen kommt es dazu, dass der Index von $x[n - k]$
+kleiner als null wird oder die Länge des Eingangssignals übersteigt. Diese Fälle werden in Zeile 11 geprüft und
+ggf. übersprungen.

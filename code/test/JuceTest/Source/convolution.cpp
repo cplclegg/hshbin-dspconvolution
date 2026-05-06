@@ -25,21 +25,7 @@ std::vector<float> convolution(std::vector<float>& input, std::vector<float>& ir
 
   std::vector<float> output (outputLen, 0.0f); //<-- Initialisiere vector mit der Pufferlaenge = outputLen und 0.0f als Initialwerte
 
-  std::cout << "Starting convolution ... " << std::endl;
-  LoadingBar loadBar {0, (long)outputLen};
-  int lastCheck {0};
-
   for (int i = 0; i < outputLen; i++) {
-
-    if (lastCheck < 5000) {
-      lastCheck++;
-    } else {
-      lastCheck = 0;
-      loadBar.setCurrVal(i);
-      loadBar.update();
-      loadBar.print();
-    }
-
     for (int k = 0; k < irLen; k++) {
       if (i - k < 0 || inputLen <= i - k) {
         continue;
@@ -47,8 +33,6 @@ std::vector<float> convolution(std::vector<float>& input, std::vector<float>& ir
       output[i] += ir[k] * input[i - k];
     }
   }
-
-  std::cout << std::endl;
 
   return output;
 }

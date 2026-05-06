@@ -20,4 +20,5 @@
 \contentsline {section}{\numberline {3.4}Entfaltung (Deconvolution) von Messungen}{13}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Digitale Audiobearbeitung: Implementierung der Faltung}{14}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Einleitung}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Direkte Faltung in der Zeitdomäne}{14}{section.4.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
