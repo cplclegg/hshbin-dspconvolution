@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex seminar_dsp_convolution"] 1778060586.09783 "seminar_dsp_convolution.aux" "seminar_dsp_convolution.bbl" "seminar_dsp_convolution" 1778061811.18493 0
+["bibtex seminar_dsp_convolution"] 1778076492.47712 "seminar_dsp_convolution.aux" "seminar_dsp_convolution.bbl" "seminar_dsp_convolution" 1778077254.61855 0
   "./bibliography/bibl.bib" 1777897805.63658 4305 bca5ec52d762d451b91d65fbc39b3949 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/alpha.bst" 1292289607 23907 a5f93555796fb564b924339521f10a7c ""
-  "seminar_dsp_convolution.aux" 1778061810.64917 14249 ef24e2cb7a1019a5d6f72c3f8e0fb55b "pdflatex"
+  "seminar_dsp_convolution.aux" 1778077254.09889 14754 587bb3377faedb70b5e9cb403c728e3b "pdflatex"
   (generated)
   "seminar_dsp_convolution.bbl"
   "seminar_dsp_convolution.blg"
   (rewritten before read)
-["pdflatex"] 1778061807.87482 "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/seminar_dsp_convolution.tex" "seminar_dsp_convolution.pdf" "seminar_dsp_convolution" 1778061811.18529 0
+["pdflatex"] 1778077251.2777 "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/seminar_dsp_convolution.tex" "seminar_dsp_convolution.pdf" "seminar_dsp_convolution" 1778077254.6189 0
   "/etc/texmf/web2c/texmf.cnf" 1776529841.68766 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/seminar_dsp_convolution.tex" 1778057651.18298 3114 82753d17393227545a16747d6faef782 ""
+  "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/seminar_dsp_convolution.tex" 1778073718.04002 3134 28ccd251dbd2aea228d87715a76cbe58 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -57,6 +57,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty" 1579038678 6078 f1cb470c9199e7110a27851508ed7a5c ""
   "/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
+  "/usr/share/texlive/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty" 1688586963 21399 e9fa1517a82f349507e998594ef20b82 ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -163,19 +164,20 @@
   "chapters/dsp_basics/sections/frequenzbereich.tex" 1777898912.9372 1558 874dfeadf6d0addf9c337b2a95513b21 ""
   "chapters/dsp_basics/sections/nyquistshannon.tex" 1777837579.15409 2468 ff55891b0dad878024b18441e8e1e9e4 ""
   "chapters/implementation/implementation.tex" 1778059280.26238 175 6c12f178acc9b1cd67cf25f119f35e3e ""
-  "chapters/implementation/sections/directConv.tex" 1778061807.57025 1993 f0de43a7bec1a51dd8f28cb9392c5354 ""
-  "chapters/implementation/sections/introImpl.tex" 1777932789.10823 1471 c4f7b8a1826781d6abd7e49a35823bca ""
+  "chapters/implementation/sections/directConv.tex" 1778077250.97886 3832 676a63aff255581c35471f27e29d45e7 ""
+  "chapters/implementation/sections/introImpl.tex" 1778077216.63195 1509 590bf80a9b8fe73b63c3dc1f906b0004 ""
   "chapters/introduction/intro.tex" 1776706015.30178 1556 c0fd01b80204c12ce645041d9e00568b ""
   "code/test/JuceTest/Source/convolution.cpp" 1778060696.27038 3187 3cdffdc7192cb8e42b9da9732434fa84 ""
   "graphic/img/chapter2/Lyons_time_freq_domain.png.png" 1777834042.55089 27893 55f22c4cf0d482ae8104eee53dd922dc ""
+  "graphic/img/chapterImpl/LfzDirekteFaltung.png" 1778072864.89749 29509 1eebc4ce45884ad6b54cf0587e398e9a ""
   "graphic/python/chapter2/aliasing_vergleich.pdf" 1777820723.77292 25780 bb34ab1225c8336e60de33b2253aa565 ""
   "graphic/python/chapter2/diskretes_signal.pdf" 1776713699.34208 12976 352d81b80ee649a94d47b80642be87be ""
   "graphic/python/chapter2/stetiges_signal.pdf" 1777820620.61567 15728 dab914756d3e8d901121c751f4af5b7a ""
-  "seminar_dsp_convolution.aux" 1778061810.64917 14249 ef24e2cb7a1019a5d6f72c3f8e0fb55b "pdflatex"
-  "seminar_dsp_convolution.bbl" 1778060586.26608 2382 24a438cd0f5c1b2f6d5a0bd2bf635fcc "bibtex seminar_dsp_convolution"
-  "seminar_dsp_convolution.out" 1778061810.07919 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "seminar_dsp_convolution.tex" 1778057651.18298 3114 82753d17393227545a16747d6faef782 ""
-  "seminar_dsp_convolution.toc" 1778061810.65517 2023 731b249914e81d86b09ff87cc2f7a36e "pdflatex"
+  "seminar_dsp_convolution.aux" 1778077254.09889 14754 587bb3377faedb70b5e9cb403c728e3b "pdflatex"
+  "seminar_dsp_convolution.bbl" 1778076492.56959 2382 24a438cd0f5c1b2f6d5a0bd2bf635fcc "bibtex seminar_dsp_convolution"
+  "seminar_dsp_convolution.out" 1778077253.46891 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "seminar_dsp_convolution.tex" 1778073718.04002 3134 28ccd251dbd2aea228d87715a76cbe58 ""
+  "seminar_dsp_convolution.toc" 1778077254.10489 2023 731b249914e81d86b09ff87cc2f7a36e "pdflatex"
   (generated)
   "seminar_dsp_convolution.aux"
   "seminar_dsp_convolution.log"
