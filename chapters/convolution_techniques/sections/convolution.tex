@@ -37,7 +37,14 @@ Unter Forderung der Zeitinvarianz des Systems fällt diese Eigenschaft weg:
 \end{equation}
 Die Gleichung \ref{eq:convolution_sum} wird als \textit{Faltungssumme} (engl.: \textit{Convolution Sum}) bezeichnet \cite[Seite 22f]{oppenheim1999}.
 
-Um das Prinzip der Faltung zu veraunschaulichen, werden wir nun einen der simpleren Anwendungsfälle betrachten: einen simplen Tiefpassfilter.
-Dieser kann in der diskreten Zeitdomäne durch ein von Lyons \cite{lyons2010} \textit{moving averager} genannte System realisiert werden. Das Prinzip ist dabei,
-für jedes $n$-te Sample des Ausgangssignals einen Durchschnittswert aus mehreren Samples des Eingangssignals zu verwenden. Visualisierungen sind in diesem Abschnitt
-an die Grafiken von Richard Lyons \cite{lyons2010} angelehnt.
+Um das Prinzip der Faltung zu veraunschaulichen, werden wir nun einen der simpleren Anwendungsfälle betrachten: einen Tiefpassfilter.
+Dieser kann in der diskreten Zeitdomäne durch ein von Lyons \cite{lyons2010} \textit{moving averager} genannte System realisiert werden. Die Idee ist,
+für jedes $n$-te Sample des Ausgangssignals einen Mittelwert aus mehreren Samples um den Index $n$ des Eingangssignals zu verwenden. Da die für jedes Ausgangs-Sample
+eine um dieses Sample herum angeordnete Gruppe an Samples gemittelt wird, "bewegt" sich das Fenster der in die Mittelwertberechung einbezogenene Samples mit dem berechneten
+Ausgangs-Sample, was den Namen Moving Averager begründet. Ein anderer Name für diese Art von Filter ist \textit{Transversalfilter} \cite{lyons2010}.
+Visualisierungen in diesem Abschnitt sind an die Grafiken von Richard Lyons \cite{lyons2010} angelehnt.
+
+Tiefpassfilter dämpfen die höheren Frequenzen des Spektrums eines Signals. Das Wirkungsprinzip bei einem Moving Average Tiefpassfilters
+beruht darauf, dass bei der Berechnung von Durchschnittswerten die schnellen Veränderungen der enthaltenen höheren Frequenzen durch die Mittelwertberechnung stärker beeinflusst
+werden, als die langsamen Veränderungen der niedrigfrequenten Anteile des Spektrums. Um 
+
