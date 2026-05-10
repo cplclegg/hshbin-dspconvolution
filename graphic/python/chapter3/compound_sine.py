@@ -50,7 +50,6 @@ plt.figure(figsize=(10, 4))
 # Der Stem-Plot (Lote)
 markerline, stemlines, baseline = plt.stem(t_sampled, filtered)
 
-
 # Styling der Linien
 plt.setp(stemlines, linestyle='--', color='skyblue', linewidth=1) # Gestrichelte Lote
 plt.setp(markerline, marker='o', color='black', markersize=3)   # Die Punkte oben
@@ -64,4 +63,26 @@ plt.grid(True, linestyle=':', alpha=0.6)
 
 # Speichern
 plt.savefig('./filtered_compound_sinusoid.pdf')
+#plt.show()
+
+plt.figure(figsize=(10, 4))
+
+kernel_sampled = np.arange(0, 1, 1/len(kernel))
+# Der Stem-Plot (Lote)
+markerline, stemlines, baseline = plt.stem(kernel_sampled, kernel)
+
+# Styling der Linien
+plt.setp(stemlines, linestyle='--', color='skyblue', linewidth=1) # Gestrichelte Lote
+plt.setp(markerline, marker='o', color='black', markersize=3)   # Die Punkte oben
+plt.setp(baseline, color='black', linewidth=0.5)             # Die Nulllinie
+
+# Beschriftung
+plt.title(f"Koeffizienten des Moving Averagers als diskretes Signal interpretiert")
+plt.xlabel("Zeit in Sekunden")
+plt.ylabel("Signalwert")
+plt.grid(True, linestyle=':', alpha=0.6)
+
+# Speichern
+plt.ylim(0, 1)
+plt.savefig('./filter_kernel.pdf')
 #plt.show()
