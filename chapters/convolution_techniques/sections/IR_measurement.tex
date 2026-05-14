@@ -2,8 +2,8 @@
 \label{sec:ir_msrmt}
 Um die akustischen Eigenschaften eines physischen Raumes in Form einer Impulsantwort abbilden zu können, wird der Raum
 zunächst durch einen Messton angeregt. Dieser muss das gesamte Frequenzspektrum, auf das die IR später angewandt werden soll, enthalten \cite{smpm2001}.
-Der im Raum resultierende Raumschall (der aus den Eigenschaften des Raumes sowie der Beschaffenheit
-des anregenden Tons entstanden ist) wird aufgenommen. Das aufgenommene Signal resultiert aus der Transferfunktion des gemessenen Raumes,
+Der im Raum resultierende Raumschall (der aus den Eigenschaften des Raumes sowie dem anregenden Ton entstanden ist) wird aufgenommen.
+Das aufgenommene Signal ist das Ergebnis der Transferfunktion des gemessenen Raumes,
 angewandt auf den Messton. Da Raumhall-Effekte sich wie in \ref{sec:irl_lti} dargestellt durch ihre Impulsantwort annähern lassen, kann die IR des Raumes
 mithilfe entsprechender Verfahren aus diesem Signal berechnet werden \cite{novak2016}. Dabei macht es für die am Ende des Entfaltungsprozesses resultierende Impulsantwort
 einen entscheidenden Unterschied, wie das Signal, mit dem der Raum angegeregt wird, beschaffen ist. In der Vergangenheit wurden oft sogenannte
@@ -11,28 +11,20 @@ pulsive Schallquellen genutzt \cite{farina2007b}, etwa Schüsse oder platzende L
 haben sich Mitte der 1980er Jahre zwei Schallquellen, die Maximum-Length-Sequence (kurz \textit{MLS}) und die Time Delay Spectrometry (kurz \textit{TDS}),
 bei der ein linearer Sinus-Sweep über das zu messende Frequenzspektrum zum Einsatz kommt, durchgesetzt. Mit diesen Methoden konnten
 verbesserter Rauschabstand und flachere Frequenzgänge der Impulsantworten erzielt werden \cite{farina2007b}. Seit Anfang der 2000er wird vermehrt
-an Verfahren mit Einsatz von exponentiellen/logarithmischen Sinus-Sweeps (kurz \textit{ESS/LSS}) geforscht.
+an Messverfahren mit exponentiellen/logarithmischen Sinus-Sweeps (kurz \textit{ESS/LSS}) geforscht.
 Diese Verfahren ermöglichen verbesserte Abbildung der gemessenen Systeme besonders bei Vorhandensein von Nonlinearen oder Zeit-Varianten Eigenschaften \cite{farina2007b}.
 
-\paragraph{Time Delay Spectrometry}
-Bei TDS-basierten Messverfahren wird ein Sinus-Sweep genutzt, bei dem die Frequenz eines Sinus-Messsignals linear durch den zu messenden
-Frequenzbereich, über einen bestimmten Zeitraum (die Messdauer), verändert wird. TDS-Verfahren sind allerdings aufgrund einiger Limitationen
-in der praktischen Umsetzung besser für die Messung kurzer Impulsantworten geeignet, etwa denen von Lautsprecher-Systemen. Für die akkurate
-Messung von längeren Impulsantworten müssten Impulse von unpraktikabler Länge, oder entsprechende Ausgleichsverfahren, auf die
-wie hier nicht genauer eingehen können, genutzt werden \cite{farina2000, holters2009}. 
-\paragraph{Minimum Length Sequence}
-MLS sind periodische Sequenzen von binären Ziffern mit der Länge $L=2^N-1$. Bei der Nutzung einer MLS als Messimpuls wird der Raum durch den bei
-der DA- und Schallwandlung erzeugten Schallimpuls angeregt. Aufgrund eines niedriger Energie in kurzen Impulsen dieser Art müssen in der Regel viele Messungen
-vorgenommen und das Ergebnise gemittelt werden. Unter Anwendung entsprechender Prozesse weist das Ergebnis einer MLS-Messung bessere Eigenschaften
-in der Immunität gegenüber Rauschen auf als TDS-Messungen \cite{rife1989}. Allerdings sind MLS-basierte Messverfahren sehr anfällig gegenüber 
-Nonlinearitäten im gemessenen System und benötigen somit besondere Sorgfalt beim Einstellen der Messpegel \cite{holters2009}.
-\paragraph{Exponential/Logarithmic Sine Sweep}
-TDS- und MLS-Verfahren zur Messung der IR eines Systems haben beide nachteilhafte Eigenschaften, wenn in den gemessenen Systemen nonlineare Eigenschaften vorliegen.
-Diese äußern sich in Form von Zeitaliasing-Artefakten, selbst wenn die Länge des Impulses angemessen gewählt wurde. Diese sind in der entfalteten
-IR als unerwartete Peaks zu erkennen. Messverfahren mit linearen Sinus-Sweeps wie die TDS-Methode verbergen diese Peaks. Sie äußern sich bei diesen Verfahren in Form
-eines mit dem Eingangssignal korrellierten Rauschens, welches nicht durch wiederholte Messung und Mittelwertbildung reduziert werden kann. Werden stattdessen
-exponentielle Sinus-Sweeps, bei denen die momentäre Frequenz sich in Abhängigkeit der Zeit exponentiell verändert genutzt, dann sind diese Artefakte in der IR wieder gut
-erkennbar \cite{farina2000}. Angelo Farina beschreibt ein Entfaltungs-Verfahren, mit dem diese Artefakte einfach von der IR getrennt werden können.
+\paragraph{Time Delay Spectrometry (TDS)}
+TDS-basierte Messverfahren nutzen einen Sinus-Sweep, bei dem die Frequenz des Messsignals über die Messdauer linear durch den zu messenden
+Frequenzbereich verändert wird. TDS-Verfahren sind eher für die Messung kurzer Impulsantworten geeignet, etwa denen von Lautsprecher-Systemen \cite{farina2000, holters2009}. 
+\paragraph{Minimum Length Sequence (MLS)}
+MLS-basierte Messverfahren nutzen periodische Sequenzen von binären Ziffern, die auch als Pseudo-Random Noise bezeichnet werden.
+MLS übertragen nur wenig Energie in kurzen Impulsen. Als Ausgleich werden viele Messungen
+vorgenommen und das Ergebnise gemittelt. Unter Anwendung entsprechender Prozesse weist das Ergebnis einer MLS-Messung einen besseren Rauschabstand auf, als TDS-Messungen \cite{rife1989}.
+Allerdings sind MLS-basierte Messverfahren sehr anfällig gegenüber Nonlinearitäten im gemessenen System und benötigen somit besondere Sorgfalt beim Einstellen der Messpegel \cite{holters2009}.
+\paragraph{Exponential/Logarithmic Sine Sweep (ESS/LSS)}
+ESS/LSS-basierte Messverfahren nutzen exponentielle Sinus-Sweeps, bei denen die momentäre Frequenz sich in Abhängigkeit der Zeit exponentiell verändert.
+Bei MLS- bzw. TDS-basierten Verfahren auftretende Artefake auftretende Artefakte können durch ein von \cite{farina2000} beschriebenes Entfaltungs-Verfahren einfach von der IR getrennt werden können.
 Unter Anwendung dieser Methodik ist sind ESS/LSS-Verfahren die geeignetsten Messverfahren für die Messung der Impulsantworten von Räumen.
 
 
