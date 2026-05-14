@@ -1,18 +1,14 @@
 \section{Faltung (Convolution)} 
 \label{sec:convolution}
-In \ref{sec:signals_and_systems} haben wir für Lineare Zeit-invariante Systeme definiert, dass sie sich vollständig durch ihre Impulsantwort
-charakterisieren lassen. In diesem Abschnitt werden auf diese Tatsache genauer eingehen, und dabei definieren, was die Impulsantwort eigentlich
-ist. Wir werden außerdem zeigen, wie die Impulsantwort eines Systems auf ein Signal angewendet wird, um den Effekt des Systems auf das Signal
-zu erzeugen.
+In \ref{sec:signals_and_systems} wurde gezeigt, dass Lineare Zeit-invariante Systeme sich vollständig durch ihre Impulsantwort
+charakterisieren lassen. Hier wird die Impulsantwort selbst definiert sowie der Begriff der Faltungssumme definiert.
 
-Eine beliebige Reihe (also ein beliebiges diskretes Signal) kann laut \ref{sec:signals_and_systems}
-als Summe von skalierten und verzögerten Einheitsimpulsen dargestellt werden kann.
-Oppenheim formuliert zur Präzisierung eine allgemeine Summenformel, mit der eine beliebige Reihe $x[n]$ ausgedrückt werden:
+\cite[Seite 11]{oppenheim1999} formuliert zur Präzisierung der in \ref{sec:signals_and_systems} gezeigten Interpratation eines Signals als Summe skalierter und verzögerter Einheitsimpulse eine allgemeine Summenformel, mit der eine beliebige Reihe $x[n]$ ausgedrückt wird:
 \begin{equation}
     x[n]=\sum_{k=-\infty}^\infty x[k]\delta[n-k]
     \label{eq:scaled_unit_sum}
 \end{equation}
-Die mathematische Beschreibung der diskreten Faltung leitet Oppenheim daraus wie folgt ab: 
+Die mathematische Beschreibung der diskreten Faltung wird daraus wie folgt abgeleitet: 
 
 Sei $y[n]$ das Ausgangssignal eines LTI-Systems, resultierend aus einem Eingangssignal $x[n]$. Sei $h_k[n]$ die Antwort eines Systems
 auf einen Einheitsimpuls an Index $n=k$. Es gilt:
@@ -38,35 +34,30 @@ Unter Forderung der Zeitinvarianz des Systems fällt diese Eigenschaft weg:
 Die Gleichung \ref{eq:convolution_sum} wird als \textit{Faltungssumme} (engl.: \textit{Convolution Sum}) bezeichnet \cite[Seite 22f]{oppenheim1999}. Als kürzere Schreibweise für 
 die Faltung zweier Signale $x$ und $h$ zu einem Ausgangssignal $y$ verwenden wir die Schreibweise $y[n]=x[n]*h[n]$.
 
-Um das Prinzip der Faltung zu veraunschaulichen, werden wir nun einen der simpleren Anwendungsfälle betrachten: einen Tiefpassfilter.
-Visualisierungen in diesem Abschnitt sind an die Grafiken von Richard Lyons \cite{lyons2010} angelehnt.
-Dieser kann in der diskreten Zeitdomäne durch ein von Lyons \cite{lyons2010} \textit{Moving Averager} genannte System realisiert werden. Die Idee ist,
-für jedes $n$-te Sample des Ausgangssignals einen Mittelwert aus mehreren Samples in der Umgebung des Index $n$ des Eingangssignals zu verwenden. Da die für jedes Ausgangs-Sample
-eine um dieses Sample herum angeordnete Gruppe an Samples gemittelt wird, "bewegt" sich das Fenster der in die Mittelwertberechung einbezogenene Samples mit dem berechneten
-Ausgangs-Sample, was den Namen Moving Averager begründet. Ein anderer Name für diese Art von Filter ist \textit{Transversalfilter} \cite{lyons2010}.
-Tiefpassfilter dämpfen die höheren Frequenzen des Spektrums eines Signals. Das Wirkungsprinzip bei einem Moving Average Tiefpassfilters
-beruht darauf, dass bei der Berechnung von Durchschnittswerten die schnellen Veränderungen der enthaltenen höheren Frequenzen durch die Mittelwertberechnung stärker beeinflusst
-werden, als die langsamen Veränderungen der niedrigfrequenten Anteile des Spektrums. 
-Da in der Signalverarbeitung oft Echtzeitberechnungen nötig sind, kann die intuitiv sinnvoll erscheinende Wahl von einer bestimmten Anzahl Samples vor und nach dem Index des zu berechnenden Ausgangs-Samples
-nicht zuverlässig berechnet werden, denn ggf. existieren die Samples mit höherem Index noch nicht. Daher werden Samples mit kleinerem Index, also ältere Samples, für die 
-Durchschnittswertberechnung genutzt. Bei einer Berechnung des Mittelwerts von 5 Samples gilt also 
+Das Prinzip kann anhand eines simplen Anwendungsfalls, dem Tiefpassfilter, versanschaulicht werden.
+Visualisierungen in diesem Abschnitt sind an die Grafiken von Richard Lyons \cite[Kapitel 5]{lyons2010} angelehnt.
+Tiefpassfilter können in der diskreten Zeitdomäne durch ein von \cite[Kapitel 5, Seite 220]{lyons2010} \textit{Moving Average Filter} genanntes System realisiert werden.
+Für jedes $n$-te Sample des Ausgangssignals wird ein Mittelwert aus mehreren Samples in der Umgebung des Samples an Index $n$ des Eingangssignals berechnet.
+Tiefpassfilter dämpfen die höheren Frequenzen des Spektrums eines Signals. Moving Average Filter erzielen diesen Effekt
+durch die stärkeren Glättung schnellerer (höherfrequenter) Veränderungen in den gemittelten Werten im Vergleich zu langsameren (niedrigfrequenter) Veränderungen.
+In der Signalverarbeitung werden oft Echtzeitberechnungen durchgeführt, daher werden Samples mit kleinerem Index für die 
+Durchschnittswertberechnung genutzt. Bei einer Berechnung des Mittelwerts von 5 Samples gilt
 \begin{equation}
     y[n]=\frac{1}{5}\sum_{k=0}^4x[n-k]\iff y[n]=\sum_{k=0}^4\frac{1}{5}x[n-k].
     \label{eq:mov_avg_filter}
-    \cite{lyons2010}
+    \cite[Kapitel 5, Seite 172]{lyons2010}
 \end{equation}
-Die Summenformel zur Berechnung der Ausgangs-Samples unseres Moving Average Filters \ref{eq:mov_avg_filter} weist starke Ähnlichkeit mit der der Faltungssumme \ref{eq:convolution_sum} auf.
-Die beiden auffälligsten Unterschiede sind die endliche Summierung und die Verwendung eines festen Koeffizienten, anstelle verschiedener Samples eines zweiten Signals.
-In der Definition eines diskreten Signals ist aber nirgends festgelegt, dass verschiedene Samples unterschiedliche Werte haben müssen. Wir können folglich den für jeden Summanden
-verwendeten Faktor $\frac{1}{5}$ auch als ein diskretes Signal, bestehend aus 5 Samples, mit den Werten $\frac{1}{5}$ interpretieren:
+Die Summenformel zur Berechnung der Ausgangs-Samples dieses Moving Average Filters \ref{eq:mov_avg_filter} ähnelt der Faltungssumme \ref{eq:convolution_sum}.
+Auffällige Unterschiede sind endliche Summierung und Verwendung eines festen Koeffizienten pro Summand.
+Der für jeden Summanden verwendete Koeffizient $\frac{1}{5}$ kann als diskretes Signal, bestehend aus 5 Samples, mit den Werten $\frac{1}{5}$ interpretiert werden:
 \begin{equation}
     \label{eq:fir_convsum}
     y[n]=\sum_{k=0}^4h[k]x[n-k]\text{ mit }h=\left(\frac{1}{5},\,\frac{1}{5},\,\frac{1}{5},\,\frac{1}{5},\,\frac{1}{5}\right).
 \end{equation}
-Die Summenformel \ref{eq:fir_convsum} ist eine endliche Faltungssumme. Es fällt auf, dass die Indizierung von Eingangs-Signal und Impulsantwort vertauscht sind, aufgrund der 
-Kommutativen Eigenschaft der Faltung \cite{oppenheim1999} ist \ref{eq:fir_convsum} Äquivalent zu \ref{eq:convolution_sum}. Man nennt solche Filter \textit{Finite Impulse Response Filter},
-kurz \text{FIR-Filter}. Die Filterkoeffizienten der Mittelwertberechnung sind dabei, wie schon durch die Notation als $h$ impliziert, die Impulsantwort des Systems, das unser
-Moving Averager bildet. Um das Ergebnis des Moving Averagers zu veranschaulichen, betrachten wir ein Signal aus 3 zusammengesetzten Sinusschwingungen:
+Die Summenformel \ref{eq:fir_convsum} ist eine endliche Faltungssumme mit vertauschter Indizierung von Eingangs-Signal und Impulsantwort. Nach der
+kommutativen Eigenschaft der Faltung ist \ref{eq:fir_convsum} Äquivalent zu \ref{eq:convolution_sum} \cite[Kapitel 2, Seite 29]{oppenheim1999}. Solche Filter werden \textit{Finite Impulse Response Filter},
+kurz \text{FIR-Filter}, genannt. Die Filterkoeffizienten der Mittelwertberechnung bilden, wie die Notation als $h$ impliziert, die Impulsantwort einses Systems: einem
+Moving Average Filter. Die Wirkung des Moving Averager Filters wird durch plotten von Ein- und Ausgangssignal anschaulich:
 
 \begin{figure}[htbp]
     \centering
@@ -75,7 +66,7 @@ Moving Averager bildet. Um das Ergebnis des Moving Averagers zu veranschaulichen
     \label{fig:comp_sinusoid}
 \end{figure}
 
-Die Anwendung des Moving Averagers resultiert in einer deutlich sichtbaren Glättung des Signals, aber auch zu einer Verzögerung des Signals:
+Die Anwendung des Moving Averager Filters resultiert in einer deutlich sichtbaren Glättung des Signals, aber auch zu einer Verzögerung des Signals:
 
 \begin{figure}[htbp]
     \centering
@@ -84,14 +75,13 @@ Die Anwendung des Moving Averagers resultiert in einer deutlich sichtbaren Glät
     \label{fig:in_out_comparison}
 \end{figure}
 
-Der hier betrachtete FIR-Filter ist ein gutes Beispiel zur Veranschaulichung des Faltungsprozesses und seiner möglichen Auswirkungen. 
-Die Faltungssumme selbst ist aber in allen anderen Anwendungsbereichen von Faltungsprozessen in der Signalverarbeitung gleich. In echten 
-Anwendungsfällen werden jedoch in der Regel Impulsantworten und Signale mit weit höheren Längen, also auch weit mehr Summanden und Multiplikationen
-pro berechnetem Ausgangs-Sample, verwendet. Dies bringt seine eigenen Herausforderungen mit sich, denn besonders in Echtzeitanwendungen ist
-eine hinreichend schnelle Berechnung der Ausgangssamples nicht verhandelbar. Bei der häufig auftretenden Abtastrate von 44,1kHz bleiben für
-die Berechnung eines Blockes von 256 Ausgangs-Samples weniger als 6 Millisekunden. Daher stellen wir abschließend ohne Beweis eine in der
-praktischen Anwendung außerordentlich wichtige Eigenschaft der Faltung vor.
-
+Dieser FIR-Filter ist ein anschauliches Beispiel für den Faltungsprozess. 
+Die Faltungssumme selbst ist in allen von Faltung in der Signalverarbeitung gleich. In echten 
+Anwendungsfällen werden oft weit längere Impulsantworten und Signale verwendet. Das resultiert in weit mehr Summanden und Multiplikationen
+pro berechnetem Ausgangs-Sample. Besonders in Echtzeitanwendungen, in denen eine hinreichend schnelle Berechnung der Ausgangssamples nötig ist, führt die direkte Berechnung von Faltungssummen zu
+untragbaren Laufzeiten. Bei der häufigen Audio-Abtastrate von 44,1kHz bleiben für
+die Berechnung eines Blockes von 256 Ausgangs-Samples weniger als 6 Millisekunden. Für die praktische Anwendung von Faltung zur Abbildung von Systemen wird eine Lösung mit besserem Laufzeitverhalten genutzt.
+Diese basiert auf dem Convolution-Theorem.
 
 \subsection{Das Convolution-Theorem}
 \label{sec:convolution_theorem}
@@ -100,8 +90,8 @@ des Ausgangssignals $y$ einer Faltung $y[n]=x[n]*h[n]$. Dann gilt:
 
 \begin{equation}
     \label{eq:convolution_theorem}
-    Y(e^i\omega)=X(e^i\omega)\cdot H(e^i\omega).
+    Y(e^i\omega)=X(e^i\omega)\cdot H(e^{i\omega}).
 \end{equation} 
 Die Faltung zweier Signale in der Zeitdomäne ist äquivalent zu einer Multiplikation der Signale in der Frequenzdomäne. Mit einer inversen diskreten Fourier-Transformation
-des Ausgangs-Spektrums $Y(e^i\omega)$ erhalten wir das Ausgangssignal in der Zeitdomäne \cite{oppenheim1999}. Das heißt, bei hinreichend effizienter Berechnung der (inversen) diskreten Fourier-Transformationen
-können wir auf die aufwändige direkte Berechnung der Faltungssume verzichten und stattdessen dasselbe Ergebnis durch Multiplikation in der Frequenzdomäne erzielen!
+des Ausgangs-Spektrums $Y(e^i\omega)$ wird das Ausgangssignal in die Zeitdomäne übertragen \cite[Kapitel 2, Seite 60]{oppenheim1999}. 
+Bei hinreichend effizienter Berechnung der (inversen) diskreten Fourier-Transformationen kann somit die direkte Berechnung der Faltungssume vermieden und durch Multiplikation in der Frequenzdomäne ersetzt werden.
