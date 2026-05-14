@@ -1,30 +1,23 @@
 \section{Signale und Systeme}
 \label{sec:signals_and_systems}
-Bevor wir genauer auf Faltung und ihre Anwendungsfälle in der digitalen Audiobearbeitung eingehen können,
-wollen wir zunächst ein paar wichtige Begriffe definieren. Insbesondere benötigen wir im weiteren Verlauf die Begriffe \textit{Signal} 
-und \textit{System}. Genauer eingehen werden wir auf eine Art von System mit bestimmten Eigenschaften,
-die linearen Zeit-Invarianten Systeme (engl.: \textit{Linear Time-Invariant Systems}, kurz LTI).
+In diesem Abschnitt werden einige für den weiteren Verlauf wichtige Begriffe definiert, insbesondere \textit{Signal} und \textit{System},
+sowie, die sogenannten linearen Zeit-Invarianten Systeme.
 \paragraph{Signale}
-Kurz gefasst ist ein Signal eine Beschreibung davon, wie ein Parameter sich im Verhältnis zu einem anderen Parameter verändert \cite[Kap. 5]{smith1997}.
-Signale übertragen dementsprechend Informationen über den Zustand oder das Verhalten eines physischen Systems. Dabei
-ist unerheblich, ob die Signale durch irgendein Verfahren gemessen, oder künstlich synthetisiert werden.
-Mathematisch werden Signale als
-Funktionen einer oder mehrerer unabhängiger Variablen ausgedrückt. So kann ein Audiosignal, beispielsweise Sprache, als Funktion der Zeit
-ausgedrückt werden.
-\paragraph{Stetige, diskrete, und digitale Signale}
-Die unabhängige Variable eines mathematisch als Funktion ausgedrückten Signals kann stetig
-oder diskret sein, wobei stetige Signale oft als \textit{analoge} Signale bezeichnet werden \cite[Kap. 2]{oppenheim1999}. 
-Sie unterscheiden sich von diskreten Signalen dahingehend, dass ihre unabhängige Variable über die reellen Zahlen definiert ist.
-Diskrete Signale widerum sind über eine endlich oder abzählbar unendliche Menge an Zahlen definiert. Man kann sie sich gut als Liste bzw. Array
-von Funktionswerten vorstellen. Darüber, ob die Funktionswerte stetig oder diskret sind, ist hier noch keine Aussage getroffen.
-Signale bei denen sowohl die unabhängige Variable der Funktion, als auch die Funktionswerte, diskret sind, nennen wir \textit{digitale Signale} \cite[Kap. 2]{oppenheim1999}.
-Wir notieren stetige Signale mit der unabhängigen Variable in runden Klammern:
+Ein Signal beschreibt, wie ein Parameter sich im Verhältnis zu einem anderen Parameter verändert.
+Signale übertragen Informationen über den Zustand oder das Verhalten eines physischen Systems. Mathematisch sind Signale
+Funktionen einer oder mehrerer unabhängiger Variablen. Die unabhängige Variable von Audiosignalen ist Zeit oder Frequenz \cite[Kap. 5]{smith1997}.
+Die unabhängige Variable kann stetig
+oder diskret sein, wobei stetige Signale oft als \textit{analoge} Signale bezeichnet werden \cite[Kap. 2]{oppenheim1999}. In Computergestützten Anwendungen werden 
+ausschließlich diskrete Signale verarbeitet.
+Der Definitionsbereich Diskreter Signale sind die natürlichen Zahlen. Diskrete Signale sind also mathematisch betrachtet Reihen. 
+Signale $S:\mathbb{N}\mapsto\mathbb{Z}$ heißen \textit{digitale Signale} \cite[Kap. 2]{oppenheim1999}.
+Stetige Signale werden mit der unabhängigen Variable in runden Klammern notiert:
 $x(t)$ für ein stetiges Signal $x$ in Abhängigkeit von Zeit $t$.
-Diskrete Signale notieren wir in Anlehnung an die von Alan Oppenheim \cite{oppenheim1999} verwendete Notation mit der
-unabhängigen Variable in eckigen Klammern: $x[n]$ für ein diskretes Signal $x$, wobei $n$ den Index des betrachteten Funktionswerts bezeichnet.
+Diskrete Signale werden mit der unabhängigen Variable in eckigen Klammern notiert: $x[n]$ für ein diskretes Signal $x$,
+wobei $n$ den Index des betrachteten Funktionswerts bezeichnet \cite[Seite 9]{oppenheim1999}.
 \paragraph{Der Einheitsimpuls}
-Eine besondere Art von diskretem Signal ist die sogenannte \textit{Einheits-Sample-Reihe}.
-Dieses Signal ist definiert als die Reihe
+Ein besonderes diskretes Signal ist die \textit{Einheits-Sample-Reihe}.
+Sie ist definiert als die Reihe
 \begin{equation}
     \delta[n]=
     \begin{cases}
@@ -32,16 +25,14 @@ Dieses Signal ist definiert als die Reihe
         1,\,n=0
     \end{cases}
 \end{equation}
-Die Einheits-Sample-Reihe hat also im ersten Index den Wert $1$, und in allen weiteren Indizes den Wert $0$.
-Jedes diskrete Signal lässt sich als eine Summe von skalierten und verzögerten Einheitsimpulsen darstellen \cite[Kap. 2]{oppenheim1999}.
-Wir bezeichnen die Einheits-Sample-Reihe im weiteren Verlauf etwas vereinfacht als \textit{Einheitsimpuls}.
+Jedes diskrete Signal lässt sich als eine Summe von skalierten und verzögerten Einheitsimpulsen darstellen \cite[Kap. 2, Seite 11]{oppenheim1999}.
+Im weiteren Verlauf wird die Einheits-Sample-Reihe etwas vereinfacht als \textit{Einheitsimpuls} bezeichnet.
 \paragraph{Systeme}
-Ein System produziert als Antwort auf ein Eingangssignal durch irgendeinen Prozess ein Ausgangssignal \cite[Kap. 5]{smith1997}.
-Formal definiert Oppenheim ein diskretes System als ``eine Transformation oder einen Operator, der eine Eingangssequenz mit den Werten $x[n]$
-auf eine Ausgangssequenz mit den Werten $y[n]$ abbildet'' \cite[Seite 16]{oppenheim1999}. Eine Funktion, welche die Transformation oder den Operator,
-welcher das Eingangssignal in das Ausgangssignal transformiert, beschreibt, nennen wir \textit{Transferfunktion}.
+Ein System produziert als Antwort auf ein Eingangssignal ein Ausgangssignal \cite[Kap. 5]{smith1997}.
+Formal definiert \cite[Seite 16]{oppenheim1999} ein diskretes System als eine Transformation oder einen Operator, welche(r) ein Eingangssignal $x[n]$
+auf ein Ausgangssignal $y[n]$ abbildet. Die Funktion $T:x[n]\mapsto y[n]$ heißt \textit{Transferfunktion} des Systems.
 \paragraph{Lineare Zeit-Invariante Systeme (LTI)}
-Eine besondere Signifikanz in der Signalverarbeitung haben die sogenannten Linearen Zeit-Invarianten Systeme. Damit ein System \textit{linear}
+Besonders signifikant sind in der Signalverarbeitung Lineare Zeit-Invariante Systeme. Damit ein System \textit{linear}
 heißt, muss es die beiden Eigenschaften
 \begin{equation}
     T(x_1[n]+x_2[n])=T(x_1[n])+T(x_2[n])=y_1[n]+y_2[n]
@@ -50,17 +41,17 @@ und
 \begin{equation}
     T(a\cdot x[n])=a\cdot T(x[n])=a\cdot y[n]
 \end{equation}
-
-erfüllen, wobei $T$ die Transferfunktion des Systems bezeichnet \cite{oppenheim1999}. Daraus resultiert die sogenannte \textit{Superposition} von Eingangssignalen:
+erfüllen.
+Daraus resultiert die \textit{Superposition} von Eingangssignalen:
 \begin{equation}
     x[n]=\sum_{k}a_kx_k[n]\Rightarrow y[n]=\sum_{k}a_ky_k[n]
 \end{equation}
 Wobei $x[n]$ das Eingangssignal, $y[n]$ das Ausgangssignal, und $a_k$ eine Reihe von Konstanten bezeichnen \cite{oppenheim1999}.
 
-Ein System heißt \textit{Zeit-Invariant}, wenn eine Verschiebung bzw. Verzögerung des Eingangssignals eine entsprechende Verschiebung bzw.
-Verzögerung des Ausgangssignals verursacht. Genauer gesagt: wenn für jedes $n_0$ und jedes Eingangssignal $x$ mit den Werten
+Ein System heißt \textit{Zeit-Invariant}, wenn für jedes $n_0$ und jedes Eingangssignal $x$ mit den Werten
 $x'[n]=x[n-n_0]$ das entsprechende Ausgangssignal $y$ mit den Werten $y'[n]=y[n-n_0]$ erzeugt wird \cite{oppenheim1999}.
 
-Ist ein System sowohl linear als auch Zeit-Invarant, dann heißt es \textit{lineares Zeit-Invariantes System (LTI-System)}. LTI-Systeme werden durch eine besonders praktische Eigenschaft ausgezeichnet:
-ihre Auswirkungen auf ein beliebiges Eingangssignal können vollständig durch ihre Impulsantwort (engl.: \textit{Impulse Response}, kurz \textit{IR}, siehe \ref{sec:convolution}) ausgedrückt werden \cite{oppenheim1999}.
-Wir notieren die Impulsantwort eines Systems, wenn sie keinen deskriptiveren Namen aus dem Kontext des Systems erhält, mit $h[n]$.
+Ist ein System sowohl linear als auch Zeit-Invarant, dann heißt es \textit{lineares Zeit-Invariantes System (LTI-System)}.
+Die Auswirkungen von LTI-Systeme auf ein beliebiges Eingangssignal können vollständig durch ihre Impulsantwort (engl.: \textit{Impulse Response}, kurz \textit{IR},
+siehe \ref{sec:convolution}) ausgedrückt werden \cite{oppenheim1999}.
+Die Impulsantwort eines Systems ist selbst ein diskretes Signal und wird mit $h[n]$ notiert \cite[Kapitel 2, Seite 23]{oppenheim1999}.
