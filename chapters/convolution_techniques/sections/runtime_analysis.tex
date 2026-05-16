@@ -1,4 +1,5 @@
 \section{Laufzeitanalyse}
+\label{sec:runtime_analysis}
 
 Im Folgenden werden die diskrete Faltung in der Zeitdomäne und die Variante der Faltung,
 basierend auf der Frequenzdomäne gegenübergestellt.
@@ -81,7 +82,7 @@ Durch diese Abzweigung an Sezenarien ergibt sich eine Best-Case Laufzeit von
 Laut Polynomregel fallen Terme niederer Ordnung weg. Daraus folgt:
 \begin{equation}
     \mathcal{O}(M^2 + MN) \implies \mathcal{O}(M \cdot N)
-     , denn: N > M \implies N > M^2
+     , denn: N > M \implies N \cdot M > M^2
 \end{equation}
 
 Die Laufzeitklasse der direkten, diskreten Convolution beträgt also laut O-Notation
@@ -127,7 +128,7 @@ dieser Länge mit Nullen aufgefüllt.
 Die Funktion FFT überführt die beiden Listen jeweils in ihre Frequenzdomäne.
 Anschließend folgt über die Länge von \textit{fftLen} eine Multipklikation jedes Frequenzwertes.
 
-Die Laufzeitklasse der FFT ist $\mathcal{O}(n \cdot log(n))$. Durch Addition aller anderen
+Die Laufzeitklasse der FFT ist $\mathcal{O}(n \cdot log(n))$ \cite[Kap. 12] {smith1997}. Durch Addition aller anderen
 Operationen ergibt sich eine Laufzeit von:
 \begin{equation}
     \mathcal{O}(3(n \cdot log(n) + 3n + 2)) \in \mathcal{O}(n \cdot log(n))
