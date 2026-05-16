@@ -2,8 +2,8 @@
 
 In der folgenden Sektion werden wir nun das Wissen aus den vorherigen Kapiteln nutzen und
 einmal selbst eine Faltung zweier Audiosignale durchführen.
-Dafür verwenden wir die zuvor vorgestellte Gleichung der diskreten Faltung \ref{scaled_unit_sum}
-aus dem Kapitel \ref{sec:convolution}:
+Dafür wird die die zuvor vorgestellte Gleichung der diskreten Faltung
+angewendet \ref{sec:convolution}:
 
 \begin{equation}
     y[n] = \sum_{k=0}^{M-1}h[k] \cdot x[n-k]
@@ -20,11 +20,5 @@ Es sollen zuerst die diskreten Abtastwerte der jeweiligen Audiodateien in Arrays
 geladen werden. Danach soll die Faltung durchgeführt und anschließend das Ergebnis als neue
 Audiodatei im Hintergrundspeicher abgelegt werden.
 
-Für das Laden und speichern von Audiodateien im .wav-Format dient ein bekanntes Framework
-namens \textit{JUCE} \cite{juce}.
-\textit{JUCE} bietet noch sehr viele weitere Funktionalitäten, wie bspw. Klassen
-zum Entwurf von Benutzeroberflächen oder Schnittstellen zur Entwicklung von \textit{Plug-ins},
-die direkt in Programmen wie \textit{Cubase} eingebunden werden können.
-Die Implementierung solcher Anwendungen würden hierbei jedoch absolut den Rahmen sprengen, weshalb
-sich im folgenden auf die Umsetzung der Faltung selbst beschränkt wird.
-Bei Interesse sei also hiermit auf die offizielle Website und Dokumentation von \textit{JUCE} verwiesen: \cite{juce}.
+Für das Laden und speichern von Audiodateien im .wav-Format wird hier das
+bekannte Framework \textit{JUCE} genutzt \cite{juce}.

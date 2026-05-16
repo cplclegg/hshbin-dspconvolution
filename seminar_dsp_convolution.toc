@@ -10,17 +10,17 @@
 \contentsline {paragraph}{\nonumberline Der Einheitsimpuls}{9}{paragraph*.7}%
 \contentsline {paragraph}{\nonumberline Systeme}{9}{paragraph*.9}%
 \contentsline {paragraph}{\nonumberline Lineare Zeit-Invariante Systeme (LTI)}{9}{paragraph*.11}%
-\contentsline {chapter}{\numberline {3}Nutzung von faltungsbasierten Verfahren in der digitalen Audiobearbeitung}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Faltung (Convolution)}{11}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Das Convolution-Theorem}{14}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}LTI-Systeme in der realen Welt}{14}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Techniken zur Messung von Raum-Impulsantworten}{15}{section.3.3}%
-\contentsline {paragraph}{\nonumberline Time Delay Spectrometry}{15}{paragraph*.13}%
-\contentsline {paragraph}{\nonumberline Minimum Length Sequence}{15}{paragraph*.15}%
-\contentsline {paragraph}{\nonumberline Exponential/Logarithmic Sine Sweep}{16}{paragraph*.17}%
-\contentsline {section}{\numberline {3.4}Entfaltung (Deconvolution) von Messungen}{16}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Digitale Audiobearbeitung: Implementierung der Faltung}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Einleitung}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Implementierung in \textit {C++}}{17}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Fazit und Ausblick auf FFT}{19}{section.4.3}%
+\contentsline {chapter}{\numberline {3}Nutzung von faltungsbasierten Verfahren in der digitalen Audiobearbeitung}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Faltung (Convolution)}{10}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Das Convolution-Theorem}{13}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}LTI-Systeme in der realen Welt}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Techniken zur Messung von Raum-Impulsantworten}{14}{section.3.3}%
+\contentsline {paragraph}{\nonumberline Time Delay Spectrometry}{14}{paragraph*.13}%
+\contentsline {paragraph}{\nonumberline Minimum Length Sequence}{14}{paragraph*.15}%
+\contentsline {paragraph}{\nonumberline Exponential/Logarithmic Sine Sweep}{15}{paragraph*.17}%
+\contentsline {section}{\numberline {3.4}Entfaltung (Deconvolution) von Messungen}{15}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Digitale Audiobearbeitung: Implementierung der Faltung}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Einleitung}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Implementierung in \textit {C++}}{16}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Fazit und Ausblick auf FFT}{18}{section.4.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
