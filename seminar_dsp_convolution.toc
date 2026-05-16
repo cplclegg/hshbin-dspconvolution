@@ -18,7 +18,7 @@
 \contentsline {paragraph}{\nonumberline Time Delay Spectrometry (TDS)}{14}{paragraph*.11}%
 \contentsline {paragraph}{\nonumberline Minimum Length Sequence (MLS)}{15}{paragraph*.13}%
 \contentsline {paragraph}{\nonumberline Exponential/Logarithmic Sine Sweep (ESS/LSS)}{15}{paragraph*.15}%
-\contentsline {chapter}{\numberline {4}Digitale Audiobearbeitung: Implementierung der Faltung}{16}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Digitale Audiobearbeitung: Implementierung der Convolution}{16}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Einleitung}{16}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Implementierung in \textit {C++}}{16}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Fazit und Ausblick auf FFT}{18}{section.4.3}%
