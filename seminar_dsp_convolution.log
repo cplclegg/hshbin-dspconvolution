@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.18)  16 MAY 2026 14:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.18)  16 MAY 2026 15:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -635,61 +635,50 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
 chapter 2.
-(./chapters/dsp_basics/sections/abtasttheorem.tex
-<graphic/python/chapter2/stetiges_signal.pdf, id=74, 462.52798pt x 346.89601pt>
-File: graphic/python/chapter2/stetiges_signal.pdf Graphic file (type pdf)
-<use graphic/python/chapter2/stetiges_signal.pdf>
-Package pdftex.def Info: graphic/python/chapter2/stetiges_signal.pdf  used on input line 14.
-(pdftex.def)             Requested size: 223.55652pt x 113.80908pt.
-<graphic/python/chapter2/diskretes_signal.pdf, id=78, 722.7pt x 289.08pt>
-File: graphic/python/chapter2/diskretes_signal.pdf Graphic file (type pdf)
-<use graphic/python/chapter2/diskretes_signal.pdf>
-Package pdftex.def Info: graphic/python/chapter2/diskretes_signal.pdf  used on input line 39.
-(pdftex.def)             Requested size: 223.5574pt x 89.4242pt.
-) (./chapters/dsp_basics/sections/frequenzbereich.tex [5
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} <./graphic/python/chapter2/stetiges_signal.pdf>]
-<graphic/img/chapter2/Lyons_time_freq_domain.png.png, id=128, 853.1875pt x 251.94125pt>
+(./chapters/dsp_basics/sections/abtasttheorem.tex) (./chapters/dsp_basics/sections/frequenzbereich.tex
+<graphic/img/chapter2/Lyons_time_freq_domain.png.png, id=75, 853.1875pt x 251.94125pt>
 File: graphic/img/chapter2/Lyons_time_freq_domain.png.png Graphic file (type png)
 <use graphic/img/chapter2/Lyons_time_freq_domain.png.png>
 Package pdftex.def Info: graphic/img/chapter2/Lyons_time_freq_domain.png.png  used on input line 9.
 (pdftex.def)             Requested size: 357.69322pt x 105.62622pt.
- [6 <./graphic/python/chapter2/diskretes_signal.pdf> <./graphic/img/chapter2/Lyons_time_freq_domain.png.png>]) (./chapters/dsp_basics/sections/nyquistshannon.tex
-<graphic/python/chapter2/aliasing_vergleich.pdf, id=178, 738.06992pt x 393.98067pt>
+ [5
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}]) (./chapters/dsp_basics/sections/nyquistshannon.tex
+<graphic/python/chapter2/aliasing_vergleich.pdf, id=94, 738.06992pt x 393.98067pt>
 File: graphic/python/chapter2/aliasing_vergleich.pdf Graphic file (type pdf)
 <use graphic/python/chapter2/aliasing_vergleich.pdf>
 Package pdftex.def Info: graphic/python/chapter2/aliasing_vergleich.pdf  used on input line 10.
 (pdftex.def)             Requested size: 223.5512pt x 113.8066pt.
-) (./chapters/convolution_techniques/sections/signals_and_systems.tex [7{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc} <./graphic/python/chapter2/aliasing_vergleich.pdf>] [8])) (./chapters/convolution_techniques/convolution_techniques.tex
+ [6{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc} <./graphic/img/chapter2/Lyons_time_freq_domain.png.png> <./graphic/python/chapter2/aliasing_vergleich.pdf>]) (./chapters/convolution_techniques/sections/signals_and_systems.tex [7])) (./chapters/convolution_techniques/convolution_techniques.tex
 Overfull \hbox (2.23694pt too wide) in paragraph at lines 54--1
 []\T1/lmr/m/n/12 Ist ein Sys-tem so-wohl li-ne-ar als auch Zeit-Invarant, dann heiÿt es \T1/lmr/m/it/12 li-nea-res Zeit-Invariantes
  []
 
-[9]
+[8]
 chapter 3.
-(./chapters/convolution_techniques/sections/convolution.tex [10
+(./chapters/convolution_techniques/sections/convolution.tex [9
 
 ]
-<graphic/python/chapter3/compound_sinusoid.pdf, id=307, 722.7pt x 289.08pt>
+<graphic/python/chapter3/compound_sinusoid.pdf, id=225, 722.7pt x 289.08pt>
 File: graphic/python/chapter3/compound_sinusoid.pdf Graphic file (type pdf)
 <use graphic/python/chapter3/compound_sinusoid.pdf>
 Package pdftex.def Info: graphic/python/chapter3/compound_sinusoid.pdf  used on input line 64.
 (pdftex.def)             Requested size: 223.5574pt x 89.4242pt.
-<graphic/python/chapter3/comparison_compound_filtered.pdf, id=308, 722.7pt x 289.08pt>
+<graphic/python/chapter3/comparison_compound_filtered.pdf, id=226, 722.7pt x 289.08pt>
 File: graphic/python/chapter3/comparison_compound_filtered.pdf Graphic file (type pdf)
 <use graphic/python/chapter3/comparison_compound_filtered.pdf>
 Package pdftex.def Info: graphic/python/chapter3/comparison_compound_filtered.pdf  used on input line 73.
 (pdftex.def)             Requested size: 223.5574pt x 89.4242pt.
- [11]) (./chapters/convolution_techniques/sections/runtime_analysis.tex [12 <./graphic/python/chapter3/compound_sinusoid.pdf> <./graphic/python/chapter3/comparison_compound_filtered.pdf>]
+ [10]) (./chapters/convolution_techniques/sections/runtime_analysis.tex [11 <./graphic/python/chapter3/compound_sinusoid.pdf> <./graphic/python/chapter3/comparison_compound_filtered.pdf>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 53.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 53.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [13]) (./chapters/convolution_techniques/sections/real_world_LTI.tex) (./chapters/convolution_techniques/sections/IR_measurement.tex [14] [15])) (./chapters/implementation/implementation.tex [16]
+) [12]) (./chapters/convolution_techniques/sections/real_world_LTI.tex) (./chapters/convolution_techniques/sections/IR_measurement.tex [13] [14])) (./chapters/implementation/implementation.tex [15]
 chapter 4.
 (./chapters/implementation/sections/introImpl.tex
 
-LaTeX Warning: Citation `juce' on page 17 undefined on input line 24.
+LaTeX Warning: Citation `juce' on page 16 undefined on input line 24.
 
 ) (./chapters/implementation/sections/directConv.tex
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <17.28> not available
@@ -704,15 +693,15 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-) (./code/test/JuceTest/Source/convolution.cpp [17
+) (./code/test/JuceTest/Source/convolution.cpp [16
 
 ])
-<graphic/img/chapterImpl/LfzDirekteFaltung.png, id=502, 1120.185pt x 269.005pt>
+<graphic/img/chapterImpl/LfzDirekteFaltung.png, id=420, 1120.185pt x 269.005pt>
 File: graphic/img/chapterImpl/LfzDirekteFaltung.png Graphic file (type png)
 <use graphic/img/chapterImpl/LfzDirekteFaltung.png>
 Package pdftex.def Info: graphic/img/chapterImpl/LfzDirekteFaltung.png  used on input line 55.
 (pdftex.def)             Requested size: 447.11482pt x 107.37022pt.
- [18 <./graphic/img/chapterImpl/LfzDirekteFaltung.png>]) (./chapters/implementation/sections/conclusion.tex)) (./seminar_dsp_convolution.bbl [19]) [20
+ [17 <./graphic/img/chapterImpl/LfzDirekteFaltung.png>]) (./chapters/implementation/sections/conclusion.tex)) (./seminar_dsp_convolution.bbl [18]) [19
 
 ] (./seminar_dsp_convolution.aux)
  ***********
@@ -730,18 +719,18 @@ Package rerunfilecheck Info: File `seminar_dsp_convolution.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18306 strings out of 474222
- 341014 string characters out of 5748733
+ 18287 strings out of 474222
+ 340191 string characters out of 5748733
  2094975 words of memory out of 5000000
- 40111 multiletter control sequences out of 15000+600000
+ 40095 multiletter control sequences out of 15000+600000
  616898 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,20n,107p,11016b,2226s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,20n,107p,11016b,2228s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on seminar_dsp_convolution.pdf (20 pages, 503925 bytes).
+Output written on seminar_dsp_convolution.pdf (19 pages, 479415 bytes).
 PDF statistics:
- 718 PDF objects out of 1000 (max. 8388607)
- 467 compressed objects within 5 object streams
- 146 named destinations out of 1000 (max. 500000)
- 182 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 634 PDF objects out of 1000 (max. 8388607)
+ 448 compressed objects within 5 object streams
+ 143 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 
