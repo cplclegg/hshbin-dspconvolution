@@ -297,6 +297,19 @@ INPUT chapters/convolution_techniques/convolution_techniques.tex
 INPUT ./chapters/convolution_techniques/sections/convolution.tex
 INPUT ./chapters/convolution_techniques/sections/convolution.tex
 INPUT chapters/convolution_techniques/sections/convolution.tex
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr6.tfm
+INPUT ./graphic/python/chapter3/compound_sinusoid.pdf
+INPUT ./graphic/python/chapter3/compound_sinusoid.pdf
+INPUT ./graphic/python/chapter3/compound_sinusoid.pdf
+INPUT ./graphic/python/chapter3/compound_sinusoid.pdf
+INPUT ./graphic/python/chapter3/compound_sinusoid.pdf
+INPUT ./graphic/python/chapter3/comparison_compound_filtered.pdf
+INPUT ./graphic/python/chapter3/comparison_compound_filtered.pdf
+INPUT ./graphic/python/chapter3/comparison_compound_filtered.pdf
+INPUT ./graphic/python/chapter3/comparison_compound_filtered.pdf
+INPUT ./graphic/python/chapter3/comparison_compound_filtered.pdf
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT ./chapters/convolution_techniques/sections/real_world_LTI.tex
 INPUT ./chapters/convolution_techniques/sections/real_world_LTI.tex
 INPUT chapters/convolution_techniques/sections/real_world_LTI.tex
@@ -334,7 +347,6 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT code/test/JuceTest/Source/convolution.cpp
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr10.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT ./graphic/img/chapterImpl/LfzDirekteFaltung.png
 INPUT ./graphic/img/chapterImpl/LfzDirekteFaltung.png
 INPUT ./graphic/img/chapterImpl/LfzDirekteFaltung.png
@@ -349,6 +361,7 @@ INPUT seminar_dsp_convolution.bbl
 INPUT seminar_dsp_convolution.aux
 INPUT ./seminar_dsp_convolution.out
 INPUT ./seminar_dsp_convolution.out
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb

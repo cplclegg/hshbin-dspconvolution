@@ -15,16 +15,16 @@ Wobei:
     \item[$M$]: Länge der Impulsantwort 
 \end{itemize}
 
-Für die konkrete Umsetzung als Programm nutzen wir die Sprache \textit{C++}.
+Für die konkrete Umsetzung als Programm wird hier die Sprache \textit{C++} genutzt.
 Es sollen zuerst die diskreten Abtastwerte der jeweiligen Audiodateien in Arrays
 geladen werden. Danach soll die Faltung durchgeführt und anschließend das Ergebnis als neue
 Audiodatei im Hintergrundspeicher abgelegt werden.
 
-Für das Laden und speichern von Audiodateien im .wav-Format nutzen wir ein bekanntes Framework
+Für das Laden und speichern von Audiodateien im .wav-Format dient ein bekanntes Framework
 namens \textit{JUCE} \cite{juce}.
 \textit{JUCE} bietet noch sehr viele weitere Funktionalitäten, wie bspw. Klassen
 zum Entwurf von Benutzeroberflächen oder Schnittstellen zur Entwicklung von \textit{Plug-ins},
 die direkt in Programmen wie \textit{Cubase} eingebunden werden können.
 Die Implementierung solcher Anwendungen würden hierbei jedoch absolut den Rahmen sprengen, weshalb
-wir uns hier lediglich auf die Faltung an sich beschränken.
+sich im folgenden auf die Umsetzung der Faltung selbst beschränkt wird.
 Bei Interesse sei also hiermit auf die offizielle Website und Dokumentation von \textit{JUCE} verwiesen: \cite{juce}.
