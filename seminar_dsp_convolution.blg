@@ -8,50 +8,50 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bibliography/bibl.bib
+Warning--I didn't find a database entry for "juce"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--to sort, need author or key in juce
 Warning--empty journal in farina2000
 Warning--empty journal in farina2007a
 Warning--empty journal in farina2007b
-You've used 12 entries,
+You've used 11 entries,
             3368 wiz_defined-function locations,
-            766 strings with 7339 characters,
-and the built_in function-call counts, 5813 in all, are:
-= -- 609
-> -- 197
+            763 strings with 7315 characters,
+and the built_in function-call counts, 5489 in all, are:
+= -- 576
+> -- 195
 < -- 6
 + -- 60
 - -- 58
-* -- 320
-:= -- 839
-add.period$ -- 40
-call.type$ -- 12
-change.case$ -- 69
-chr.to.int$ -- 11
-cite$ -- 17
-duplicate$ -- 194
-empty$ -- 537
+* -- 306
+:= -- 810
+add.period$ -- 38
+call.type$ -- 11
+change.case$ -- 65
+chr.to.int$ -- 10
+cite$ -- 14
+duplicate$ -- 182
+empty$ -- 492
 format.name$ -- 74
-if$ -- 1470
+if$ -- 1374
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 14
-newline$ -- 66
+newline$ -- 62
 num.names$ -- 33
-pop$ -- 143
+pop$ -- 129
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 76
 quote$ -- 0
-skip$ -- 414
+skip$ -- 384
 stack$ -- 0
-substring$ -- 205
-swap$ -- 24
+substring$ -- 197
+swap$ -- 23
 text.length$ -- 10
 text.prefix$ -- 5
 top$ -- 0
-type$ -- 84
-warning$ -- 4
+type$ -- 76
+warning$ -- 3
 while$ -- 37
-width$ -- 16
-write$ -- 161
+width$ -- 15
+write$ -- 151
 (There were 4 warnings)

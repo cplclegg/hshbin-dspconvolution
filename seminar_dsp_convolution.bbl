@@ -21,10 +21,6 @@ Martin Holters, Tobias Corbach, and Udo Zölzer.
 \newblock Impulse {Response} {Measurement} {Techniques} and their {Applicability} in the {Real} {World}.
 \newblock In {\em Proc. of the 12th {Int}. {Conference} on {Digital} {Audio} {Effects}}, Como, Italy, September 2009.
 
-\bibitem[juc25]{juce}
-Juce, 2025.
-\newblock URL: \url{https://juce.com}.
-
 \bibitem[Lyo10]{lyons2010}
 Richard~G. Lyons.
 \newblock {\em Understanding Digital Signal Processing}.

@@ -10,6 +10,7 @@
 #include <string>
 #include <memory>
 #include <vector>
+#include <complex>
 
 //==============================================================================
 void normalizeSamples(std::vector<float>& samples) {
@@ -104,3 +105,5 @@ int main (int argc, char* argv[])
 
     return 0;
 }
+
+void convolute
