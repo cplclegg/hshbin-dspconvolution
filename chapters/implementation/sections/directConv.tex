@@ -1,7 +1,7 @@
 \section{Implementierung in \textit{C++}}
 \label{sec:implementation}
 
-Der folgende Quellcodeausschnitt zeigt eine Implementierung der direkten, diskreten Faltung
+Der folgende Quellcodeausschnitt zeigt eine Implementierung der direkten, diskreten Convolution
 nach Summenformel: \ref{eq:directConv}
 
 % Farben für Code definieren
@@ -31,7 +31,7 @@ nach Summenformel: \ref{eq:directConv}
 }
 
 \lstinputlisting
-[language=C++, linerange={20-38}, caption={Grundalgorithmus der Faltung im Zeitbereich},
+[language=C++, linerange={20-38}, caption={Grundalgorithmus der Convolution im Zeitbereich},
 label={lst:directConvolution}
 ]
 {code/test/JuceTest/Source/convolution.cpp}
@@ -45,7 +45,7 @@ in Zeilen 9 bis 16 umgesetzt. In manchen Schleifeniterationen kommt es dazu, das
 kleiner als null wird oder die Länge des Eingangssignals übersteigt. Diese Fälle werden in Zeile 11 geprüft und
 ggf. wird die jeweilige Iteration der Schleife übersprungen.
 
-Diese Vorgehensweise ist unter Kenntnis der diskreten Faltungslgeichung \ref{eq:directConv}
+Diese Vorgehensweise ist unter Kenntnis der diskreten Gleichung der Convolution \ref{eq:directConv}
 leicht nachzuvollziehen, weil sie hier direkt in Code umgesetzt wird.
 Es gibt aber hinsichtlich der Nutzung in der Praxis ein großes Problem, das durch das folgende
 Bildschirmfoto unterstrichen wird:
@@ -59,7 +59,7 @@ Bildschirmfoto unterstrichen wird:
 \end{figure}
 
 Das Ergebnis der Messung, die in Abbildung \ref{img:LfzMessungDirekteFaltung} gezeigt wird,
-bezieht sich auf die Faltung eines 10-sekündigen Gitarrensignals (416.960 Abtastungen) mit einer Impulsantwort von
+bezieht sich auf die Convolution eines 10-sekündigen Gitarrensignals (416.960 Abtastungen) mit einer Impulsantwort von
 5 Sekunden (176.584 Abtastungen). Ergebnis ist ein Halleffekt auf der Gitarre.
 Wie an der Messung zu sehen, dauerte die Berechnung des 15-sekündigen Resultats fast ganze 9 Minuten an.
 Diese Dauer ergibt in Anbetracht der zweifach verschachtelten Schleife und der Menge an Abtastwerten durchaus Sinn.
@@ -74,4 +74,4 @@ Schleife an, dann ergibt sich folgende Laufzeitklasse:
 Das entspricht speziell in diesem Experiment ausmultipliziert 104.805.076.176 Berechnungen, die der Prozessor also für ein
 15-sekündiges Audiosignal ausführen muss.
 Eine solche Laufzeit ist für den Gebrauch in der Praxis nicht hinnehmbar und der Grund, weshalb Berechnungen
-von Faltungssummen lange Zeit ausschließlich in der Forschung ihren Platz fanden \cite[Kap. 4]{lyons2010}.
+der diskreten Convolution lange Zeit ausschließlich in der Forschung ihren Platz fanden \cite[Kap. 4]{lyons2010}.

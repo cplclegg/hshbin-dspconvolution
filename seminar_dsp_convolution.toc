@@ -2,24 +2,24 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{4}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Abtasttheorem}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Zeit- und Frequenzdomäne}{6}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Nyquist-Shannon Theorem}{7}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Signale und Systeme}{8}{section.2.4}%
-\contentsline {paragraph}{\nonumberline Signale}{8}{paragraph*.3}%
+\contentsline {section}{\numberline {2.2}Zeit- und Frequenzdomäne}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Nyquist-Shannon Theorem}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Signale und Systeme}{7}{section.2.4}%
+\contentsline {paragraph}{\nonumberline Signale}{7}{paragraph*.3}%
 \contentsline {paragraph}{\nonumberline Der Einheitsimpuls}{8}{paragraph*.5}%
 \contentsline {paragraph}{\nonumberline Systeme}{8}{paragraph*.7}%
-\contentsline {paragraph}{\nonumberline Lineare Zeit-Invariante Systeme (LTI)}{9}{paragraph*.9}%
-\contentsline {chapter}{\numberline {3}Faltungsbasierte Verfahren in der digitalen Audiobearbeitung}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Faltung (Convolution)}{10}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Das Convolution-Theorem}{12}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Laufzeitanalyse}{13}{section.3.2}%
-\contentsline {section}{\numberline {3.3}LTI-Systeme in der realen Welt}{14}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Techniken zur Messung von Raum-Impulsantworten}{15}{section.3.4}%
-\contentsline {paragraph}{\nonumberline Time Delay Spectrometry (TDS)}{15}{paragraph*.11}%
-\contentsline {paragraph}{\nonumberline Minimum Length Sequence (MLS)}{16}{paragraph*.13}%
-\contentsline {paragraph}{\nonumberline Exponential/Logarithmic Sine Sweep (ESS/LSS)}{16}{paragraph*.15}%
-\contentsline {chapter}{\numberline {4}Digitale Audiobearbeitung: Implementierung der Faltung}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Einleitung}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Implementierung in \textit {C++}}{17}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Fazit und Ausblick auf FFT}{19}{section.4.3}%
+\contentsline {paragraph}{\nonumberline Lineare Zeit-Invariante Systeme (LTI)}{8}{paragraph*.9}%
+\contentsline {chapter}{\numberline {3}Faltungsbasierte Verfahren in der digitalen Audiobearbeitung}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Faltung (Convolution)}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Das Convolution-Theorem}{11}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Laufzeitanalyse}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}LTI-Systeme in der realen Welt}{13}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Techniken zur Messung von Raum-Impulsantworten}{14}{section.3.4}%
+\contentsline {paragraph}{\nonumberline Time Delay Spectrometry (TDS)}{14}{paragraph*.11}%
+\contentsline {paragraph}{\nonumberline Minimum Length Sequence (MLS)}{15}{paragraph*.13}%
+\contentsline {paragraph}{\nonumberline Exponential/Logarithmic Sine Sweep (ESS/LSS)}{15}{paragraph*.15}%
+\contentsline {chapter}{\numberline {4}Digitale Audiobearbeitung: Implementierung der Convolution}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Einleitung}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Implementierung in \textit {C++}}{16}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Fazit und Ausblick auf FFT}{18}{section.4.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
