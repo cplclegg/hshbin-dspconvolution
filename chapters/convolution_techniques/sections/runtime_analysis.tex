@@ -54,8 +54,8 @@ Zeitdomäne algorithmisch aufzeigt:
 ]
 Algorithm directConvolution(inSignal, N, irSignal, M)
     outLen <- N + M - 1
-    for i <- 0 to outLen
-        for k <- 0 to M
+    for i <- 0 to outLen - 1
+        for k <- 0 to M - 1
             if i-k < 0 or n <= i-k
                 continue
             outSignal[i] <- outSignal[i] + irSignal[k] * inSignal[i-k]
@@ -102,7 +102,8 @@ Algorithm fftConvolution(inSignal, N, irSignal, M)
     outLen <- N + M - 1 //  O(1)
     fftLen <- outLen    //  O(1)
 
-    zeroPad(inSignal, fftLen) // zeroPad fuellt die Liste bis fftLen mit nullen: O(n)
+    // zeroPad() fuellt die Listen bis fftLen mit nullen auf
+    zeroPad(inSignal, fftLen) // O(n)
     zeroPad(irSignal, fftlen) // O(n)
 
     inSpectrum <- FFT(inSignal, N, fftLen)  // O(n log(n))
@@ -114,7 +115,8 @@ Algorithm fftConvolution(inSignal, N, irSignal, M)
 
     outTimeDomain <- IFFT(outSpectrum, fftLen)  // O(n log(n))
 
-    for i <- 0 to outLen - 1    // O(n)
+    // real() isoliert den Realteil des komplexen IFFT-Outputs
+    for i <- 0 to outLen - 1    // Insg. O(n)
         outSignal[i] <- real(outTime[i])
     done
 
@@ -128,8 +130,8 @@ dieser Länge mit Nullen aufgefüllt.
 Die Funktion FFT überführt die beiden Listen jeweils in ihre Frequenzdomäne.
 Anschließend folgt über die Länge von \textit{fftLen} eine Multipklikation jedes Frequenzwertes.
 
-Die Laufzeitklasse der FFT ist $\mathcal{O}(n \cdot log(n))$ \cite[Kap. 12] {smith1997}. Durch Addition aller anderen
+Die Laufzeitklasse der FFT ist $\mathcal{O}(N \cdot log(N))$ \cite[Kap. 12] {smith1997}. Durch Addition aller anderen
 Operationen ergibt sich eine Laufzeit von:
 \begin{equation}
-    \mathcal{O}(3(n \cdot log(n) + 3n + 2)) \in \mathcal{O}(n \cdot log(n))
+    \mathcal{O}(3(N \cdot log(N)) + 3N + 2) \in \mathcal{O}(N \cdot log(N))
 \end{equation}
