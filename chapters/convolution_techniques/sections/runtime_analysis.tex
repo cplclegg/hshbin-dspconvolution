@@ -89,3 +89,46 @@ Die Laufzeitklasse der direkten, diskreten Convolution beträgt also laut O-Nota
 \mathcal{O}(M \cdot N)
 \end{equation}
 
+Nun zur Faltung, per Multiplikation beider Signale innerhalb der Frequenzdomäne.
+Auch hier einmal der Algorithmus in Pseudocode:
+
+\begin{lstlisting}[
+    style=pseudocode,
+    caption={Grundalgorithmus der Faltung im Zeitbereich},
+    label={lst:directConvolution}
+]
+Algorithm fftConvolution(inSignal, N, irSignal, M)
+    outLen <- N + M - 1 //  O(1)
+    fftLen <- outLen    //  O(1)
+
+    zeroPad(inSignal, fftLen) // zeroPad fuellt die Liste bis fftLen mit nullen: O(n)
+    zeroPad(irSignal, fftlen) // O(n)
+
+    inSpectrum <- FFT(inSignal, N, fftLen)  // O(n log(n))
+    irSpectrum <- FFT(irSignal, M, fftLen)  // O(n log(n))
+
+    for f <- 0 to fftLen - 1    // Insg. O(n)
+        outSpectrum[f] <- inSpectrum[f] * irSpectrum[f]
+    done
+
+    outTimeDomain <- IFFT(outSpectrum, fftLen)  // O(n log(n))
+
+    for i <- 0 to outLen - 1    // O(n)
+        outSignal[i] <- real(outTime[i])
+    done
+
+    return outSignal
+\end{lstlisting}
+
+Dieser Algorithmus erhält als Parameter erneut die beiden Folgen der diskreten Signale
+des Eingangssignals und der Impulsantwort.
+Zuerst wird die Länge \textit{fftLen} des Ausgangssignals ermittelt und die beiden Listen mit bis zu
+dieser Länge mit Nullen aufgefüllt.
+Die Funktion FFT überführt die beiden Listen jeweils in ihre Frequenzdomäne.
+Anschließend folgt über die Länge von \textit{fftLen} eine Multipklikation jedes Frequenzwertes.
+
+Die Laufzeitklasse der FFT ist $\mathcal{O}(n \cdot log(n))$. Durch Addition aller anderen
+Operationen ergibt sich eine Laufzeit von:
+\begin{equation}
+    \mathcal{O}(3(n \cdot log(n) + 3n + 2)) \in \mathcal{O}(n \cdot log(n))
+\end{equation}
