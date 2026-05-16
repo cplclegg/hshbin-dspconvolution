@@ -1,0 +1,134 @@
+\section{Laufzeitanalyse}
+
+Im Folgenden werden die diskrete Faltung in der Zeitdomäne und die Variante der Faltung,
+basierend auf der Frequenzdomäne gegenübergestellt.
+
+Dazu betrachten wir zunächst folgenden Pseudocode, der die diskrete Faltung in der
+Zeitdomäne algorithmisch aufzeigt:
+
+% Farben für Code definieren
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% Eigene Sprache für Pseudocode
+\lstdefinelanguage{Pseudo}{
+    morekeywords={
+        algorithm, input, output, function, procedure,
+        if, then, else, end, while, do, for, foreach,
+        return, break, continue, repeat, until
+    },
+    sensitive=false,
+    morecomment=[l]{//},
+    morestring=[b]"
+}
+
+% Stil für Pseudocode
+\lstdefinestyle{pseudocode}{
+    language=Pseudo,
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    mathescape=true
+}
+
+\begin{lstlisting}[
+    style=pseudocode,
+    caption={Grundalgorithmus der Faltung im Zeitbereich},
+    label={lst:directConvolution}
+]
+Algorithm directConvolution(inSignal, N, irSignal, M)
+    outLen <- N + M - 1
+    for i <- 0 to outLen
+        for k <- 0 to M
+            if i-k < 0 or n <= i-k
+                continue
+            outSignal[i] <- outSignal[i] + irSignal[k] * inSignal[i-k]
+        done
+    done
+    return outSignal
+\end{lstlisting}
+
+Als Parameter erhält der Algorithmus der direkten Faltung zwei Listen.
+Die erste Liste enthält die Folge der diskreten Abtastungssignale des Eingangssignals.
+Dieses Signal hat den Betrag/ die Länge \textit{N}.
+Die zweite Liste enthält die diskreten Abtastungssignale der Impulsantwort und hat die Länge \textit{M}.
+Insgesamt hat die resultierende Folge eine Länge von $N + M - 1$.
+
+Über diese Länge iteriert dementsprechend die äußere Schleife.
+Die innere Schleife iteriert über die Länge $M$ der Impulsantwort.
+Die if-Abfrage der inneren Schleife prüft, ob im Laufe der Iterationen
+der Index des Eingangssignals 1 unterschreitet.
+Durch diese Abzweigung an Sezenarien ergibt sich eine Best-Case Laufzeit von
+\begin{equation}
+\mathcal{O}((N + M - 1) \cdot (M + 2)) = \mathcal{O}(M^2 + NM + M + 2N - 2)
+\end{equation}
+
+Laut Polynomregel fallen Terme niederer Ordnung weg. Daraus folgt:
+\begin{equation}
+    \mathcal{O}(M^2 + MN) \implies \mathcal{O}(M \cdot N)
+     , denn: N > M \implies N > M^2
+\end{equation}
+
+Die Laufzeitklasse der direkten, diskreten Convolution beträgt also laut O-Notation
+\begin{equation}
+\mathcal{O}(M \cdot N)
+\end{equation}
+
+Nun zur Faltung, per Multiplikation beider Signale innerhalb der Frequenzdomäne.
+Auch hier einmal der Algorithmus in Pseudocode:
+
+\begin{lstlisting}[
+    style=pseudocode,
+    caption={Grundalgorithmus der Faltung im Zeitbereich},
+    label={lst:directConvolution}
+]
+Algorithm fftConvolution(inSignal, N, irSignal, M)
+    outLen <- N + M - 1 //  O(1)
+    fftLen <- outLen    //  O(1)
+
+    zeroPad(inSignal, fftLen) // zeroPad fuellt die Liste bis fftLen mit nullen: O(n)
+    zeroPad(irSignal, fftlen) // O(n)
+
+    inSpectrum <- FFT(inSignal, N, fftLen)  // O(n log(n))
+    irSpectrum <- FFT(irSignal, M, fftLen)  // O(n log(n))
+
+    for f <- 0 to fftLen - 1    // Insg. O(n)
+        outSpectrum[f] <- inSpectrum[f] * irSpectrum[f]
+    done
+
+    outTimeDomain <- IFFT(outSpectrum, fftLen)  // O(n log(n))
+
+    for i <- 0 to outLen - 1    // O(n)
+        outSignal[i] <- real(outTime[i])
+    done
+
+    return outSignal
+\end{lstlisting}
+
+Dieser Algorithmus erhält als Parameter erneut die beiden Folgen der diskreten Signale
+des Eingangssignals und der Impulsantwort.
+Zuerst wird die Länge \textit{fftLen} des Ausgangssignals ermittelt und die beiden Listen mit bis zu
+dieser Länge mit Nullen aufgefüllt.
+Die Funktion FFT überführt die beiden Listen jeweils in ihre Frequenzdomäne.
+Anschließend folgt über die Länge von \textit{fftLen} eine Multipklikation jedes Frequenzwertes.
+
+Die Laufzeitklasse der FFT ist $\mathcal{O}(n \cdot log(n))$. Durch Addition aller anderen
+Operationen ergibt sich eine Laufzeit von:
+\begin{equation}
+    \mathcal{O}(3(n \cdot log(n) + 3n + 2)) \in \mathcal{O}(n \cdot log(n))
+\end{equation}
