@@ -2,12 +2,16 @@
 \label{sec:irl_lti}
 Die Eigenschaften von LTI-Systemen sind in der digitalen Audiobearbeitung besonders interessant, wo Realweltsysteme als LTI-System interpretiert
 und durch ihre Impulsantwort approximiert werden können.
-Ein bekannter Anwendungsfall ist der Faltungshall (Engl.: \textit{Convolution Reverb}), der das Nachhallverhalten eines Raumes durch Faltung einer in dem Raum
+Ein bekannter Anwendungsfall ist der Convolution Reverb, der das Nachhallverhalten eines Raumes durch Convolution eines Signal mit einer in dem Raum
 gemessenen Impulsantwort nachstellt. Die Akustik eines Raumes wird durch einen Schallimpuls angeregt, mit einem Mikrofon aufgenommen, und digital gespeichert. 
-Aus dem Messergebnis wird die Impulsantwort des Raums berechnet. Wird diese im Anschluss mit einem beliebigen Eingangssignal gefaltet, dann approximiert das
-Ergebnis die Anwendung der Transferfunktion des Raums auf das Eingangssignal.
+Aus dem Messergebnis wird die Impulsantwort des Raums berechnet. Eine Convolution der Impulsantwort mit einem beliebigen Eingangssignal approximiert das
+Ergebnis die Anwendung der Transferfunktion des Raums auf das Eingangssignal und resultiert in einem Halleffekt, der dem im gemessenen Raum vorhandenen Nachhallverhalten entspricht.
 Der Raum selbst weist lineare Eigenschaften auf, die eingesetzten Schallwandler und
 Signalverstärker verursachen aber leichte nonlineare Verzerrungen. Die auf die Schallwandlung folgende Ausbreitung durch 
 die Raumluft ist widerum nicht vollständig Zeit-Invariant \cite{farina2000,farina2007a,prawda2024}. 
-Durch geeignete Messverfahren in Kombination mit entsprechenden Verfahren zur Berechnung der Impulsantwort (\textit{Entfaltung}, engl. \textit{Deconvolution}) können auch Systeme mit leicht
+Durch geeignete Messverfahren in Kombination mit entsprechenden Verfahren zur Berechnung der Impulsantwort (\textit{Deconvolution}) können auch Systeme mit leicht
 nonlinearen und Zeit-Varianten Eigenschaften vollständig charakterisiert werden \cite{farina2000,farina2007a}. 
+Neben dem eher spektakulären Anwendungsfall des Convolution Reverbs sind auf Impulsantworten und Convolution basierende Verfahren in der
+digitalen Signalverarbeitung allgegenwärtig. Sie kommen auch bei der qualitativen Messung von Audio-Equipment, etwa der Frequenzgangbestimmung
+zum Einsatz. Genauso werden Impulsantworten von Lautsprechersystemen in der Simulation von Gitarrenverstärkern verwendet, um den Einfluss
+verschiedener an Verstärker angeschlossener Lautsprecherkabinette auf das Signal zu simulieren. 

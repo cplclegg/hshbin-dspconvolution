@@ -1,4 +1,4 @@
-\section{Techniken zur Messung von Raum-Impulsantworten}
+\section{Messung von Raum-Impulsantworten}
 \label{sec:ir_msrmt}
 Um die akustischen Eigenschaften eines Raumes in Form einer Impulsantwort zu messen, wird der Raum
 durch einen das gesamte abzubildende Frequenzspektrum umfassenden Messton angeregt \cite{smpm2001}.
@@ -10,20 +10,26 @@ In der Vergangenheit wurden oft pulsive Schallquellen genutzt \cite{farina2007b}
 haben sich zunächst die Maximum-Length-Sequence (kurz \textit{MLS}), einem digital erzeugen Rauschen, und die Time Delay Spectrometry (kurz \textit{TDS}),
 einem linearen Sinus-Sweep, als Messtöne durchgesetzt. Mit diesen Methoden konnten verbesserter Rauschabstand und flachere Frequenzgänge der Impulsantworten erzielt werden \cite{farina2007b}.
 Heutzutage wird vermehrt mit Messverfahren mit exponentiellen/logarithmischen Sinus-Sweeps (kurz \textit{ESS/LSS}) gearbeitet.
-Diese Verfahren ermöglichen verbesserte Abbildung der gemessenen Systeme besonders bei Vorhandensein von Nonlinearen oder Zeit-Varianten Eigenschaften \cite{farina2007b}.
+Durch die verbesserte Abbildung gemessener Systeme bei Vorhandensein von nonlinearen oder zeitvarianten Eigenschaften sind ESS/LSS-basierte Verfahren die bevorzugte Messmethode \cite{farina2007b}.
 
-\paragraph{Time Delay Spectrometry (TDS)}
 TDS-basierte Messverfahren nutzen einen Sinus-Sweep, bei dem die Frequenz des Messsignals über die Messdauer linear durch den zu messenden
-Frequenzbereich verändert wird. TDS-Verfahren sind eher für die Messung kurzer Impulsantworten geeignet, etwa denen von Lautsprecher-Systemen \cite{farina2000, holters2009}. 
-\paragraph{Minimum Length Sequence (MLS)}
+Frequenzbereich verändert wird. TDS-Verfahren sind eher für die Messung kurzer Impulsantworten geeignet, etwa denen von Lautsprecher-Systemen \cite{farina2000, holters2009}.
+
 MLS-basierte Messverfahren nutzen periodische Sequenzen von binären Ziffern, die auch als Pseudo-Random Noise bezeichnet werden.
-MLS übertragen nur wenig Energie in kurzen Impulsen. Als Ausgleich werden viele Messungen
-vorgenommen und das Ergebnise gemittelt. Unter Anwendung entsprechender Prozesse weist das Ergebnis einer MLS-Messung einen besseren Rauschabstand auf, als TDS-Messungen \cite{rife1989}.
-Allerdings sind MLS-basierte Messverfahren sehr anfällig gegenüber Nonlinearitäten im gemessenen System und benötigen somit besondere Sorgfalt beim Einstellen der Messpegel \cite{holters2009}.
-\paragraph{Exponential/Logarithmic Sine Sweep (ESS/LSS)}
-ESS/LSS-basierte Messverfahren nutzen exponentielle Sinus-Sweeps, bei denen die momentäre Frequenz sich in Abhängigkeit der Zeit exponentiell verändert.
-Bei MLS- bzw. TDS-basierten Verfahren auftretende Artefake auftretende Artefakte können durch ein von \cite{farina2000} beschriebenes Entfaltungs-Verfahren einfach von der IR getrennt werden können.
-Unter Anwendung dieser Methodik sind ESS/LSS-Verfahren die geeignetsten Messverfahren für die Messung der Impulsantworten von Räumen.
+Oft werden mehrere Messungen vorgenommen und die Ergebnisse gemittelt. So erzielen MLS-Messungen bessere Rauschabstände als TDS-Messungen  \cite{rife1989}.
+MLS-basierte Messverfahren sind jedoch sehr anfällig gegenüber Nonlinearitäten im gemessenen System \cite{holters2009}.
+
+ESS/LSS-basierte Messverfahren nutzen Sinus-Sweeps, bei denen die Frequenz sich in Abhängigkeit der Zeit exponentiell verändert. 
+
+Auftretende Artefakte können bei ESS/LSS-Messungen durch ein von \cite{farina2000} beschriebenes Deconvolution-Verfahren einfach von der IR getrennt werden.
+Dabei wird ein zum verwendeten Messton inverses Signal genutzt, welches so berechnet wird, dass eine Convolution des Messtons mit dem inversen Signal einen Einheitsimpuls erzeugt.
+Convolution dieses inversen Signals mit der Aufnahme des Raumschalls isoliert nicht nur die Impulsantwort, sondern verschiebt auch durch nonlineare Verzerrungen im Messystem
+erzeugte Artefakte in der Zeitdomäne auf einen Zeitpunkt vor der eigentlichen Impulsantwort. Dadurch wird es möglich, diese Artefakte von der eigentlich Impulsantwort
+zu trennen, bevor die Impulsantwort zur Nachbildung des Raumhalls verwendet wird \cite{farina2000}. 
+
+Die Anwendung der so gemessenen Impulsantwort auf ein beliebiges Eingangssignal
+zur Erzeugung eines Convolution Reverbs erfolgt durch Convolution des Eingangssignals mit der Impulsantwort mittels eines der in \ref{sec:runtime_analysis} besschriebenen
+Algorithmen, oder einer für Echtzeitanwendungen angepassten Variante des FFT-basierten Convolution-Algorithmus.
 
 
 
