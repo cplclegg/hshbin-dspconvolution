@@ -1,7 +1,7 @@
 \section{Einleitung}
 \label{sec:introimpl}
 
-In der folgenden Sektion wir nun das Wissen aus den vorherigen Kapiteln genutzt und
+In der folgenden Sektion wird nun das Wissen aus den vorherigen Kapiteln genutzt und
 eine Convolution zweier Audiosignale durchgeführt.
 Dafür wird die die zuvor vorgestellte Gleichung der diskreten Convolution
 angewendet \ref{sec:convolution}:
@@ -12,8 +12,8 @@ angewendet \ref{sec:convolution}:
 \end{equation}
 Wobei:
 \begin{itemize}
-    \item[$n$]: Folgenindex (Maximum ist Länge des Ausgangssignals)
-    \item[$M$]: Länge der Impulsantwort
+    \item[$n$]: Folgenindex (Maximum ist Länge des Ausgangssignals),
+    \item[$M$]: Länge der Impulsantwort.
 \end{itemize}
 
 Für die konkrete Umsetzung als Programm wird hier die Sprache \textit{C++} genutzt.
@@ -21,3 +21,5 @@ Es sollen zuerst die diskreten Abtastwerte der jeweiligen Audiodateien in Arrays
 geladen werden. Danach soll die Convolution durchgeführt und anschließend das Ergebnis als neue
 Audiodatei im Hintergrundspeicher abgelegt werden.
 
+Für das Laden und speichern von Audiodateien im .wav-Format wird hier das
+bekannte Framework \textit{JUCE} genutzt.
