@@ -4,8 +4,8 @@ Um die akustischen Eigenschaften eines Raumes in Form einer Impulsantwort zu mes
 durch einen das gesamte abzubildende Frequenzspektrum umfassenden Messton angeregt \cite{smpm2001}.
 Der im Raum resultierende Raumschall wird aufgenommen.
 Das aufgenommene Signal ist das Ergebnis der Transferfunktion des gemessenen Raumes,
-angewandt auf den Messton. Da Raumhall-Effekte sich wie in \ref{sec:irl_lti} dargestellt durch ihre Impulsantwort annähern lassen, kann die IR des Raumes
-aus diesem Signal berechnet werden \cite{novak2016}. Die Qualität der gemessenen IR ist von der Beschaffenheit des Signals, mit dem der Raum angegeregt wird, abhängig.
+angewandt auf den Messton. Da Raumhall-Effekte sich wie in \ref{sec:irl_lti} dargestellt durch ihre Impulsantwort annähern lassen, kann die Impulsantwort des Raumes
+aus diesem Signal berechnet werden \cite{novak2016}. Die Qualität der gemessenen Impulsantwort ist von der Beschaffenheit des Signals, mit dem der Raum angegeregt wird, abhängig.
 In der Vergangenheit wurden oft pulsive Schallquellen genutzt \cite{farina2007b}, etwa Schüsse oder platzende Luftballons. Mit der steigenden Verbreitung digitaler Systeme
 haben sich zunächst die Maximum-Length-Sequence (kurz \textit{MLS}), einem digital erzeugen Rauschen, und die Time Delay Spectrometry (kurz \textit{TDS}),
 einem linearen Sinus-Sweep, als Messtöne durchgesetzt. Mit diesen Methoden konnten verbesserter Rauschabstand und flachere Frequenzgänge der Impulsantworten erzielt werden \cite{farina2007b}.
@@ -21,7 +21,7 @@ MLS-basierte Messverfahren sind jedoch sehr anfällig gegenüber Nonlinearitäte
 
 ESS/LSS-basierte Messverfahren nutzen Sinus-Sweeps, bei denen die Frequenz sich in Abhängigkeit der Zeit exponentiell verändert. 
 
-Auftretende Artefakte können bei ESS/LSS-Messungen durch ein von \cite{farina2000} beschriebenes Deconvolution-Verfahren einfach von der IR getrennt werden.
+Auftretende Artefakte können bei ESS/LSS-Messungen durch ein von \cite{farina2000} beschriebenes Deconvolution-Verfahren einfach von der Impulsantwort getrennt werden.
 Dabei wird ein zum verwendeten Messton inverses Signal genutzt, welches so berechnet wird, dass eine Convolution des Messtons mit dem inversen Signal einen Einheitsimpuls erzeugt.
 Convolution dieses inversen Signals mit der Aufnahme des Raumschalls isoliert nicht nur die Impulsantwort, sondern verschiebt auch durch nonlineare Verzerrungen im Messystem
 erzeugte Artefakte in der Zeitdomäne auf einen Zeitpunkt vor der eigentlichen Impulsantwort. Dadurch wird es möglich, diese Artefakte von der eigentlich Impulsantwort
