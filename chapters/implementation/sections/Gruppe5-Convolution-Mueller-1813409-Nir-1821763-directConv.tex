@@ -66,10 +66,11 @@ Diese Dauer ergibt in Anbetracht der zweifach verschachtelten Schleife und der M
 Schaut man sich im Quellcode \ref{lst:directConvolution} die Anzahl der Schleifendurchläufe, jew. von innerer und äußerer
 Schleife an, dann ergibt sich folgende Laufzeitklasse:
 \begin{equation}
-\mathcal{O}(N \cdot M) \approx \mathcal{O}(n^2)
+\mathcal{O}(N \cdot M)
 \label{eq:LfzDirekteFaltung}
 \end{equation}
-\textit{N} sei hierbei die Länge des Ausgangssignals und \textit{M} die Länge der Impulsantwort
+\textit{N} sei hierbei die Länge des Ausgangssignals und \textit{M} die Länge der Impulsantwort.
+Dies ist kongruent zu der in der Sektion \ref{sec:runtime_analysis} gezeigten Laufzeitkomplexität.
 
 Das entspricht speziell in diesem Experiment ausmultipliziert 104.805.076.176 Berechnungen, die der Prozessor also für ein
 15-sekündiges Audiosignal ausführen muss.
