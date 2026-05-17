@@ -56,7 +56,7 @@ plt.setp(markerline, marker='o', color='black', markersize=3)   # Die Punkte obe
 plt.setp(baseline, color='black', linewidth=0.5)             # Die Nulllinie
 
 # Beschriftung
-plt.title(f"Zusammengesetzter Sinus nach Anwendung des Moving Averagers")
+plt.title(f"Zusammengesetzter Sinus nach Anwendung des Moving Average Filters")
 plt.xlabel("Zeit in Sekunden")
 plt.ylabel("Signalwert")
 plt.grid(True, linestyle=':', alpha=0.6)
@@ -77,7 +77,7 @@ plt.setp(markerline, marker='o', color='black', markersize=3)   # Die Punkte obe
 plt.setp(baseline, color='black', linewidth=0.5)             # Die Nulllinie
 
 # Beschriftung
-plt.title(f"Koeffizienten des Moving Averagers als diskretes Signal interpretiert")
+plt.title(f"Koeffizienten des Moving Average Filters als diskretes Signal interpretiert")
 plt.xlabel("Zeit in Sekunden")
 plt.ylabel("Signalwert")
 plt.grid(True, linestyle=':', alpha=0.6)
@@ -131,7 +131,7 @@ legend_handles = [
 ax.legend(handles=legend_handles, loc='best')
 
 # Labels
-plt.title("Gegenüberstellung von Eingangs- und Ausgangssignal des Moving Averagers")
+plt.title("Gegenüberstellung von Eingangs- und Ausgangssignal des Moving Average Filters")
 plt.xlabel("Zeit in Sekunden")
 plt.ylabel("Signalwert")
 plt.grid(True, linestyle=':', alpha=0.6)

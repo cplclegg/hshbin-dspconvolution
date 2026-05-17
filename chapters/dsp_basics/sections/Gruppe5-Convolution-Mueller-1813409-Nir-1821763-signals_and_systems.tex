@@ -5,7 +5,7 @@ sowie die sogenannten Linearen Zeit-Invarianten Systeme.
 \paragraph{Signale}
 Ein Signal beschreibt, wie ein Parameter sich im Verhältnis zu einem anderen Parameter verändert.
 Signale übertragen Informationen über den Zustand oder das Verhalten eines physischen Systems. Mathematisch sind Signale
-Funktionen einer oder mehrerer unabhängiger Variablen. Die unabhängige Variable von Audiosignalen ist Zeit oder Frequenz \cite[Kap. 5]{smith1997}.
+Funktionen einer oder mehrerer unabhängiger Variablen. Die unabhängige Variable von Audiosignalen repräsentiert Zeit oder Frequenz \cite[Kap. 5]{smith1997}.
 Die unabhängige Variable kann stetig
 oder diskret sein, wobei stetige Signale oft als \textit{analoge} Signale bezeichnet werden \cite[Kap. 2]{oppenheim1999}. In Computergestützten Anwendungen werden 
 ausschließlich diskrete Signale verarbeitet.
@@ -25,14 +25,14 @@ Sie ist definiert als die Folge
         1,\,n=0
     \end{cases}
 \end{equation}
-Jedes diskrete Signal lässt sich als eine Summe von skalierten und verzögerten Einheitsimpulsen darstellen \cite[Kap. 2, Seite 11]{oppenheim1999}.
+Jedes diskrete Signal lässt sich als eine Summe von skalierten und verzögerten Einheitsimpulsen darstellen \cite[Kap. 2, S. 11]{oppenheim1999}.
 Im weiteren Verlauf wird die Einheits-Sample-Folge etwas vereinfacht als \textit{Einheitsimpuls} bezeichnet.
 \paragraph{Systeme}
 Ein System produziert als Antwort auf ein Eingangssignal ein Ausgangssignal \cite[Kap. 5]{smith1997}.
 Formal definiert \cite[Seite 16]{oppenheim1999} ein diskretes System als eine Transformation oder einen Operator, welche(r) ein Eingangssignal $x[n]$
 auf ein Ausgangssignal $y[n]$ abbildet. Die Funktion $T:x[n]\mapsto y[n]$ heißt \textit{Transferfunktion} des Systems.
 \paragraph{Lineare Zeit-Invariante Systeme (LTI)}
-Besonders signifikant sind in der Signalverarbeitung Lineare Zeit-Invariante Systeme. Damit ein System \textit{linear}
+Besonders signifikant für die Signalverarbeitung sind Lineare Zeit-Invariante Systeme. Damit ein System \textit{linear}
 heißt, muss es die beiden Eigenschaften
 \begin{equation}
     T(x_1[n]+x_2[n])=T(x_1[n])+T(x_2[n])=y_1[n]+y_2[n]
@@ -46,12 +46,12 @@ Daraus resultiert die \textit{Superposition} von Eingangssignalen:
 \begin{equation}
     x[n]=\sum_{k}a_kx_k[n]\Rightarrow y[n]=\sum_{k}a_ky_k[n]
 \end{equation}
-Wobei $x[n]$ das Eingangssignal, $y[n]$ das Ausgangssignal, und $a_k$ eine Folge von Konstanten bezeichnen \cite{oppenheim1999}.
+Wobei $x[n]$ das Eingangssignal, $y[n]$ das Ausgangssignal, und $a_k$ eine Folge von Konstanten bezeichnen \cite[Kap. 2]{oppenheim1999}
 
 Ein System heißt \textit{Zeit-Invariant}, wenn für jedes $n_0$ und jedes Eingangssignal $x$ mit den Werten
-$x'[n]=x[n-n_0]$ das entsprechende Ausgangssignal $y$ mit den Werten $y'[n]=y[n-n_0]$ erzeugt wird \cite{oppenheim1999}.
+$x'[n]=x[n-n_0]$ das entsprechende Ausgangssignal $y$ mit den Werten $y'[n]=y[n-n_0]$ erzeugt wird \cite[Kap. 2]{oppenheim1999}.
 
-Ist ein System sowohl linear als auch Zeit-Invarant, dann heißt es \textit{lineares Zeit-Invariantes System (LTI-System)}.
-Die Auswirkungen von LTI-Systeme auf ein beliebiges Eingangssignal können vollständig durch ihre Impulsantwort (engl.: \textit{Impulse Response}, kurz \textit{IR},
-siehe \ref{sec:convolution}) ausgedrückt werden \cite{oppenheim1999}.
-Die Impulsantwort eines Systems ist selbst ein diskretes Signal und wird mit $h[n]$ notiert \cite[Kapitel 2, Seite 23]{oppenheim1999}.
+Systeme mit beiden Eigenschaften heißen \textit{lineare Zeit-Invariante Systeme (LTI-Systeme)}.
+Die Auswirkungen von LTI-Systemen auf ein beliebiges Eingangssignal können vollständig durch ihre Impulsantwort (engl.: \textit{Impulse Response}, kurz \textit{IR},
+siehe \ref{sec:convolution}) ausgedrückt werden.
+Die Impulsantwort eines Systems ist selbst ein diskretes Signal und wird mit $h[n]$ notiert \cite[Kap. 2]{oppenheim1999}.
