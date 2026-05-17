@@ -1,7 +1,7 @@
 \section{Convolution} 
 \label{sec:convolution}
-In \ref{sec:signals_and_systems} wurde gezeigt, dass Lineare Zeit-invariante Systeme sich vollständig durch ihre Impulsantwort
-charakterisieren lassen. Hier werden Impulsantwort und die Convolution-Summe definiert.
+In Abschnitt \ref{sec:signals_and_systems} wurde gezeigt, dass Lineare Zeit-invariante Systeme sich vollständig durch ihre Impulsantwort
+charakterisieren lassen. In diesem Abschnitt werden die Impulsantwort und die Convolution-Summe definiert.
 
 \cite[S. 11]{oppenheim1999} formuliert zur Präzisierung der in \ref{sec:signals_and_systems} gezeigten Interpretation eines Signals als Summe skalierter und verzögerter Einheitsimpulse eine allgemeine Summenformel, mit der eine beliebige Folge $x[n]$ ausgedrückt wird:
 \begin{equation}
@@ -10,22 +10,21 @@ charakterisieren lassen. Hier werden Impulsantwort und die Convolution-Summe def
 \end{equation}
 Die mathematische Beschreibung der diskreten Convolution wird daraus wie folgt abgeleitet: 
 
-Sei $y[n]$ das Ausgangssignal eines LTI-Systems, resultierend aus einem Eingangssignal $x[n]$. Sei $h_k[n]$ die Antwort eines Systems
-auf einen Einheitsimpuls an Index $n=k$. Es gilt:
+Sei $y[n]$ das Ausgangssignal eines LTI-Systems, resultierend aus einem Eingangssignal $x[n]$. Sei $h_k[n]$ die Antwort des Systems
+auf einen Einheitsimpuls am Index $n=k$. Es gilt:
 
 \begin{equation}
     y[n]=T\left( \sum_{k=-\infty}^{\infty}x[k]\delta[n-k] \right).
 \end{equation}
-
 Nach Superposition (Linearität) gilt auch:
 
 \begin{equation}
     y[n]=\sum_{k=-\infty}^{\infty}x[k]T(\delta[n-k])=\sum_{k=-\infty}^{\infty}x[k]h_k[n].
     \label{eq:timevariant_equation}
 \end{equation}
-In Gleichung \ref{eq:timevariant_equation} ist $h_k[n]$ vom Laufindex der Summenfunktion abhängig. Es würden für die Berechnung der Summe also
+In Gleichung \ref{eq:timevariant_equation} ist $h_k[n]$ vom Laufindex der Summenfunktion abhängig. Für die Summenberechnung werden
 genauso viele System-Antworten benötigt, wie Summierungen ausgeführt werden.
-Unter Forderung der Zeitinvarianz des Systems fällt diese Eigenschaft weg:
+Unter Forderung der Zeitinvarianz des Systems fällt diese Eigenschaft jedoch weg:
 
 \begin{equation}
     y[n]=\sum_{k=-\infty}^{\infty}x[k]h[n-k].
@@ -34,13 +33,13 @@ Unter Forderung der Zeitinvarianz des Systems fällt diese Eigenschaft weg:
 Die Gleichung \ref{eq:convolution_sum} wird als \textit{Convolution-Summe} bezeichnet \cite[S. 22f]{oppenheim1999}. Als kürzere Schreibweise für 
 die Convolution zweier Signale $x$ und $h$ zu einem Ausgangssignal $y$ dient die Schreibweise $y[n]=x[n]*h[n]$.
 
-Das Prinzip kann anhand eines simplen Anwendungsfalls, dem Tiefpassfilter, versanschaulicht werden.
-Visualisierungen in diesem Abschnitt sind an die Grafiken von Richard Lyons \cite[Kap. 5]{lyons2011} angelehnt.
+Das Prinzip kann anhand des simplen Anwendungsfalls des Tiefpassfilters, veranschaulicht werden.
+Die Visualisierungen in diesem Abschnitt orientieren sich an denen von \cite[Kap. 5]{lyons2011}.
 Tiefpassfilter können in der diskreten Zeitdomäne durch ein von \cite[S. 220]{lyons2011} \textit{Moving Average Filter} genanntes System realisiert werden.
 Für jedes Sample $y[n]$ des Ausgangssignals wird ein Mittelwert der Eingangs-Samples $x[n-k]$ bis $x[n]$, $k\in\mathbb{N}$, gebildet.
 Tiefpassfilter dämpfen die höheren Frequenzen des Spektrums eines Signals. Moving Average Filter erzielen diesen Effekt
-durch stärkere Glättung schnellerer (höherfrequenter) Veränderungen in den gemittelten Werten im Vergleich zu langsameren (niedrigfrequenter) Veränderungen.
-Bei einer Berechnung des Mittelwerts von 5 Samples gilt
+durch stärkere Glättung schnellerer (höherfrequenter) Veränderungen in den gemittelten Werten im Vergleich zu langsameren (niedrigfrequenten) Veränderungen.
+Bei einer Berechnung des Mittelwerts von fünf Samples gilt
 \begin{equation}
     y[n]=\frac{1}{5}\sum_{k=0}^4x[n-k]\iff y[n]=\sum_{k=0}^4\frac{1}{5}x[n-k].
     \label{eq:mov_avg_filter}
@@ -48,18 +47,18 @@ Bei einer Berechnung des Mittelwerts von 5 Samples gilt
 \cite[S. 172]{lyons2011}.
 
 Die Summenformel zur Berechnung der Ausgangs-Samples dieses Moving Average Filters \ref{eq:mov_avg_filter} ähnelt der Convolution-Summe \ref{eq:convolution_sum}.
-Auffällige Unterschiede sind endliche Summierung und Verwendung eines festen Koeffizienten pro Summand.
-Der für jeden Summanden verwendete Koeffizient $\frac{1}{5}$ kann als diskretes Signal, bestehend aus 5 Samples, mit den Werten $\frac{1}{5}$ interpretiert werden:
+Auffällige Unterschiede sind die endliche Summierung und die Verwendung eines festen Koeffizienten pro Summand.
+Der für jeden Summanden verwendete Koeffizient $\frac{1}{5}$ kann als diskretes Signal, bestehend aus fünf Samples, mit den Werten $\frac{1}{5}$ interpretiert werden:
 \begin{equation}
     \label{eq:fir_convsum}
     y[n]=\sum_{k=0}^4h[k]x[n-k]\text{ mit }h=\left(\frac{1}{5},\,\frac{1}{5},\,\frac{1}{5},\,\frac{1}{5},\,\frac{1}{5}\right).
 \end{equation} \cite[S. 172 f]{lyons2011}.
 
 Die Summenformel \ref{eq:fir_convsum} ist eine endliche Convolution-Summe mit vertauschter Indizierung von Eingangs-Signal und Impulsantwort. Nach der
-kommutativen Eigenschaft der Convolution ist \ref{eq:fir_convsum} äquivalent zu \ref{eq:convolution_sum} \cite[Kap. 2]{oppenheim1999}. So konstruierte Filter werden \textit{Finite Impulse Response Filter},
-kurz \textit{FIR-Filter}, genannt. Die Filterkoeffizienten der Mittelwertberechnung bilden, wie die Notation als $h$ impliziert, die Impulsantwort einses Systems: eines
+kommutativen Eigenschaft der Convolution ist die Gleichung \ref{eq:fir_convsum} äquivalent zu \ref{eq:convolution_sum} \cite[Kap. 2]{oppenheim1999}. So konstruierte Filter werden \textit{Finite Impulse Response Filter},
+kurz \textit{FIR-Filter}, genannt. Die Filterkoeffizienten der Mittelwertberechnung bilden, wie die Notation als $h$ impliziert, die Impulsantwort eines Systems: nämlich eines
 Moving Average Filters. Aus Anwendung dieses konstruierten FIR-Filters auf einen Einheitspimpuls resultiert das diskrete Signal $h$ aus Gleichung \ref{eq:fir_convsum}.
-Die Wirkung des Moving Average Filters wird durch plotten von Ein- und Ausgangssignal anschaulich:
+Die Wirkung des Moving Average Filters wird durch das Plotten von Ein- und Ausgangssignal anschaulich:
 
 \begin{figure}[H]
     \centering
@@ -68,7 +67,7 @@ Die Wirkung des Moving Average Filters wird durch plotten von Ein- und Ausgangss
     \label{fig:comp_sinusoid}
 \end{figure}
 
-Die Anwendung des Moving Averager Filters resultiert in einer deutlichen Glättung des Signals, aber auch zu einer zeitlichen Verzögerung des Signals:
+Die Anwendung des Moving Averager Filters resultiert in einer deutlichen Glättung des Signals, führt aber auch zu einer zeitlichen Verzögerung des Signals:
 
 \begin{figure}[H]
     \centering
@@ -78,11 +77,11 @@ Die Anwendung des Moving Averager Filters resultiert in einer deutlichen Glättu
 \end{figure}
 
 Dieser FIR-Filter ist ein anschauliches Beispiel für den Prozess der Convolution. 
-Die Convolution-Summe selbst ist in allen Anwedungen von Convolution in der Signalverarbeitung gleich. In echten 
-Anwendungsfällen werden oft weit längere Impulsantworten und Signale verwendet. Das resultiert in weit mehr Summanden und Multiplikationen
+Die Convolution-Summe selbst ist in allen Anwendungen der Convolution in der Signalverarbeitung gleich. In echten 
+Anwendungsfällen werden jedoch oft weit längere Impulsantworten und Signale verwendet. Das resultiert in weit mehr Summanden und Multiplikationen
 pro berechnetem Ausgangs-Sample. Besonders in Echtzeitanwendungen, in denen eine hinreichend schnelle Berechnung der Ausgangssamples nötig ist, führt die direkte Berechnung von Convolution-Summen zu
-untragbaren Laufzeiten. Bei der häufigen Audio-Abtastrate von 44,1kHz bleiben für
-die Berechnung eines Blockes von 256 Ausgangs-Samples weniger als 6 Millisekunden. Für die praktische Anwendung von Convolution zur Abbildung von Systemen wird eine Lösung mit besserem Laufzeitverhalten genutzt.
+untragbaren Laufzeiten. Bei der häufigen Audio-Abtastrate von 44,1 kHz bleiben für
+die Berechnung eines Blocks von 256 Ausgangs-Samples weniger als 6 Millisekunden. Für die praktische Anwendung von Convolution zur Abbildung von Systemen wird desshalb eine Lösung mit besserem Laufzeitverhalten genutzt.
 Diese basiert auf dem Convolution-Theorem.
 
 \subsection{Das Convolution-Theorem}
