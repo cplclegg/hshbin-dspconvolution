@@ -3,7 +3,7 @@
 In \ref{sec:signals_and_systems} wurde gezeigt, dass Lineare Zeit-invariante Systeme sich vollständig durch ihre Impulsantwort
 charakterisieren lassen. Hier werden Impulsantwort und die Convolution-Summe definiert.
 
-\cite[Seite 11]{oppenheim1999} formuliert zur Präzisierung der in \ref{sec:signals_and_systems} gezeigten Interpratation eines Signals als Summe skalierter und verzögerter Einheitsimpulse eine allgemeine Summenformel, mit der eine beliebige Reihe $x[n]$ ausgedrückt wird:
+\cite[Seite 11]{oppenheim1999} formuliert zur Präzisierung der in \ref{sec:signals_and_systems} gezeigten Interpretation eines Signals als Summe skalierter und verzögerter Einheitsimpulse eine allgemeine Summenformel, mit der eine beliebige Folge $x[n]$ ausgedrückt wird:
 \begin{equation}
     x[n]=\sum_{k=-\infty}^\infty x[k]\delta[n-k]
     \label{eq:scaled_unit_sum}
@@ -39,7 +39,7 @@ Visualisierungen in diesem Abschnitt sind an die Grafiken von Richard Lyons \cit
 Tiefpassfilter können in der diskreten Zeitdomäne durch ein von \cite[Kapitel 5, Seite 220]{lyons2010} \textit{Moving Average Filter} genanntes System realisiert werden.
 Für jedes $n$-te Sample des Ausgangssignals wird ein Mittelwert aus mehreren Samples in der Umgebung des Samples an Index $n$ des Eingangssignals berechnet.
 Tiefpassfilter dämpfen die höheren Frequenzen des Spektrums eines Signals. Moving Average Filter erzielen diesen Effekt
-durch die stärkeren Glättung schnellerer (höherfrequenter) Veränderungen in den gemittelten Werten im Vergleich zu langsameren (niedrigfrequenter) Veränderungen.
+durch stärkere Glättung schnellerer (höherfrequenter) Veränderungen in den gemittelten Werten im Vergleich zu langsameren (niedrigfrequenter) Veränderungen.
 In der Signalverarbeitung werden oft Echtzeitberechnungen durchgeführt, daher werden Samples mit kleinerem Index für die 
 Durchschnittswertberechnung genutzt. Bei einer Berechnung des Mittelwerts von 5 Samples gilt
 \begin{equation}
