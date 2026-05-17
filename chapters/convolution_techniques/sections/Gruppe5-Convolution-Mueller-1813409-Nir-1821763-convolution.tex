@@ -35,8 +35,8 @@ Die Gleichung \ref{eq:convolution_sum} wird als \textit{Convolution-Summe} bezei
 die Convolution zweier Signale $x$ und $h$ zu einem Ausgangssignal $y$ dient die Schreibweise $y[n]=x[n]*h[n]$.
 
 Das Prinzip kann anhand eines simplen Anwendungsfalls, dem Tiefpassfilter, versanschaulicht werden.
-Visualisierungen in diesem Abschnitt sind an die Grafiken von Richard Lyons \cite[Kapitel 5]{lyons2010} angelehnt.
-Tiefpassfilter können in der diskreten Zeitdomäne durch ein von \cite[Kapitel 5, Seite 220]{lyons2010} \textit{Moving Average Filter} genanntes System realisiert werden.
+Visualisierungen in diesem Abschnitt sind an die Grafiken von Richard Lyons \cite[Kapitel 5]{lyons2011} angelehnt.
+Tiefpassfilter können in der diskreten Zeitdomäne durch ein von \cite[Kapitel 5, Seite 220]{lyons2011} \textit{Moving Average Filter} genanntes System realisiert werden.
 Für jedes $n$-te Sample des Ausgangssignals wird ein Mittelwert aus mehreren Samples in der Umgebung des Samples an Index $n$ des Eingangssignals berechnet.
 Tiefpassfilter dämpfen die höheren Frequenzen des Spektrums eines Signals. Moving Average Filter erzielen diesen Effekt
 durch die stärkeren Glättung schnellerer (höherfrequenter) Veränderungen in den gemittelten Werten im Vergleich zu langsameren (niedrigfrequenter) Veränderungen.
@@ -46,7 +46,7 @@ Durchschnittswertberechnung genutzt. Bei einer Berechnung des Mittelwerts von 5 
     y[n]=\frac{1}{5}\sum_{k=0}^4x[n-k]\iff y[n]=\sum_{k=0}^4\frac{1}{5}x[n-k].
     \label{eq:mov_avg_filter}
 \end{equation}
-\cite[Kapitel 5, Seite 172]{lyons2010}.
+\cite[Kapitel 5, Seite 172]{lyons2011}.
 
 Die Summenformel zur Berechnung der Ausgangs-Samples dieses Moving Average Filters \ref{eq:mov_avg_filter} ähnelt der Convolution-Summe \ref{eq:convolution_sum}.
 Auffällige Unterschiede sind endliche Summierung und Verwendung eines festen Koeffizienten pro Summand.
