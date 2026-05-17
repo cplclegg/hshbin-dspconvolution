@@ -9,15 +9,15 @@ Funktionen einer oder mehrerer unabhängiger Variablen. Die unabhängige Variabl
 Die unabhängige Variable kann stetig
 oder diskret sein, wobei stetige Signale oft als \textit{analoge} Signale bezeichnet werden \cite[Kap. 2]{oppenheim1999}. In Computergestützten Anwendungen werden 
 ausschließlich diskrete Signale verarbeitet.
-Der Definitionsbereich Diskreter Signale sind die natürlichen Zahlen. Diskrete Signale sind also mathematisch betrachtet Reihen. 
+Der Definitionsbereich Diskreter Signale sind die natürlichen Zahlen. Diskrete Signale sind also mathematisch betrachtet Folgen. 
 Signale $S:\mathbb{N}\mapsto\mathbb{Z}$ heißen \textit{digitale Signale} \cite[Kap. 2]{oppenheim1999}.
 Stetige Signale werden mit der unabhängigen Variable in runden Klammern notiert:
 $x(t)$ für ein stetiges Signal $x$ in Abhängigkeit von Zeit $t$.
 Diskrete Signale werden mit der unabhängigen Variable in eckigen Klammern notiert: $x[n]$ für ein diskretes Signal $x$,
 wobei $n$ den Index des betrachteten Funktionswerts bezeichnet \cite[Seite 9]{oppenheim1999}.
 \paragraph{Der Einheitsimpuls}
-Ein besonderes diskretes Signal ist die \textit{Einheits-Sample-Reihe}.
-Sie ist definiert als die Reihe
+Ein besonderes diskretes Signal ist die \textit{Einheits-Sample-Folge}.
+Sie ist definiert als die Folge
 \begin{equation}
     \delta[n]=
     \begin{cases}
@@ -26,7 +26,7 @@ Sie ist definiert als die Reihe
     \end{cases}
 \end{equation}
 Jedes diskrete Signal lässt sich als eine Summe von skalierten und verzögerten Einheitsimpulsen darstellen \cite[Kap. 2, Seite 11]{oppenheim1999}.
-Im weiteren Verlauf wird die Einheits-Sample-Reihe etwas vereinfacht als \textit{Einheitsimpuls} bezeichnet.
+Im weiteren Verlauf wird die Einheits-Sample-Folge etwas vereinfacht als \textit{Einheitsimpuls} bezeichnet.
 \paragraph{Systeme}
 Ein System produziert als Antwort auf ein Eingangssignal ein Ausgangssignal \cite[Kap. 5]{smith1997}.
 Formal definiert \cite[Seite 16]{oppenheim1999} ein diskretes System als eine Transformation oder einen Operator, welche(r) ein Eingangssignal $x[n]$
@@ -46,7 +46,7 @@ Daraus resultiert die \textit{Superposition} von Eingangssignalen:
 \begin{equation}
     x[n]=\sum_{k}a_kx_k[n]\Rightarrow y[n]=\sum_{k}a_ky_k[n]
 \end{equation}
-Wobei $x[n]$ das Eingangssignal, $y[n]$ das Ausgangssignal, und $a_k$ eine Reihe von Konstanten bezeichnen \cite{oppenheim1999}.
+Wobei $x[n]$ das Eingangssignal, $y[n]$ das Ausgangssignal, und $a_k$ eine Folge von Konstanten bezeichnen \cite{oppenheim1999}.
 
 Ein System heißt \textit{Zeit-Invariant}, wenn für jedes $n_0$ und jedes Eingangssignal $x$ mit den Werten
 $x'[n]=x[n-n_0]$ das entsprechende Ausgangssignal $y$ mit den Werten $y'[n]=y[n-n_0]$ erzeugt wird \cite{oppenheim1999}.

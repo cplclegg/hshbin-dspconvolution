@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Grupp5-Convolution-Mueller-1813409-Nir-1821763.aux
+The style file: alphaurl.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: bibliography/bibl.bib
+Warning--I didn't find a database entry for "juce"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty journal in farina2000
+Warning--empty journal in farina2007a
+Warning--empty journal in farina2007b
+You've used 11 entries,
+            3368 wiz_defined-function locations,
+            763 strings with 7361 characters,
+and the built_in function-call counts, 5489 in all, are:
+= -- 576
+> -- 195
+< -- 6
++ -- 60
+- -- 58
+* -- 306
+:= -- 810
+add.period$ -- 38
+call.type$ -- 11
+change.case$ -- 65
+chr.to.int$ -- 10
+cite$ -- 14
+duplicate$ -- 182
+empty$ -- 492
+format.name$ -- 74
+if$ -- 1374
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 14
+newline$ -- 62
+num.names$ -- 33
+pop$ -- 129
+preamble$ -- 1
+purify$ -- 76
+quote$ -- 0
+skip$ -- 384
+stack$ -- 0
+substring$ -- 197
+swap$ -- 23
+text.length$ -- 10
+text.prefix$ -- 5
+top$ -- 0
+type$ -- 76
+warning$ -- 3
+while$ -- 37
+width$ -- 15
+write$ -- 151
+(There were 4 warnings)
