@@ -1,17 +1,18 @@
 \section{LTI-Systeme in der realen Welt}
 \label{sec:irl_lti}
-Die Eigenschaften von LTI-Systemen sind in der digitalen Audiobearbeitung besonders interessant, wo Realweltsysteme als LTI-System interpretiert
+Die Eigenschaften von LTI-Systemen sind in der digitalen Audiobearbeitung besonders dann interessant, wenn Realweltsysteme als LTI-System interpretiert
 und durch ihre Impulsantwort approximiert werden können.
-Ein bekannter Anwendungsfall ist der Convolution Reverb, der das Nachhallverhalten eines Raumes durch Convolution eines Signal mit einer in dem Raum
-gemessenen Impulsantwort nachstellt. Die Akustik eines Raumes wird durch einen Schallimpuls angeregt, mit einem Mikrofon aufgenommen, und digital gespeichert. 
-Aus dem Messergebnis wird die Impulsantwort des Raums berechnet. Eine Convolution der Impulsantwort mit einem beliebigen Eingangssignal approximiert das
-Ergebnis die Anwendung der Transferfunktion des Raums auf das Eingangssignal und resultiert in einem Halleffekt, der dem im gemessenen Raum vorhandenen Nachhallverhalten entspricht.
+Ein bekannter Anwendungsfall ist der Convolution Reverb, der das Nachhallverhalten eines Raumes durch Convolution eines Signals mit einer im Raum
+gemessenen Impulsantwort nachstellt. Ddazu wird Akustik eines Raumes durch einen Schallimpuls angeregt, mit einem Mikrofon aufgenommen, und digital gespeichert. 
+Aus dem Messergebnis wird die Impulsantwort des Raums berechnet.
+Durch eine Convolution der Impulsantwort mit einem beliebigen Eingangssignalwird wird das Ergebnis der Anwendung der Transferfunktion des Raums
+auf das Eingangssignal approximiert, was zu einem Halleffekt führt, der dem im gemessenen Raum vorhandenen Nachhallverhalten entspricht.
 Der Raum selbst weist lineare Eigenschaften auf, die eingesetzten Schallwandler und
-Signalverstärker verursachen aber leichte nonlineare Verzerrungen. Die auf die Schallwandlung folgende Ausbreitung durch 
+Signalverstärker verursachen jedoch leichte nonlineare Verzerrungen. Die auf die Schallwandlung folgende Ausbreitung durch 
 die Raumluft ist widerum nicht vollständig Zeit-Invariant \cite{farina2000,farina2007a,prawda2024}. 
 Durch geeignete Messverfahren in Kombination mit entsprechenden Verfahren zur Berechnung der Impulsantwort (\textit{Deconvolution}) können auch Systeme mit leicht
 nonlinearen und Zeit-Varianten Eigenschaften vollständig charakterisiert werden \cite{farina2000,farina2007a}. 
 Neben dem gut nachvollziehbaren Anwendungsfall des Convolution Reverbs sind Verfahren, welche Impulsantworten und Convolution nutzen, in der
 digitalen Signalverarbeitung allgegenwärtig. Sie kommen auch bei der qualitativen Messung von Audio-Equipment, etwa der Frequenzgangbestimmung
-zum Einsatz. Genauso werden Impulsantworten von Lautsprechersystemen in der Simulation von Gitarrenverstärkern verwendet, um den Einfluss
+zum Einsatz. Ebenso werden Impulsantworten von Lautsprechersystemen in der Simulation von Gitarrenverstärkern verwendet, um den Einfluss
 verschiedener an Verstärker angeschlossener Lautsprecherkabinette auf das Signal zu simulieren. 

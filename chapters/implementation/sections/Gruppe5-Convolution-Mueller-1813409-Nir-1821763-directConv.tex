@@ -37,8 +37,8 @@ label={lst:directConvolution}
 {code/test/JuceTest/Source/convolution.cpp}
 
 Als Parameter werden im Quellcode \ref{lst:directConvolution} zwei Listen, nämlich jeweils die Folgen
-an normalisierten Abttaswerten des Eingangssignals und der Impulssantwort übergeben.
-Dadurch, dass die Beträge/Längen der Folgen bekannt sind, lässt sich in Zeilen 5 bis einschl. 8
+an normalisierten Abttaswerten des Eingangssignals und der Impulssantwort, übergeben.
+Dadurch, dass die Beträge/Längen der Folgen bekannt sind, lässt sich in den Zeilen 5 bis einschl. 8
 im Voraus die Länge der Ausgangssignalfolge nach $|y[n]| = |h[n]| + |x[n]| - 1$ berechnen und die Werte mit 0 initialisieren.
 Schließlich wird die Formel \ref{eq:directConv} in Form der verschachtelten Schleife
 in Zeilen 9 bis 16 umgesetzt. In manchen Schleifeniterationen kommt es dazu, dass der Index von $x[n - k]$
@@ -60,7 +60,7 @@ Es gibt aber hinsichtlich der Nutzung in der Praxis ein großes Problem, das dur
 Das Ergebnis der Messung, die in Abbildung \ref{img:LfzMessungDirekteFaltung} gezeigt wird,
 bezieht sich auf die Convolution eines 10-sekündigen Gitarrensignals (416.960 Abtastungen) mit einer Impulsantwort von
 5 Sekunden (176.584 Abtastungen). Ergebnis ist ein Halleffekt auf der Gitarre.
-Wie an der Messung zu sehen, dauerte die Berechnung des 15-sekündigen Resultats fast ganze 9 Minuten an.
+Wie an der Messung zu sehen ist, dauerte die Berechnung des 15-sekündigen Resultats fast ganze 9 Minuten an.
 Diese Dauer ergibt in Anbetracht der zweifach verschachtelten Schleife und der Menge an Abtastwerten durchaus Sinn.
 Schaut man sich im Quellcode \ref{lst:directConvolution} die Anzahl der Schleifendurchläufe, jew. von innerer und äußerer
 Schleife an, dann ergibt sich folgende Laufzeitklasse:
