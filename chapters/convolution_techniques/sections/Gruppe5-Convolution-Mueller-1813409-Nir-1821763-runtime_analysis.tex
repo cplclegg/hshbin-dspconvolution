@@ -1,10 +1,10 @@
 \section{Laufzeitanalyse}
 \label{sec:runtime_analysis}
 
-Im Folgenden werden die diskrete Faltung in der Zeitdomäne und die Variante der Faltung,
+Im Folgenden werden die diskrete Convolution in der Zeitdomäne und die Variante der Convolution,
 basierend auf der Frequenzdomäne gegenübergestellt.
 
-Dazu betrachten wir zunächst folgenden Pseudocode, der die diskrete Faltung in der
+Dazu betrachten wir zunächst folgenden Pseudocode, der die diskrete Convolution in der
 Zeitdomäne algorithmisch aufzeigt:
 
 % Farben für Code definieren
@@ -49,7 +49,7 @@ Zeitdomäne algorithmisch aufzeigt:
 
 \begin{lstlisting}[
     style=pseudocode,
-    caption={Grundalgorithmus der Faltung im Zeitbereich},
+    caption={Grundalgorithmus der Convolution in der Zeitdomäne},
     label={lst:directConvolution}
 ]
 Algorithm directConvolution(inSignal, N, irSignal, M)
@@ -66,7 +66,7 @@ Algorithm directConvolution(inSignal, N, irSignal, M)
     return outSignal
 \end{lstlisting}
 
-Als Parameter erhält der Algorithmus der direkten Faltung zwei Listen.
+Als Parameter erhält der Algorithmus der direkten Convolution zwei Listen.
 Die erste Liste enthält die Folge der diskreten Abtastungssignale des Eingangssignals.
 Dieses Signal hat den Betrag/ die Länge \textit{N}.
 Die zweite Liste enthält die diskreten Abtastungssignale der Impulsantwort und hat die Länge \textit{M}.
@@ -97,7 +97,7 @@ Auch hier der Algorithmus in Pseudocode:
 
 \begin{lstlisting}[
     style=pseudocode,
-    caption={Grundalgorithmus der Faltung im Zeitbereich},
+    caption={Grundalgorithmus der Convolution in der Zeitdomäne},
     label={lst:directConvolution}
 ]
 Algorithm fftConvolution(inSignal, N, irSignal, M)

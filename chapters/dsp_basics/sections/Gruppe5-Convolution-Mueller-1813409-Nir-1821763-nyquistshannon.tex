@@ -1,17 +1,11 @@
 \section{Nyquist-Shannon Theorem}
 \label{sec:nyquistshannon}
 
- Wie in \cite[Kap. 2]{lyons2010} beschrieben, gibt es für jede Folge an abgetasteten Werten unendlich viele
+ Wie in \cite[Kap. 2]{lyons2011} beschrieben, gibt es für jede Folge an abgetasteten Werten unendlich viele
  Möglichkeiten, dieses Signal zu interpretieren. Die ursprüngliche Frequenz des Signals wird periodisch und unendlich oft ober- und unterhalb
- der jeweiligen Frequenz gespiegelt (auch \textit{Aliasing} genannt) \cite[Kapitel 2]{lyons2010}. 
- Veranschaulicht in folgender Grafik:
+ der jeweiligen Frequenz gespiegelt (auch \textit{Aliasing} genannt) \cite[Kapitel 2]{lyons2011},
+ veranschaulicht in Abbildung \ref{fig:aliasing}.
 
- \begin{figure}[htbp]
-    \centering
-    \includegraphics[width = 0.5\textwidth, height=4cm]{graphic/python/chapter2/aliasing_vergleich.pdf}
-    \caption{Neben den beiden abgebildeten Kurven könnten unendlich viele weitere Kurven über die Abtastwerte gelegt werden}
-    \label{fig:aliasing}
- \end{figure}
 
  Mathematisch genau lässt sich dieses Phänomen wie folgt beschreiben:
  \begin{equation}
@@ -27,7 +21,7 @@
  \end{itemize}
  Die Faktoren $f_0$ und $(f_0 + kf_s)$ führen also zum gleichen Ergebnis an Signalwerten.
 
- Der mathematische Beweis dafür wird hier übersprungen, da es den Rahmen sprengen würde\cite[vgl. Kap 2]{lyons2010}
+ Der mathematische Beweis dafür wird hier übersprungen, da es den Rahmen sprengen würde\cite[vgl. Kap 2]{lyons2011}
  Um mit dieser Problematik umzugehen, bedient man sich der sog. \textit{Nyquist-Frequenz} oder auch \textit{Nyquist-Grenze}
  , die wie folgt definiert ist:
  \begin{equation}
@@ -36,5 +30,9 @@
  \end{equation}
  wobei $f_s$ wieder für die Abtastfrequenz steht.
 
-
- 
+ \begin{figure}[!htpb]
+    \centering
+    \includegraphics[width = 0.5\textwidth, height=4cm]{graphic/python/chapter2/aliasing_vergleich.pdf}
+    \caption{Neben den beiden abgebildeten Kurven könnten unendlich viele weitere Kurven über die Abtastwerte gelegt werden}
+    \label{fig:aliasing}
+ \end{figure}
