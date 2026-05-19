@@ -1,0 +1,4 @@
+\babel@toc {ngerman}{}\relax 
+\beamer@sectionintoc {1}{Grundlagen: Audio DSP}{2}{0}{1}
+\beamer@sectionintoc {2}{Einführung}{4}{0}{2}
+\beamer@sectionintoc {3}{Noch mehr Einführung}{7}{0}{3}
