@@ -5,10 +5,23 @@
 \author{Julian Mueller \and Tom Nir}
 \date{\today}
 
+\usepackage[style=numeric, backend=biber]{biblatex}
+\addbibresource{bibliography/bibl.bib}
 
 \begin{document}
 
+% Neue Sektion (Neues Kapitel) in sections.tex einfügen
+% Eine Section setzt sich hier aus mehreren Folien (frames) zusammen: \begin{frame}
+
 \input{Sections/sections.tex}
+
+\section{Literatur}
+\begin{frame}[allowframebreaks]{Literaturverzeichnis}
+    \printbibliography
+\end{frame}
+
+
+% AB HIER: Beispielformatierung aus Vorlage -> (Temporär dagelassen)
 
 \section{Einführung}
 
