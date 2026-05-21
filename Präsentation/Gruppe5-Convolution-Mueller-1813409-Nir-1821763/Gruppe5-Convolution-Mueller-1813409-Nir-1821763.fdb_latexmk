@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber Gruppe5-Convolution-Mueller-1813409-Nir-1821763"] 1779284186.02051 "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.bcf" "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.bbl" "Gruppe5-Convolution-Mueller-1813409-Nir-1821763" 1779284209.67826 0
-  "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.bcf" 1779284209.43572 108220 3dfd4090ce57b686954208e4941534c4 "pdflatex"
+["biber Gruppe5-Convolution-Mueller-1813409-Nir-1821763"] 1779284186.02051 "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.bcf" "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.bbl" "Gruppe5-Convolution-Mueller-1813409-Nir-1821763" 1779375471.02243 0
+  "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.bcf" 1779375470.7726 108220 3dfd4090ce57b686954208e4941534c4 "pdflatex"
   "bibliography/bibl.bib" 1779275443.03501 4181 b7b6c81ea915b6eaf8c97ea382b506d5 ""
   (generated)
   "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.bbl"
   "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.blg"
   (rewritten before read)
-["pdflatex"] 1779284206.99438 "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/Präsentation/Gruppe5-Convolution-Mueller-1813409-Nir-1821763/Gruppe5-Convolution-Mueller-1813409-Nir-1821763.tex" "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.pdf" "Gruppe5-Convolution-Mueller-1813409-Nir-1821763" 1779284209.67877 0
+["pdflatex"] 1779375467.74895 "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/Präsentation/Gruppe5-Convolution-Mueller-1813409-Nir-1821763/Gruppe5-Convolution-Mueller-1813409-Nir-1821763.tex" "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.pdf" "Gruppe5-Convolution-Mueller-1813409-Nir-1821763" 1779375471.02295 0
   "/etc/texmf/web2c/texmf.cnf" 1776529841.68766 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/Präsentation/Gruppe5-Convolution-Mueller-1813409-Nir-1821763/Gruppe5-Convolution-Mueller-1813409-Nir-1821763.tex" 1779282142.49307 595 72880094d0c8839ae518b39a6f6597b6 ""
+  "/home/jm/Studium/Semester4/Seminar/Seminararbeit/hshbin-dspconvolution/Präsentation/Gruppe5-Convolution-Mueller-1813409-Nir-1821763/Gruppe5-Convolution-Mueller-1813409-Nir-1821763.tex" 1779370981.96713 595 72880094d0c8839ae518b39a6f6597b6 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm" 1136768653 3584 929cdff2b7a8c11bd4d49fd68cb0ae70 ""
@@ -268,19 +268,23 @@
   "Graphics/Diskretes_signal_lyons.png" 1779200617.68319 16067 85cbb2b6cddcb8f6317e0651d22670ed ""
   "Graphics/Lyons_time_freq_domain.png.png" 1777834042.55089 27893 55f22c4cf0d482ae8104eee53dd922dc ""
   "Graphics/aliasing_vergleich.pdf" 1777820723.77292 25780 bb34ab1225c8336e60de33b2253aa565 ""
-  "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.aux" 1779284209.42972 3359 60f67bb087461c29fe9da4a38cf489bb "pdflatex"
+  "Graphics/pseudocode_diskrete_convolution.png" 1779371884.69876 113587 2a0be6854dee98318273d8a9cfc64ec3 ""
+  "Graphics/pseudocode_fft_convolution.png" 1779371627.36651 123942 b58324356b681e7aa319c42f3e628629 ""
+  "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.aux" 1779375470.7666 4398 b6064f81cad9626bb4e6db107a1c21ac "pdflatex"
   "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.bbl" 1779284187.28369 1613 feb3c13d9e747496cdbbbc807430dc7a "biber Gruppe5-Convolution-Mueller-1813409-Nir-1821763"
-  "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.nav" 1779284209.43756 1583 a0cd309418b218a5b68dd069222fa524 "pdflatex"
-  "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.out" 1779284209.43372 330 9fcd1e8c07a41452a9a3a0312e850be9 "pdflatex"
-  "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.run.xml" 1779284209.43756 2643 fccb33ca5538f8dc88af8d1405ef2d3e "pdflatex"
-  "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.tex" 1779282142.49307 595 72880094d0c8839ae518b39a6f6597b6 ""
-  "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.toc" 1779284209.43756 132 49c20d4940969e8ace8af59037056320 "pdflatex"
+  "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.nav" 1779375470.7746 2206 d34dbc61f67ed258f2cdc5a0d16be5b5 "pdflatex"
+  "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.out" 1779375470.7706 428 c71a8946d1866c4f8edf055d4a903785 "pdflatex"
+  "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.run.xml" 1779375470.7746 2643 fccb33ca5538f8dc88af8d1405ef2d3e "pdflatex"
+  "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.tex" 1779370981.96713 595 72880094d0c8839ae518b39a6f6597b6 ""
+  "Gruppe5-Convolution-Mueller-1813409-Nir-1821763.toc" 1779375470.7746 180 c3d2244b657a95889b6fd9ee309bcd0e "pdflatex"
   "H_WI_Pantone1665.pdf" 1383062912 7439 da052d383040ca24b29c150780344e39 ""
   "Sections/Basics/basics.tex" 1779280735.8216 198 186a92711e87d94d311357029791065b ""
   "Sections/Basics/frames/nyquist_shannon.tex" 1779284043.68376 914 b101d9c55bbfd602584849d2e0c49c35 ""
   "Sections/Basics/frames/sampling.tex" 1779281996.73441 971 e96a87363826e0a9fc54f0056af6e877 ""
   "Sections/Basics/frames/time_freq_domains.tex" 1779284203.81661 899 5a6ae53df72dba6c3d2ad32febb17bce ""
-  "Sections/sections.tex" 1779199542.94521 34 5e27b9640495e84c78b2afcc9a5a359a ""
+  "Sections/Convolution/convolution.tex" 1779370982.05647 102 5d491950ff718c9ce78774c9b5d55855 ""
+  "Sections/Convolution/frames/runtime_analysis.tex" 1779375467.44722 1425 7e6191dfa6e8d39c93328f3da49915ac ""
+  "Sections/sections.tex" 1779370982.05763 79 c59061a52ad909c009de257f2181b68c ""
   "Wortmarke_WI_schwarz.pdf" 1383063258 43749 83ab1940fe374e4312be1a2db47a85ff ""
   "f4_beamer.cls" 1468932662 3717 36ca97c50f8b98a3c9a8c7be1cd91109 ""
   (generated)
