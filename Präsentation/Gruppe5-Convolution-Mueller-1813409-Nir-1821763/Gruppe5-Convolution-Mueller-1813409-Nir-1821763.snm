@@ -1,0 +1,6 @@
+\beamer@slide {sec:basics}{3}
+\beamer@slide {sec:convolution}{10}
+\beamer@slide {frame:runtime_analysis}{10}
+\beamer@slide {fig: runtime_direct_convolution}{10}
+\beamer@slide {sec:implementation}{15}
+\beamer@slide {fig:cpp_code}{15}
