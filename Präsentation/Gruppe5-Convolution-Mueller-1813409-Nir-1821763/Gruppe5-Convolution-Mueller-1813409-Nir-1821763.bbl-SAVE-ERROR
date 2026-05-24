@@ -1,0 +1,51 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{lyons2011}{book}{}
+      \name{author}{1}{}{%
+        {{hash=30cfa3906c03117342e730ef1ed57349}{%
+           family={Lyons},
+           familyi={L\bibinitperiod},
+           given={Richard\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education}%
+      }
+      \strng{namehash}{30cfa3906c03117342e730ef1ed57349}
+      \strng{fullhash}{30cfa3906c03117342e730ef1ed57349}
+      \strng{bibnamehash}{30cfa3906c03117342e730ef1ed57349}
+      \strng{authorbibnamehash}{30cfa3906c03117342e730ef1ed57349}
+      \strng{authornamehash}{30cfa3906c03117342e730ef1ed57349}
+      \strng{authorfullhash}{30cfa3906c03117342e730ef1ed57349}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{third}
+      \field{isbn}{978-0-13-702741-5}
+      \field{title}{Understanding Digital Signal Processing}
+      \field{year}{2011}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

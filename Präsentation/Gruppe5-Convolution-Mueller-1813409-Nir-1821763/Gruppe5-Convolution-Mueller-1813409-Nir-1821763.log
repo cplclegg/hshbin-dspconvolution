@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.18)  21 MAY 2026 20:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.18)  24 MAY 2026 17:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1016,45 +1016,34 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [2
 
  <./H_WI_Pantone1665.pdf>] (./Sections/Basics/frames/sampling.tex
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 31.
+(Font)              <10.95> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 31.
+(Font)              <8> on input line 19.
 <Graphics/Diskretes_signal_lyons.png, id=79, 531.9875pt x 300.12125pt>
 File: Graphics/Diskretes_signal_lyons.png Graphic file (type png)
 <use Graphics/Diskretes_signal_lyons.png>
-Package pdftex.def Info: Graphics/Diskretes_signal_lyons.png  used on input line 31.
+Package pdftex.def Info: Graphics/Diskretes_signal_lyons.png  used on input line 19.
 (pdftex.def)             Requested size: 213.39784pt x 120.38525pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 31.
-(/usr/share/texmf/tex/latex/lm/ts1lmss.fd
-File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
 [3
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc} <./Graphics/Diskretes_signal_lyons.png>]
-Underfull \hbox (badness 10000) has occurred while \output is active
-
- []
-
-[4
-
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]) (./Sections/Basics/frames/time_freq_domains.tex
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc} <./Graphics/Diskretes_signal_lyons.png>]) (./Sections/Basics/frames/time_freq_domains.tex
 Underfull \hbox (badness 10000) in paragraph at lines 18--18
 
  []
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 18.
-<Graphics/Lyons_time_freq_domain.png.png, id=109, 853.1875pt x 251.94125pt>
+<Graphics/Lyons_time_freq_domain.png.png, id=98, 853.1875pt x 251.94125pt>
 File: Graphics/Lyons_time_freq_domain.png.png Graphic file (type png)
 <use Graphics/Lyons_time_freq_domain.png.png>
 Package pdftex.def Info: Graphics/Lyons_time_freq_domain.png.png  used on input line 18.
@@ -1070,70 +1059,75 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[5
+[4
 
  <./Graphics/Lyons_time_freq_domain.png.png>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[6
+[5
 
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]) (./Sections/Basics/frames/nyquist_shannon.tex
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]) (./Sections/Basics/frames/signals_systems.tex
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
 
  []
 
-<Graphics/aliasing_vergleich.pdf, id=133, 738.06992pt x 393.98067pt>
-File: Graphics/aliasing_vergleich.pdf Graphic file (type pdf)
-<use Graphics/aliasing_vergleich.pdf>
-Package pdftex.def Info: Graphics/aliasing_vergleich.pdf  used on input line 19.
-(pdftex.def)             Requested size: 213.39784pt x 113.9088pt.
+<Graphics/stetiges_signal.pdf, id=125, 462.52798pt x 346.89601pt>
+File: Graphics/stetiges_signal.pdf Graphic file (type pdf)
+<use Graphics/stetiges_signal.pdf>
+Package pdftex.def Info: Graphics/stetiges_signal.pdf  used on input line 14.
+(pdftex.def)             Requested size: 213.39784pt x 160.05048pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[7
+[6
 
 ]
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[8
+[7
 
 
- <./Graphics/aliasing_vergleich.pdf>])) (./Sections/Convolution/convolution.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--1
+ <./Graphics/stetiges_signal.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 
  []
 
-(./Gruppe5-Convolution-Mueller-1813409-Nir-1821763.toc)
+<Graphics/unitImpulse.pdf, id=180, 722.7pt x 289.08pt>
+File: Graphics/unitImpulse.pdf Graphic file (type pdf)
+<use Graphics/unitImpulse.pdf>
+Package pdftex.def Info: Graphics/unitImpulse.pdf  used on input line 32.
+(pdftex.def)             Requested size: 284.52866pt x 113.8126pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[8
+
+ <./Graphics/unitImpulse.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+
+ []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
 [9
 
-] (./Sections/Convolution/frames/runtime_analysis.tex
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
+]
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 
  []
 
-<Graphics/pseudocode_diskrete_convolution.png, id=221, 1667.22874pt x 602.25pt>
-File: Graphics/pseudocode_diskrete_convolution.png Graphic file (type png)
-<use Graphics/pseudocode_diskrete_convolution.png>
-Package pdftex.def Info: Graphics/pseudocode_diskrete_convolution.png  used on input line 47.
-(pdftex.def)             Requested size: 320.09134pt x 115.62332pt.
-<Graphics/pseudocode_fft_convolution.png, id=222, 906.38625pt x 615.29875pt>
-File: Graphics/pseudocode_fft_convolution.png Graphic file (type png)
-<use Graphics/pseudocode_fft_convolution.png>
-Package pdftex.def Info: Graphics/pseudocode_fft_convolution.png  used on input line 47.
-(pdftex.def)             Requested size: 213.39784pt x 144.85811pt.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 47.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
@@ -1141,7 +1135,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [10
 
- <./Graphics/pseudocode_diskrete_convolution.png>]
+]
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
@@ -1157,12 +1151,277 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [12
 
 
- <./Graphics/pseudocode_fft_convolution.png>]
+])) (./Sections/Convolution/convolution.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+ []
+
+(./Gruppe5-Convolution-Mueller-1813409-Nir-1821763.toc)
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
 [13
+
+] (./Sections/Convolution/frames/convolution_frame.tex
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+
+ []
+
+<Graphics/signals_sum.pdf, id=266, 1011.78pt x 578.16pt>
+File: Graphics/signals_sum.pdf Graphic file (type pdf)
+<use Graphics/signals_sum.pdf>
+Package pdftex.def Info: Graphics/signals_sum.pdf  used on input line 57.
+(pdftex.def)             Requested size: 284.52866pt x 162.58945pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[14
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[15
+
+
+ <./Graphics/signals_sum.pdf>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[16
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[17
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[18
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[19
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+
+ []
+
+<Graphics/compound_sinusoid.pdf, id=353, 722.7pt x 289.08pt>
+File: Graphics/compound_sinusoid.pdf Graphic file (type pdf)
+<use Graphics/compound_sinusoid.pdf>
+Package pdftex.def Info: Graphics/compound_sinusoid.pdf  used on input line 111.
+(pdftex.def)             Requested size: 284.52866pt x 113.8126pt.
+<Graphics/comparison_compound_filtered.pdf, id=354, 722.7pt x 289.08pt>
+File: Graphics/comparison_compound_filtered.pdf Graphic file (type pdf)
+<use Graphics/comparison_compound_filtered.pdf>
+Package pdftex.def Info: Graphics/comparison_compound_filtered.pdf  used on input line 111.
+(pdftex.def)             Requested size: 284.52866pt x 113.8126pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[20
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[21
+
+
+ <./Graphics/compound_sinusoid.pdf>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[22
+
+
+ <./Graphics/comparison_compound_filtered.pdf>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[23
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[24
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[25
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
+
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[26
+
+]) (./Sections/Convolution/frames/irl_lti.tex
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+
+ []
+
+<Graphics/reiss_mcpherson_room_verb_diagram.png, id=492, 779.16093pt x 411.78844pt>
+File: Graphics/reiss_mcpherson_room_verb_diagram.png Graphic file (type png)
+<use Graphics/reiss_mcpherson_room_verb_diagram.png>
+Package pdftex.def Info: Graphics/reiss_mcpherson_room_verb_diagram.png  used on input line 44.
+(pdftex.def)             Requested size: 284.52866pt x 150.37378pt.
+<Graphics/farina_anechoic.png, id=494, 559.33969pt x 420.82219pt>
+File: Graphics/farina_anechoic.png Graphic file (type png)
+<use Graphics/farina_anechoic.png>
+Package pdftex.def Info: Graphics/farina_anechoic.png  used on input line 44.
+(pdftex.def)             Requested size: 213.39784pt x 160.54979pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[27
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[28
+
+
+ <./Graphics/reiss_mcpherson_room_verb_diagram.png>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[29
+
+
+ <./Graphics/farina_anechoic.png>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[30
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[31
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[32
+
+
+]) (./Sections/Convolution/frames/ir_msrmt.tex
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[33
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[34
+
+
+]) (./Sections/Convolution/frames/runtime_analysis.tex
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+
+ []
+
+<Graphics/pseudocode_diskrete_convolution.png, id=561, 1667.22874pt x 602.25pt>
+File: Graphics/pseudocode_diskrete_convolution.png Graphic file (type png)
+<use Graphics/pseudocode_diskrete_convolution.png>
+Package pdftex.def Info: Graphics/pseudocode_diskrete_convolution.png  used on input line 47.
+(pdftex.def)             Requested size: 320.09134pt x 115.62332pt.
+<Graphics/pseudocode_fft_convolution.png, id=562, 906.38625pt x 615.29875pt>
+File: Graphics/pseudocode_fft_convolution.png Graphic file (type png)
+<use Graphics/pseudocode_fft_convolution.png>
+Package pdftex.def Info: Graphics/pseudocode_fft_convolution.png  used on input line 47.
+(pdftex.def)             Requested size: 213.39784pt x 144.85811pt.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 47.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[35
+
+ <./Graphics/pseudocode_diskrete_convolution.png>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[36
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[37
+
+
+ <./Graphics/pseudocode_fft_convolution.png>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[38
 
 
 ])) (./Sections/Implementation/implementation.tex
@@ -1175,31 +1434,39 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[14
+[39
 
 ] (./Sections/Implementation/frames/impl_direct_conv.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--8
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
 
  []
 
-<Graphics/cpp_code.png, id=272, 911.405pt x 441.65pt>
+<Graphics/cpp_code.png, id=611, 911.405pt x 441.65pt>
 File: Graphics/cpp_code.png Graphic file (type png)
 <use Graphics/cpp_code.png>
-Package pdftex.def Info: Graphics/cpp_code.png  used on input line 8.
+Package pdftex.def Info: Graphics/cpp_code.png  used on input line 14.
 (pdftex.def)             Requested size: 284.52866pt x 137.8805pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[15
+[40
 
- <./Graphics/cpp_code.png>]) (./Sections/Implementation/frames/runtime_measurement.tex
+ <./Graphics/cpp_code.png>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[41
+
+
+]) (./Sections/Implementation/frames/runtime_measurement.tex
 Underfull \hbox (badness 10000) in paragraph at lines 26--26
 
  []
 
-<Graphics/runtime_measurement.png, id=285, 1561.835pt x 377.41pt>
+<Graphics/runtime_measurement.png, id=631, 1561.835pt x 377.41pt>
 File: Graphics/runtime_measurement.png Graphic file (type png)
 <use Graphics/runtime_measurement.png>
 Package pdftex.def Info: Graphics/runtime_measurement.png  used on input line 26.
@@ -1209,18 +1476,18 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[16
+[42
 
  <./Graphics/runtime_measurement.png>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[17
+[43
 
 
 ]) (./Sections/Implementation/frames/conclusion.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--3
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
 
  []
 
@@ -1229,7 +1496,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[18
+[44
 
 ])))
 Underfull \hbox (badness 10000) in paragraph at lines 18--18
@@ -1241,7 +1508,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[19
+[45
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 21--21
@@ -1261,7 +1528,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[20
+[46
 
 ]
 \tf@nav=\write7
@@ -1285,18 +1552,18 @@ Package logreq Info: Writing requests to 'Gruppe5-Convolution-Mueller-1813409-Ni
 
  ) 
 Here is how much of TeX's memory you used:
- 30494 strings out of 474222
- 596230 string characters out of 5748733
+ 30660 strings out of 474222
+ 599939 string characters out of 5748733
  1933975 words of memory out of 5000000
- 52060 multiletter control sequences out of 15000+600000
- 624398 words of font info for 88 fonts, out of 8000000 for 9000
+ 52162 multiletter control sequences out of 15000+600000
+ 626799 words of font info for 88 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  142i,16n,137p,853b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Gruppe5-Convolution-Mueller-1813409-Nir-1821763.pdf (20 pages, 703418 bytes).
+</usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Gruppe5-Convolution-Mueller-1813409-Nir-1821763.pdf (46 pages, 1191617 bytes).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
- 271 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 794 PDF objects out of 1000 (max. 8388607)
+ 473 compressed objects within 5 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 175 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -19,6 +19,31 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{farina2007a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5a71914fbfe680b72a7c8dbe7fe84128}{%
+           family={Farina},
+           familyi={F\bibinitperiod},
+           given={Angelo},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{5a71914fbfe680b72a7c8dbe7fe84128}
+      \strng{fullhash}{5a71914fbfe680b72a7c8dbe7fe84128}
+      \strng{bibnamehash}{5a71914fbfe680b72a7c8dbe7fe84128}
+      \strng{authorbibnamehash}{5a71914fbfe680b72a7c8dbe7fe84128}
+      \strng{authornamehash}{5a71914fbfe680b72a7c8dbe7fe84128}
+      \strng{authorfullhash}{5a71914fbfe680b72a7c8dbe7fe84128}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Sine sweeps are employed since long time for audio and acoustics measurements, but in recent years (2000 and later) their usage became much larger, thanks to the computational capabilities of modern computers. Recent research results allow now for a further step in sine sweep measurements, particularly when dealing with the problem of measuring impulse responses, distortion and when working with systems which are neither time invariant, nor linear.}
+      \field{title}{Advancements in impulse response measurements by sine sweeps}
+      \field{year}{2007}
+    \endentry
     \entry{lyons2011}{book}{}
       \name{author}{1}{}{%
         {{hash=30cfa3906c03117342e730ef1ed57349}{%
@@ -44,6 +69,78 @@
       \field{isbn}{978-0-13-702741-5}
       \field{title}{Understanding Digital Signal Processing}
       \field{year}{2011}
+    \endentry
+    \entry{oppenheim1999}{book}{}
+      \name{author}{3}{}{%
+        {{hash=3d2d1d8687de3baa625d3d62a7e0e464}{%
+           family={Oppenheim},
+           familyi={O\bibinitperiod},
+           given={Alan\bibnamedelima V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=fd563e605c810572cece256b4271abd4}{%
+           family={Schafer},
+           familyi={S\bibinitperiod},
+           given={Ronald\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=e341805489324358e172d81e56536a74}{%
+           family={Buck},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River, N.J}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{c1d6917d7b5e4d1a20e161047608a05d}
+      \strng{fullhash}{c1d6917d7b5e4d1a20e161047608a05d}
+      \strng{bibnamehash}{c1d6917d7b5e4d1a20e161047608a05d}
+      \strng{authorbibnamehash}{c1d6917d7b5e4d1a20e161047608a05d}
+      \strng{authornamehash}{c1d6917d7b5e4d1a20e161047608a05d}
+      \strng{authorfullhash}{c1d6917d7b5e4d1a20e161047608a05d}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd ed}
+      \field{isbn}{978-0-13-754920-7}
+      \field{title}{Discrete-time signal processing}
+      \field{year}{1999}
+    \endentry
+    \entry{reiss2015}{book}{}
+      \name{author}{2}{}{%
+        {{hash=6feb0767f57229346e3eba3ed48f7bf5}{%
+           family={Reiss},
+           familyi={R\bibinitperiod},
+           given={Joshua\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=b7cdf92b737b8f855f96371825f6ba4c}{%
+           family={McPherson},
+           familyi={M\bibinitperiod},
+           given={Andrew\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Hoboken}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{d89817c905dab02747e192e6028c6df8}
+      \strng{fullhash}{d89817c905dab02747e192e6028c6df8}
+      \strng{bibnamehash}{d89817c905dab02747e192e6028c6df8}
+      \strng{authorbibnamehash}{d89817c905dab02747e192e6028c6df8}
+      \strng{authornamehash}{d89817c905dab02747e192e6028c6df8}
+      \strng{authorfullhash}{d89817c905dab02747e192e6028c6df8}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4665-6028-4}
+      \field{title}{Audio {Effects}: {Theory}, {Implementation} and {Application}}
+      \field{year}{2015}
     \endentry
   \enddatalist
 \endrefsection
