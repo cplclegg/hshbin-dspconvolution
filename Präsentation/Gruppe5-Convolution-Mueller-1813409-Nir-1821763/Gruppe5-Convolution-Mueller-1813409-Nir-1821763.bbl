@@ -142,6 +142,37 @@
       \field{title}{Audio {Effects}: {Theory}, {Implementation} and {Application}}
       \field{year}{2015}
     \endentry
+    \entry{alekseyV}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=dd30f876cb5b6516b2fcacccc4b4ae1c}{%
+           family={Vaneev},
+           familyi={V\bibinitperiod},
+           given={Aleksey},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd30f876cb5b6516b2fcacccc4b4ae1c}
+      \strng{fullhash}{dd30f876cb5b6516b2fcacccc4b4ae1c}
+      \strng{bibnamehash}{dd30f876cb5b6516b2fcacccc4b4ae1c}
+      \strng{authorbibnamehash}{dd30f876cb5b6516b2fcacccc4b4ae1c}
+      \strng{authornamehash}{dd30f876cb5b6516b2fcacccc4b4ae1c}
+      \strng{authorfullhash}{dd30f876cb5b6516b2fcacccc4b4ae1c}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Free impulse responses}
+      \field{urlday}{25}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.voxengo.com/impulses/
+      \endverb
+      \verb{url}
+      \verb https://www.voxengo.com/impulses/
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
