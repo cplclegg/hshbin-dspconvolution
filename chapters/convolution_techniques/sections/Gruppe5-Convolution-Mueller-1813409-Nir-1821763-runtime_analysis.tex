@@ -102,7 +102,7 @@ Auch hier der Algorithmus in Pseudocode:
 ]
 Algorithm fftConvolution(inSignal, N, irSignal, M)
     outLen <- N + M - 1 //  O(1)
-    fftLen <- outLen    //  O(1)
+    fftLen <- zeroPadToNextPowOf2(outLen)    //  O(1)
 
     // zeroPad() fuellt die Listen bis fftLen mit nullen auf
     zeroPad(inSignal, fftLen) // O(n)
@@ -119,7 +119,7 @@ Algorithm fftConvolution(inSignal, N, irSignal, M)
 
     // real() isoliert den Realteil des komplexen IFFT-Outputs
     for i <- 0 to outLen - 1    // Insg. O(n)
-        outSignal[i] <- real(outTime[i])
+        outSignal[i] <- real(outTimeDomain[i])
     done
 
     return outSignal

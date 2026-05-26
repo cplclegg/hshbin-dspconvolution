@@ -1,0 +1,62 @@
+\begin{thebibliography}{NRH16}
+
+\bibitem[Far00]{farina2000}
+Angelo Farina.
+\newblock Simultaneous measurement of impulse response and distortion with a swept-sine technique.
+\newblock February 2000.
+
+\bibitem[Far07a]{farina2007a}
+Angelo Farina.
+\newblock Advancements in impulse response measurements by sine sweeps.
+\newblock 2007.
+
+\bibitem[Far07b]{farina2007b}
+Angelo Farina.
+\newblock Impulse {Response} {Measurements}.
+\newblock 2007.
+\newblock URL: \url{https://www.angelofarina.it/Public/papers/238-NordicSound2007.pdf}.
+
+\bibitem[HCZ09]{holters2009}
+Martin Holters, Tobias Corbach, and Udo Zölzer.
+\newblock Impulse {Response} {Measurement} {Techniques} and their {Applicability} in the {Real} {World}.
+\newblock In {\em Proc. of the 12th {Int}. {Conference} on {Digital} {Audio} {Effects}}, Como, Italy, September 2009.
+
+\bibitem[Lyo11]{lyons2011}
+Richard~G. Lyons.
+\newblock {\em Understanding Digital Signal Processing}.
+\newblock Pearson Education, third edition, 2011.
+
+\bibitem[MM01]{smpm2001}
+Swen Müller and Paulo Massarani.
+\newblock Transfer {Function} {Measurement} with {Sweeps}.
+\newblock {\em Journal of the Audio Engineering Society}, 49(6):443--471, June 2001.
+\newblock URL: \url{https://www.aes.org/e-lib/browse.cfm?elib=10189}.
+
+\bibitem[NRH16]{novak2016}
+Antonin Novak, Frantisek Rund, and Petr Honzik.
+\newblock Impulse {Response} {Measurements} using {MLS} {Technique} on {Nonsynchronous} {Devices}.
+\newblock {\em Journal of the Audio Engineering Society}, 64(12):978--987, December 2016.
+\newblock URL: \url{http://www.aes.org/e-lib/browse.cfm?elib=18532}, \href {https://doi.org/10.17743/jaes.2016.0050} {\path{doi:10.17743/jaes.2016.0050}}.
+
+\bibitem[OSB99]{oppenheim1999}
+Alan~V. Oppenheim, Ronald~W. Schafer, and John~R. Buck.
+\newblock {\em Discrete-time signal processing}.
+\newblock Prentice Hall, Upper Saddle River, N.J, 2nd ed edition, 1999.
+
+\bibitem[PSV24]{prawda2024}
+K.~Prawda, S.~Schlecht, and V.~Välimäki.
+\newblock Time {Variance} in {Measured} {Room} {Impulse} {Responses}.
+\newblock In {\em Proceedings of the 10th {Convention} of the {European} {Acoustics} {Association} {Forum} {Acusticum} 2023}, pages 1639--1646, Turin, Italy, January 2024. European Acoustics Association.
+\newblock \href {https://doi.org/10.61782/fa.2023.0398} {\path{doi:10.61782/fa.2023.0398}}.
+
+\bibitem[RV89]{rife1989}
+Douglas~D Rife and John Vanderkooy.
+\newblock Transfer-{Function} {Measurement} with {Maximum}-{Length} {Sequences}.
+\newblock {\em Journal of the Audio Engineering Society}, 37(6):419--444, 1989.
+
+\bibitem[Smi97]{smith1997}
+Steven~W. Smith.
+\newblock {\em The Scientist \& Engineer's Guide to Digital Signal Processing}.
+\newblock California Technical Pub, first edition, 1997.
+
+\end{thebibliography}
