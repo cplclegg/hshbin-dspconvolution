@@ -2366,12 +2366,15 @@
     <bcf:citekey order="3" intorder="1">lyons2011</bcf:citekey>
     <bcf:citekey order="4" intorder="1">lyons2011</bcf:citekey>
     <bcf:citekey order="5" intorder="1">lyons2011</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">oppenheim1999</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">lyons2011</bcf:citekey>
     <bcf:citekey order="7" intorder="1">lyons2011</bcf:citekey>
     <bcf:citekey order="8" intorder="1">lyons2011</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">reiss2015</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">farina2007a</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">alekseyV</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">oppenheim1999</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">lyons2011</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">lyons2011</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">reiss2015</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">farina2007a</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">alekseyV</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
