@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'Gruppe5-Convolution-Mueller-1813409-Nir-1821763.blg'
-[113] biber:340> INFO - === Mo Mai 25, 2026, 14:23:20
-[133] Biber.pm:419> INFO - Reading 'Gruppe5-Convolution-Mueller-1813409-Nir-1821763.bcf'
-[227] Biber.pm:979> INFO - Found 5 citekeys in bib section 0
-[246] Biber.pm:4419> INFO - Processing section 0
-[259] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography/bibl.bib' for section 0
-[261] bibtex.pm:1713> INFO - LaTeX decoding ...
-[280] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography/bibl.bib'
-[373] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[373] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[373] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[373] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
-[386] bbl.pm:660> INFO - Writing 'Gruppe5-Convolution-Mueller-1813409-Nir-1821763.bbl' with encoding 'UTF-8'
-[389] bbl.pm:763> INFO - Output to Gruppe5-Convolution-Mueller-1813409-Nir-1821763.bbl
+[126] biber:340> INFO - === Mi Mai 27, 2026, 14:20:16
+[156] Biber.pm:419> INFO - Reading 'Gruppe5-Convolution-Mueller-1813409-Nir-1821763.bcf'
+[253] Biber.pm:979> INFO - Found 5 citekeys in bib section 0
+[273] Biber.pm:4419> INFO - Processing section 0
+[287] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography/bibl.bib' for section 0
+[289] bibtex.pm:1713> INFO - LaTeX decoding ...
+[309] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography/bibl.bib'
+[405] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[405] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[405] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[405] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
+[418] bbl.pm:660> INFO - Writing 'Gruppe5-Convolution-Mueller-1813409-Nir-1821763.bbl' with encoding 'UTF-8'
+[421] bbl.pm:763> INFO - Output to Gruppe5-Convolution-Mueller-1813409-Nir-1821763.bbl

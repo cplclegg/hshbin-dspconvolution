@@ -483,7 +483,6 @@ INPUT ./Graphics/Diskretes_signal_lyons.png
 INPUT ./Graphics/Diskretes_signal_lyons.png
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss10.tfm
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
-INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
 INPUT ./Sections/Basics/frames/time_freq_domains.tex
 INPUT ./Sections/Basics/frames/time_freq_domains.tex
 INPUT Sections/Basics/frames/time_freq_domains.tex
@@ -508,8 +507,6 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/lmmi9.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmsy9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
-INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT ./Sections/Basics/frames/signals_systems.tex
 INPUT ./Sections/Basics/frames/signals_systems.tex
 INPUT Sections/Basics/frames/signals_systems.tex
@@ -518,11 +515,14 @@ INPUT ./Graphics/stetiges_signal.pdf
 INPUT ./Graphics/stetiges_signal.pdf
 INPUT ./Graphics/stetiges_signal.pdf
 INPUT ./Graphics/stetiges_signal.pdf
+INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
+INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
 INPUT ./Graphics/unitImpulse.pdf
 INPUT ./Graphics/unitImpulse.pdf
 INPUT ./Graphics/unitImpulse.pdf
 INPUT ./Graphics/unitImpulse.pdf
 INPUT ./Graphics/unitImpulse.pdf
+INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT ./Sections/Convolution/convolution.tex
 INPUT ./Sections/Convolution/convolution.tex
 INPUT Sections/Convolution/convolution.tex
