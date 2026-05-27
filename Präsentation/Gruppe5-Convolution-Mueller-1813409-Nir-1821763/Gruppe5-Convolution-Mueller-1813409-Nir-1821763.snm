@@ -1,11 +1,11 @@
 \beamer@slide {sec:basics}{3}
 \beamer@slide {sec:convolution}{13}
 \beamer@slide {eq:scaled_unit_sum}{13}
-\beamer@slide {fig:comp_sinusoid}{15}
-\beamer@slide {fig:filtered_sinusoid}{15}
-\beamer@slide {eq:mov_avg_filter}{15}
-\beamer@slide {eq:fir_convsum}{15}
-\beamer@slide {frame:runtime_analysis}{30}
-\beamer@slide {fig: runtime_direct_convolution}{30}
-\beamer@slide {sec:implementation}{36}
-\beamer@slide {fig:cpp_code}{36}
+\beamer@slide {fig:comp_sinusoid}{19}
+\beamer@slide {fig:filtered_sinusoid}{19}
+\beamer@slide {eq:mov_avg_filter}{19}
+\beamer@slide {eq:fir_convsum}{19}
+\beamer@slide {frame:runtime_analysis}{34}
+\beamer@slide {fig: runtime_direct_convolution}{34}
+\beamer@slide {sec:implementation}{40}
+\beamer@slide {fig:cpp_code}{40}
