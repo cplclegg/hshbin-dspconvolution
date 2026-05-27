@@ -1,5 +1,5 @@
 \babel@toc {ngerman}{}\relax 
-\beamer@sectionintoc {1}{Grundlagen: Audio DSP}{2}{0}{1}
+\beamer@sectionintoc {1}{Grundlagen}{2}{0}{1}
 \beamer@sectionintoc {2}{Convolution}{13}{0}{2}
-\beamer@sectionintoc {3}{Implementierung}{39}{0}{3}
-\beamer@sectionintoc {4}{Literatur}{45}{0}{4}
+\beamer@sectionintoc {3}{Implementierung}{35}{0}{3}
+\beamer@sectionintoc {4}{Literatur}{41}{0}{4}
